@@ -1,0 +1,124 @@
+chapter,manuscript,source_line,row_label,table_column,displayed,underlying_value,source,metric_key,source_sha256,status
+1,manuscript/chapters/ch01.qmd,180,Fitted slope,2,80.000,80.00000000000001,Part_I/python.csv,slope|full,dd0cb33eea26b98c1e7521a796ca29a2af0a46d087933af7692c7f1166145b7f,Passed
+2,manuscript/chapters/ch02.qmd,117,Agent,2,2,2,Part_I/python.csv,invoices|agent,dd0cb33eea26b98c1e7521a796ca29a2af0a46d087933af7692c7f1166145b7f,Passed
+2,manuscript/chapters/ch02.qmd,117,Agent,3,"180,000",180000,Part_I/python.csv,net_minor|agent,dd0cb33eea26b98c1e7521a796ca29a2af0a46d087933af7692c7f1166145b7f,Passed
+3,manuscript/chapters/ch03.qmd,138,Usable measurements,2,3,3,Part_I/python.csv,usable|all,dd0cb33eea26b98c1e7521a796ca29a2af0a46d087933af7692c7f1166145b7f,Passed
+4,manuscript/chapters/ch04.qmd,167,Crude contrast,3,0.50,0.5,Part_I/python.csv,difference|crude,dd0cb33eea26b98c1e7521a796ca29a2af0a46d087933af7692c7f1166145b7f,Passed
+5,manuscript/chapters/ch05.qmd,143,Distinct source text IDs,2,6,6,Part_II/python.csv,count|text_ids,a0b53d63478c361d94a3c468964c1d94c29711bddf4decedf28d466c4ece5361,Passed
+6,manuscript/chapters/ch06.qmd,86,I01,4,"25,000",25000,Part_II/python.csv,net_minor|I01,a0b53d63478c361d94a3c468964c1d94c29711bddf4decedf28d466c4ece5361,Passed
+7,manuscript/chapters/ch07.qmd,91,Source headers,2,8,8,Part_II/python.csv,count|headers,a0b53d63478c361d94a3c468964c1d94c29711bddf4decedf28d466c4ece5361,Passed
+7,manuscript/chapters/ch07.qmd,91,Source headers,3,860,860,Part_II/python.csv,total|headers_minor,a0b53d63478c361d94a3c468964c1d94c29711bddf4decedf28d466c4ece5361,Passed
+8,manuscript/chapters/ch08.qmd,82,Eligible households,2,5,5,Part_II/python.csv,count|eligible_households,a0b53d63478c361d94a3c468964c1d94c29711bddf4decedf28d466c4ece5361,Passed
+9,manuscript/chapters/ch09.qmd,36,Yield,2,11,11.0,Part_III/python/metrics.csv,count|yield,81d8310a379a75c1fb165e92771e6625b158ac02ce510343c281d37dfdd6dd4c,Passed
+10,manuscript/chapters/ch10.qmd,70,"[2, 3)",3,3,3.0,Part_III/python/metrics.csv,bin|Rainfed/2,81d8310a379a75c1fb165e92771e6625b158ac02ce510343c281d37dfdd6dd4c,Passed
+11,manuscript/chapters/ch11.qmd,180,Type 7,2,1.30625,1.30625,Part_III/python/metrics.csv,bootstrap_type7|lower,81d8310a379a75c1fb165e92771e6625b158ac02ce510343c281d37dfdd6dd4c,Passed
+11,manuscript/chapters/ch11.qmd,180,Type 7,3,6.66250,6.6625000000000005,Part_III/python/metrics.csv,bootstrap_type7|upper,81d8310a379a75c1fb165e92771e6625b158ac02ce510343c281d37dfdd6dd4c,Passed
+12,manuscript/chapters/ch12.qmd,79,Rural,5,45.2800,45.28,Part_III/python/metrics.csv,mean|wr/rural,81d8310a379a75c1fb165e92771e6625b158ac02ce510343c281d37dfdd6dd4c,Passed
+13,manuscript/chapters/ch13.qmd,147,Simple pilot,2,12,12,pilot_licensed/python/fit.json,:nobs,9d7c0191d35f21738bb18796557d4ffe83d516282d07b1ce1323912e92ea4655,Passed
+13,manuscript/chapters/ch13.qmd,147,Simple pilot,3,10,10,pilot_licensed/python/fit.json,:df_resid,9d7c0191d35f21738bb18796557d4ffe83d516282d07b1ce1323912e92ea4655,Passed
+13,manuscript/chapters/ch13.qmd,147,Simple pilot,4,80.0000,79.99999999999996,pilot_licensed/python/coefficients.csv,classical/sessions:estimate,0f635c2ca1350df52e321f5a4b4b4a15a439bf8fac897b88317bf92907e97732,Passed
+13,manuscript/chapters/ch13.qmd,147,Simple pilot,5,4.4561,4.4561354172806364,pilot_licensed/python/coefficients.csv,classical/sessions:std_error,0f635c2ca1350df52e321f5a4b4b4a15a439bf8fac897b88317bf92907e97732,Passed
+13,manuscript/chapters/ch13.qmd,147,Simple pilot,6,4.6568,4.656792274271452,pilot_licensed/python/coefficients.csv,HC1/sessions:std_error,0f635c2ca1350df52e321f5a4b4b4a15a439bf8fac897b88317bf92907e97732,Passed
+14,manuscript/chapters/ch14.qmd,89,Logit,5,−152.3338,-152.33382323608828,Part_IV/python/metrics.csv,logit|scalar|ll,4b2085d4777c01b31429d3f4cdae8e54b0a63d2336ee75a0580ac80edb72e2c5,Passed
+15,manuscript/chapters/ch15.qmd,135,1,2,100,100.0,Part_IV/python/metrics.csv,riskset|risk|1,4b2085d4777c01b31429d3f4cdae8e54b0a63d2336ee75a0580ac80edb72e2c5,Passed
+15,manuscript/chapters/ch15.qmd,135,1,5,0.9200,0.92,Part_IV/python/metrics.csv,riskset|km|1,4b2085d4777c01b31429d3f4cdae8e54b0a63d2336ee75a0580ac80edb72e2c5,Passed
+16,manuscript/chapters/ch16.qmd,100,Unbalanced,2,21.8902,21.89019107832409,Part_IV/python/metrics.csv,unbalanced|beta|intercept,4b2085d4777c01b31429d3f4cdae8e54b0a63d2336ee75a0580ac80edb72e2c5,Passed
+16,manuscript/chapters/ch16.qmd,100,Unbalanced,3,1.4083,1.4083200042599577,Part_IV/python/metrics.csv,unbalanced|beta|baseline,4b2085d4777c01b31429d3f4cdae8e54b0a63d2336ee75a0580ac80edb72e2c5,Passed
+16,manuscript/chapters/ch16.qmd,100,Unbalanced,4,7.9598,7.959791589987045,Part_IV/python/metrics.csv,unbalanced|scalar|tau2,4b2085d4777c01b31429d3f4cdae8e54b0a63d2336ee75a0580ac80edb72e2c5,Passed
+16,manuscript/chapters/ch16.qmd,100,Unbalanced,5,0.7550,0.7549763819393587,Part_IV/python/metrics.csv,unbalanced|scalar|sigma2,4b2085d4777c01b31429d3f4cdae8e54b0a63d2336ee75a0580ac80edb72e2c5,Passed
+16,manuscript/chapters/ch16.qmd,100,Unbalanced,6,−90.5048,-90.50484131616554,Part_IV/python/metrics.csv,unbalanced|scalar|ll,4b2085d4777c01b31429d3f4cdae8e54b0a63d2336ee75a0580ac80edb72e2c5,Passed
+17,manuscript/chapters/ch17.qmd,182,Offer effect on administrative score,2,5.3125,5.3125,Part_V/python/metrics.csv,trial|scalar|itt,9b31c9b74bf7f3e7b7bc929ec51eb7db266b1dcadfa195f077982249c378dd77,Passed
+17,manuscript/chapters/ch17.qmd,183,Blocked Neyman standard error,2,3.4047,3.404704669848604,Part_V/python/metrics.csv,trial|scalar|se_neyman,9b31c9b74bf7f3e7b7bc929ec51eb7db266b1dcadfa195f077982249c378dd77,Passed
+17,manuscript/chapters/ch17.qmd,184,Exact sharp-null probability,2,0.1500,0.15,Part_V/python/metrics.csv,trial|scalar|ri_p,9b31c9b74bf7f3e7b7bc929ec51eb7db266b1dcadfa195f077982249c378dd77,Passed
+17,manuscript/chapters/ch17.qmd,184,Exact sharp-null probability,3,60 of 400 allocations,60.0 / 400.0,Part_V/python/metrics.csv,trial|scalar|extreme / trial|scalar|permutations,9b31c9b74bf7f3e7b7bc929ec51eb7db266b1dcadfa195f077982249c378dd77,Passed
+18,manuscript/chapters/ch18.qmd,101,3 and 3,3,31,31.0,Part_V/python/metrics.csv,notyet|control_n|3/3,9b31c9b74bf7f3e7b7bc929ec51eb7db266b1dcadfa195f077982249c378dd77,Passed
+18,manuscript/chapters/ch18.qmd,101,3 and 3,5,2.300,2.2999999999950007,Part_V/python/metrics.csv,never|att|3/3,9b31c9b74bf7f3e7b7bc929ec51eb7db266b1dcadfa195f077982249c378dd77,Passed
+19,manuscript/chapters/ch19.qmd,77,Strong,4,53.9225,53.92246698594384,Part_V/python/metrics.csv,strong|scalar|first_t2,9b31c9b74bf7f3e7b7bc929ec51eb7db266b1dcadfa195f077982249c378dd77,Passed
+19,manuscript/chapters/ch19.qmd,78,Weak,5,3.2709,3.270945660309987,Part_V/python/metrics.csv,weak|scalar|effect,9b31c9b74bf7f3e7b7bc929ec51eb7db266b1dcadfa195f077982249c378dd77,Passed
+20,manuscript/chapters/ch20.qmd,80,Treated ESS,2,53.42,53.42461054595794,Part_V/python/metrics.csv,full|scalar|ess1,9b31c9b74bf7f3e7b7bc929ec51eb7db266b1dcadfa195f077982249c378dd77,Passed
+20,manuscript/chapters/ch20.qmd,80,Treated ESS,3,82.73,82.73351195414546,Part_V/python/metrics.csv,trim|scalar|ess1,9b31c9b74bf7f3e7b7bc929ec51eb7db266b1dcadfa195f077982249c378dd77,Passed
+21,manuscript/chapters/ch21.qmd,57,Level comparison,2,153,153.0,Part_VI/python/metrics.csv,within|scalar|n,2398159e57f78b1d0c079f097a0f07cd77aa1bfc3a9e4e6265192cf391034933,Passed
+21,manuscript/chapters/ch21.qmd,59,Dynamic IV,2,120,120.0,Part_VI/python/metrics.csv,dynamic|scalar|n,2398159e57f78b1d0c079f097a0f07cd77aa1bfc3a9e4e6265192cf391034933,Passed
+22,manuscript/chapters/ch22.qmd,175,Ghana,3,6.459,6.459010976000537,Part_VI/python/metrics.csv,naive|rmse|1/1,2398159e57f78b1d0c079f097a0f07cd77aa1bfc3a9e4e6265192cf391034933,Passed
+22,manuscript/chapters/ch22.qmd,175,Ghana,4,3.341,3.3407987125056717,Part_VI/python/metrics.csv,ar1|rmse|1/1,2398159e57f78b1d0c079f097a0f07cd77aa1bfc3a9e4e6265192cf391034933,Passed
+22,manuscript/chapters/ch22.qmd,175,Ghana,5,3.318,3.318143724557844,Part_VI/python/metrics.csv,ma1|rmse|1/1,2398159e57f78b1d0c079f097a0f07cd77aa1bfc3a9e4e6265192cf391034933,Passed
+23,manuscript/chapters/ch23.qmd,111,Rook contiguity,2,64,64.0,Part_VI/python/metrics.csv,rook|scalar|edges,2398159e57f78b1d0c079f097a0f07cd77aa1bfc3a9e4e6265192cf391034933,Passed
+23,manuscript/chapters/ch23.qmd,111,Rook contiguity,3,0.4945,0.494471440664214,Part_VI/python/metrics.csv,rook|scalar|I,2398159e57f78b1d0c079f097a0f07cd77aa1bfc3a9e4e6265192cf391034933,Passed
+23,manuscript/chapters/ch23.qmd,111,Rook contiguity,5,0.0050,0.005,Part_VI/python/metrics.csv,rook|scalar|p,2398159e57f78b1d0c079f097a0f07cd77aa1bfc3a9e4e6265192cf391034933,Passed
+24,manuscript/chapters/ch24.qmd,78,CR1,2,0.5062,0.5061958133281527,Part_VI/python/metrics.csv,y1|se|cr1,2398159e57f78b1d0c079f097a0f07cd77aa1bfc3a9e4e6265192cf391034933,Passed
+24,manuscript/chapters/ch24.qmd,78,CR1,3,3.509,3.509073745774489,Part_VI/python/metrics.csv,y1|scalar|t_cr1,2398159e57f78b1d0c079f097a0f07cd77aa1bfc3a9e4e6265192cf391034933,Passed
+25,manuscript/chapters/ch25.qmd,185,Final holdout,2,92,92.0,Part_VII/python/metrics.csv,holdout|scalar|events,9a1d0c847c85fccfc4aec77d860cefe9d266a889f90b80dafe4103bfb97cd62a,Passed
+25,manuscript/chapters/ch25.qmd,185,Final holdout,3,0.7944,0.7943595769682726,Part_VII/python/metrics.csv,holdout|scalar|auc,9a1d0c847c85fccfc4aec77d860cefe9d266a889f90b80dafe4103bfb97cd62a,Passed
+25,manuscript/chapters/ch25.qmd,185,Final holdout,6,0.5432,0.5431659388016511,Part_VII/python/metrics.csv,holdout|scalar|logloss,9a1d0c847c85fccfc4aec77d860cefe9d266a889f90b80dafe4103bfb97cd62a,Passed
+26,manuscript/chapters/ch26.qmd,157,Ridge baseline,2,0.41695,0.41694927084704436,Part_VII/python/metrics.csv,ridge|scalar|logloss,9a1d0c847c85fccfc4aec77d860cefe9d266a889f90b80dafe4103bfb97cd62a,Passed
+26,manuscript/chapters/ch26.qmd,158,Python forest,3,0.12870,0.1286979719298823,Part_VII/python/metrics.csv,py_forest|scalar|brier,9a1d0c847c85fccfc4aec77d860cefe9d266a889f90b80dafe4103bfb97cd62a,Passed
+26,manuscript/chapters/ch26.qmd,160,R forest,3,0.13075,0.1307525881454855,Part_VII/python/metrics.csv,r_forest|scalar|brier,9a1d0c847c85fccfc4aec77d860cefe9d266a889f90b80dafe4103bfb97cd62a,Passed
+27,manuscript/chapters/ch27.qmd,77,0.0–0.2,2,151,151.0,Part_VII/python/metrics.csv,audit|bin_n|1,9a1d0c847c85fccfc4aec77d860cefe9d266a889f90b80dafe4103bfb97cd62a,Passed
+27,manuscript/chapters/ch27.qmd,77,0.0–0.2,3,0.1069,0.10687850277085144,Part_VII/python/metrics.csv,audit|bin_mean_p|1,9a1d0c847c85fccfc4aec77d860cefe9d266a889f90b80dafe4103bfb97cd62a,Passed
+28,manuscript/chapters/ch28.qmd,80,1,3,392,392.0,Part_VII/python/metrics.csv,shared|fold_train_treat|1,9a1d0c847c85fccfc4aec77d860cefe9d266a889f90b80dafe4103bfb97cd62a,Passed
+28,manuscript/chapters/ch28.qmd,80,1,5,131,131.0,Part_VII/python/metrics.csv,shared|fold_treat|1,9a1d0c847c85fccfc4aec77d860cefe9d266a889f90b80dafe4103bfb97cd62a,Passed
+29,manuscript/chapters/ch29.qmd,43,Lending interest rate,3,0,0.0,Part_VIII/python/metrics.csv,country1|available|lending,5bcb989e656e772e22999e7e190a728af973b9a9d762a19004055d4bef535657,Passed
+29,manuscript/chapters/ch29.qmd,43,Lending interest rate,4,25,25.0,Part_VIII/python/metrics.csv,country2|available|lending,5bcb989e656e772e22999e7e190a728af973b9a9d762a19004055d4bef535657,Passed
+30,manuscript/chapters/ch30.qmd,44,All observed,2,374,374.0,Part_VIII/python/metrics.csv,all|scalar|n,5bcb989e656e772e22999e7e190a728af973b9a9d762a19004055d4bef535657,Passed
+30,manuscript/chapters/ch30.qmd,44,All observed,3,523.05,523.0500000000001,Part_VIII/python/metrics.csv,all|scalar|denominator,5bcb989e656e772e22999e7e190a728af973b9a9d762a19004055d4bef535657,Passed
+30,manuscript/chapters/ch30.qmd,44,All observed,4,363.03,363.03000000000003,Part_VIII/python/metrics.csv,all|scalar|numerator,5bcb989e656e772e22999e7e190a728af973b9a9d762a19004055d4bef535657,Passed
+30,manuscript/chapters/ch30.qmd,44,All observed,5,69.41,69.406366504158300,Part_VIII/python/metrics.csv,all|scalar|estimate,5bcb989e656e772e22999e7e190a728af973b9a9d762a19004055d4bef535657,Passed
+30,manuscript/chapters/ch30.qmd,44,All observed,6,63.96 to 74.85,63.9619344648473500 / 74.8507985434692500,Part_VIII/python/metrics.csv,all|scalar|lo / all|scalar|hi,5bcb989e656e772e22999e7e190a728af973b9a9d762a19004055d4bef535657,Passed
+31,manuscript/chapters/ch31.qmd,48,Original and revised filings,2,"1,136",1136.0,Part_VIII/python/metrics.csv,flow|scalar|filings,5bcb989e656e772e22999e7e190a728af973b9a9d762a19004055d4bef535657,Passed
+31,manuscript/chapters/ch31.qmd,50,Same-segment next-quarter outcomes,2,543,543.0,Part_VIII/python/metrics.csv,flow|scalar|outcome_rows,5bcb989e656e772e22999e7e190a728af973b9a9d762a19004055d4bef535657,Passed
+32,manuscript/chapters/ch32.qmd,83,GPS planted area,2,267,267.0,Part_VIII/python/metrics.csv,gps|scalar|n,5bcb989e656e772e22999e7e190a728af973b9a9d762a19004055d4bef535657,Passed
+32,manuscript/chapters/ch32.qmd,83,GPS planted area,3,"218,003.75",218003.74756533845,Part_VIII/python/metrics.csv,gps|scalar|kg,5bcb989e656e772e22999e7e190a728af973b9a9d762a19004055d4bef535657,Passed
+32,manuscript/chapters/ch32.qmd,83,GPS planted area,5,"1,635.80",1635.802252881584,Part_VIII/python/metrics.csv,gps|scalar|ratio,5bcb989e656e772e22999e7e190a728af973b9a9d762a19004055d4bef535657,Passed
+33,manuscript/chapters/ch33.qmd,84,Follow-up observed,2,417,417.0,Part_IX/python/metrics.csv,arm0|scalar|observed,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+33,manuscript/chapters/ch33.qmd,84,Follow-up observed,3,414,414.0,Part_IX/python/metrics.csv,arm1|scalar|observed,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+34,manuscript/chapters/ch34.qmd,61,Scoped lines,2,"5,904",5904.0,Part_IX/python/metrics.csv,revenue|scalar|lines,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+34,manuscript/chapters/ch34.qmd,65,Eligible invoice balances,2,"4,893",4893.0,Part_IX/python/metrics.csv,revenue|scalar|invoices,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+34,manuscript/chapters/ch34.qmd,65,Eligible invoice balances,3,"£295,491.85",295491.850,Part_IX/python/metrics.csv,revenue|scalar|net,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,161,"Balanced, equal weights",2,240,240.0,Part_IX/python/metrics.csv,common:n,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,161,"Balanced, equal weights",3,10,10.0,Part_IX/python/metrics.csv,common:countries,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,161,"Balanced, equal weights",4,−1.33,-1.3305575699372612,Part_IX/python/metrics.csv,common:estimate,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,161,"Balanced, equal weights",5,−7.65 to 4.99,-7.64718562635729 / 4.9860704864827685,Part_IX/python/metrics.csv,common:lo/hi,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,162,"Balanced, population weights",2,240,240.0,Part_IX/python/metrics.csv,weighted:n,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,162,"Balanced, population weights",3,10,10.0,Part_IX/python/metrics.csv,weighted:countries,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,162,"Balanced, population weights",4,2.98,2.979789036702206,Part_IX/python/metrics.csv,weighted:estimate,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,162,"Balanced, population weights",5,−1.89 to 7.85,-1.8895023992830877 / 7.8490804726875,Part_IX/python/metrics.csv,weighted:lo/hi,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,163,"Expanded, equal weights",2,256,256.0,Part_IX/python/metrics.csv,expanded:n,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,163,"Expanded, equal weights",3,11,11.0,Part_IX/python/metrics.csv,expanded:countries,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,163,"Expanded, equal weights",4,2.41,2.406328048397135,Part_IX/python/metrics.csv,expanded:estimate,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,163,"Expanded, equal weights",5,−5.20 to 10.02,-5.203404455734439 / 10.01606055252871,Part_IX/python/metrics.csv,expanded:lo/hi,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,164,"Balanced, WDI income",2,240,240.0,Part_IX/python/metrics.csv,national:n,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,164,"Balanced, WDI income",3,10,10.0,Part_IX/python/metrics.csv,national:countries,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,164,"Balanced, WDI income",4,−1.23,-1.2339670901642321,Part_IX/python/metrics.csv,national:estimate,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+35,manuscript/chapters/ch35.qmd,164,"Balanced, WDI income",5,−10.32 to 7.85,-10.319307594320522 / 7.851373413992058,Part_IX/python/metrics.csv,national:lo/hi,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+36,manuscript/chapters/ch36.qmd,67,Transfer coverage,2,175,175.0,Part_IX/python/metrics.csv,coverage|scalar|n,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+36,manuscript/chapters/ch36.qmd,67,Transfer coverage,4,75.05%,75.0454821103699200,Part_IX/python/metrics.csv,coverage|scalar|estimate,db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27,Passed
+37,manuscript/chapters/ch37.qmd,164,Public checkouts,2,267,267,pilot_first/validation.json,reference_check_count,6dfb7d14038f0f304382bb9301bb1fbbd3190f9b310f1757178fefc2a7ad9b07,Passed
+37,manuscript/chapters/ch37.qmd,164,Public checkouts,3,243,243,pilot_first/validation.json,pairwise_check_count,6dfb7d14038f0f304382bb9301bb1fbbd3190f9b310f1757178fefc2a7ad9b07,Passed
+37,manuscript/chapters/ch37.qmd,165,Licensed replay,2,364,364,pilot_licensed/validation.json,reference_check_count,61c93d85ce618d81688e7fff257ee5550ee2b34927fe3ad8ff62aa09fd915541,Passed
+37,manuscript/chapters/ch37.qmd,165,Licensed replay,3,510,510,pilot_licensed/validation.json,pairwise_check_count,61c93d85ce618d81688e7fff257ee5550ee2b34927fe3ad8ff62aa09fd915541,Passed
+38,manuscript/chapters/ch38.qmd,114,Baseline,2,12,12,reporting/report_values.json,baseline:n,e49d12cdf6ddb04374e5fae7463bdf595bd8e1c9c779035b2716be298cccf163,Passed
+38,manuscript/chapters/ch38.qmd,114,Baseline,3,80.00,79.99999999999996,reporting/report_values.json,baseline:estimate,e49d12cdf6ddb04374e5fae7463bdf595bd8e1c9c779035b2716be298cccf163,Passed
+38,manuscript/chapters/ch38.qmd,114,Baseline,4,4.66,4.656792274271452,reporting/report_values.json,baseline:std_error,e49d12cdf6ddb04374e5fae7463bdf595bd8e1c9c779035b2716be298cccf163,Passed
+38,manuscript/chapters/ch38.qmd,114,Baseline,5,69.62 to 90.38,69.62402020806621 / 90.3759797919337,reporting/report_values.json,baseline:ci_low/ci_high,e49d12cdf6ddb04374e5fae7463bdf595bd8e1c9c779035b2716be298cccf163,Passed
+38,manuscript/chapters/ch38.qmd,115,Corrected harvest,2,12,12,reporting/report_values.json,corrected:n,e49d12cdf6ddb04374e5fae7463bdf595bd8e1c9c779035b2716be298cccf163,Passed
+38,manuscript/chapters/ch38.qmd,115,Corrected harvest,3,81.43,81.42857142857144,reporting/report_values.json,corrected:estimate,e49d12cdf6ddb04374e5fae7463bdf595bd8e1c9c779035b2716be298cccf163,Passed
+38,manuscript/chapters/ch38.qmd,115,Corrected harvest,4,3.84,3.8378454029859745,reporting/report_values.json,corrected:std_error,e49d12cdf6ddb04374e5fae7463bdf595bd8e1c9c779035b2716be298cccf163,Passed
+38,manuscript/chapters/ch38.qmd,115,Corrected harvest,5,72.88 to 89.98,72.87731897826147 / 89.97982387888142,reporting/report_values.json,corrected:ci_low/ci_high,e49d12cdf6ddb04374e5fae7463bdf595bd8e1c9c779035b2716be298cccf163,Passed
+39,manuscript/chapters/ch39.qmd,95,Domain 1,2,Released,Released,disclosure/public_domains.csv,Domain 1:status,be728749586bfb5eb40d071de765c1882a82c7dd8de18cb6b2ae9b463426a2d9,Passed
+39,manuscript/chapters/ch39.qmd,95,Domain 1,3,37.84%,37.835800,disclosure/public_domains.csv,Domain 1:estimate,be728749586bfb5eb40d071de765c1882a82c7dd8de18cb6b2ae9b463426a2d9,Passed
+39,manuscript/chapters/ch39.qmd,96,Domain 2,2,Released,Released,disclosure/public_domains.csv,Domain 2:status,be728749586bfb5eb40d071de765c1882a82c7dd8de18cb6b2ae9b463426a2d9,Passed
+39,manuscript/chapters/ch39.qmd,96,Domain 2,3,39.81%,39.809700,disclosure/public_domains.csv,Domain 2:estimate,be728749586bfb5eb40d071de765c1882a82c7dd8de18cb6b2ae9b463426a2d9,Passed
+39,manuscript/chapters/ch39.qmd,97,Domain 3,2,Insufficient precision,Insufficient precision,disclosure/public_domains.csv,Domain 3:status,be728749586bfb5eb40d071de765c1882a82c7dd8de18cb6b2ae9b463426a2d9,Passed
+39,manuscript/chapters/ch39.qmd,98,Domain 4,2,Withheld,Withheld,disclosure/public_domains.csv,Domain 4:status,be728749586bfb5eb40d071de765c1882a82c7dd8de18cb6b2ae9b463426a2d9,Passed
+40,manuscript/chapters/ch40.qmd,110,"Balanced, equal weights",2,240,240.0,capstone_report/panel_results.csv,common:n,db6201b36a86ce40c9848a0215bc4f61d0f2e3e1db5de62a75932ffb156e23e4,Passed
+40,manuscript/chapters/ch40.qmd,110,"Balanced, equal weights",3,−1.33,-1.3305575699372612,capstone_report/panel_results.csv,common:estimate,db6201b36a86ce40c9848a0215bc4f61d0f2e3e1db5de62a75932ffb156e23e4,Passed
+40,manuscript/chapters/ch40.qmd,110,"Balanced, equal weights",4,−7.65 to 4.99,-7.64718562635729 / 4.9860704864827685,capstone_report/panel_results.csv,common:lo/hi,db6201b36a86ce40c9848a0215bc4f61d0f2e3e1db5de62a75932ffb156e23e4,Passed
+40,manuscript/chapters/ch40.qmd,111,"Balanced, population weights",2,240,240.0,capstone_report/panel_results.csv,weighted:n,db6201b36a86ce40c9848a0215bc4f61d0f2e3e1db5de62a75932ffb156e23e4,Passed
+40,manuscript/chapters/ch40.qmd,111,"Balanced, population weights",3,2.98,2.979789036702206,capstone_report/panel_results.csv,weighted:estimate,db6201b36a86ce40c9848a0215bc4f61d0f2e3e1db5de62a75932ffb156e23e4,Passed
+40,manuscript/chapters/ch40.qmd,111,"Balanced, population weights",4,−1.89 to 7.85,-1.8895023992830877 / 7.8490804726875,capstone_report/panel_results.csv,weighted:lo/hi,db6201b36a86ce40c9848a0215bc4f61d0f2e3e1db5de62a75932ffb156e23e4,Passed
+40,manuscript/chapters/ch40.qmd,112,"Expanded, equal weights",2,256,256.0,capstone_report/panel_results.csv,expanded:n,db6201b36a86ce40c9848a0215bc4f61d0f2e3e1db5de62a75932ffb156e23e4,Passed
+40,manuscript/chapters/ch40.qmd,112,"Expanded, equal weights",3,2.41,2.406328048397135,capstone_report/panel_results.csv,expanded:estimate,db6201b36a86ce40c9848a0215bc4f61d0f2e3e1db5de62a75932ffb156e23e4,Passed
+40,manuscript/chapters/ch40.qmd,112,"Expanded, equal weights",4,−5.20 to 10.02,-5.203404455734439 / 10.01606055252871,capstone_report/panel_results.csv,expanded:lo/hi,db6201b36a86ce40c9848a0215bc4f61d0f2e3e1db5de62a75932ffb156e23e4,Passed
+40,manuscript/chapters/ch40.qmd,113,"Balanced, WDI income",2,240,240.0,capstone_report/panel_results.csv,national:n,db6201b36a86ce40c9848a0215bc4f61d0f2e3e1db5de62a75932ffb156e23e4,Passed
+40,manuscript/chapters/ch40.qmd,113,"Balanced, WDI income",3,−1.23,-1.2339670901642321,capstone_report/panel_results.csv,national:estimate,db6201b36a86ce40c9848a0215bc4f61d0f2e3e1db5de62a75932ffb156e23e4,Passed
+40,manuscript/chapters/ch40.qmd,113,"Balanced, WDI income",4,−10.32 to 7.85,-10.319307594320522 / 7.851373413992058,capstone_report/panel_results.csv,national:lo/hi,db6201b36a86ce40c9848a0215bc4f61d0f2e3e1db5de62a75932ffb156e23e4,Passed

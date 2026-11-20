@@ -1,0 +1,43 @@
+---
+title: "Reader companion"
+---
+
+**Statistical Programming and Reproducible Data Science**  
+Advanced Methods and Practical Applications Using Python, R, Stata, and SQL
+
+Download the same free teaching resources for the ebook, paperback and
+hardcover. Start with a project, identify its data and expected results,
+then run the supplied analytical code in your preferred environment.
+
+<a class="download" href="https://zenodo.org/records/24382209/files/Statistical_Programming_Stage8_Reader_Companion.zip?download=1">Download the complete companion (39.2 MB)</a>
+
+The single ZIP on Zenodo contains all 2,033 companion files and their checksum manifest. Extract it once to use the materials offline. The [Zenodo record](https://zenodo.org/records/24382209) gives the version, citation and reuse terms.
+
+For a smaller download at a time, get [volume 1](Reader_Companion_1.zip) and [volume 2](Reader_Companion_2.zip) from this site. Extract both into the same folder to obtain the same files. All downloads are free.
+
+## Choose a starting point
+
+| Your task | Reader resources |
+| --- | --- |
+| Apply a method to a research problem | [Twelve complete project guides and worked reports](projects.html) |
+| Find a dataset, field or script | [Data catalogue, codebooks and chapter code routes](data.html) |
+| Work through a chapter assessment | [All 892 chapter exercises](exercises.html) |
+| Check a selected answer | [Eighty worked chapter answers and exam marking guidance](solutions.html) |
+| Reproduce a reference result | [Setup, run instructions and verification evidence](reproduce.html) |
+
+## What the downloads contain
+
+The companion includes Python and R scripts, Stata do-files, SQL, teaching
+datasets, codebooks, assignment worksheets, worked project reports,
+verified numerical outputs, logs and reproducibility guides. Every file
+has a checksum in the combined package manifest.
+
+Python, R and DuckDB were rerun for the Stage 8 computational review.
+Matching outputs from the original licensed Stata runs are retained.
+Run new Stata analyses using an installed licensed copy.
+
+The data catalogue distinguishes included teaching datasets from original
+provider holdings. Controlled surveys use their custodian's access route;
+the teaching baselines include synthetic datasets for the labs.
+
+[Download checksums](sha256.txt) · [How to cite and reuse the materials](READER_USE.md)

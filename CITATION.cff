@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this companion and the textbook when using the teaching material."
+title: "Statistical Programming and Reproducible Data Science Reader Companion"
+authors:
+  - family-names: Essilfie
+    given-names: Felix Larry
+version: "stage8-2026-11-19"
+date-released: "2026-11-19"
+repository-code: "https://github.com/FelixLarry7/statistical-programming-companion"
+doi: "10.5281/zenodo.24382209"
+url: "https://felixlarry7.github.io/statistical-programming-companion/"

@@ -1,0 +1,31 @@
+{
+  "title": "Statistical Programming and Reproducible Data Science Reader Companion",
+  "creators": [
+    {
+      "name": "Essilfie, Felix Larry",
+      "display_name": "Felix Larry Essilfie, PhD"
+    }
+  ],
+  "version": "stage8-2026-11-19",
+  "resource_type": "Lesson",
+  "description": "Free reader companion with twelve applied research projects, chapter exercises, selected solutions, teaching datasets, Python, R, Stata and SQL code, checked outputs and reproducibility records. Stata evidence records the matching original licensed local runs. The full manuscript is excluded.",
+  "keywords": [
+    "statistical programming",
+    "reproducible research",
+    "Python",
+    "R",
+    "Stata",
+    "SQL",
+    "teaching datasets"
+  ],
+  "related_repository": "https://github.com/FelixLarry7/statistical-programming-companion",
+  "visibility": "Public",
+  "rights": "Custom reader-use terms in READER_USE.md; third-party materials retain their documented terms.",
+  "file_to_deposit": "Statistical_Programming_Stage8_Reader_Companion.zip",
+  "doi_status": "Published",
+  "doi": "10.5281/zenodo.24382209",
+  "all_versions_doi": "10.5281/zenodo.24382208",
+  "publication_date": "2026-11-19",
+  "record_url": "https://zenodo.org/records/24382209",
+  "download_url": "https://zenodo.org/records/24382209/files/Statistical_Programming_Stage8_Reader_Companion.zip?download=1"
+}

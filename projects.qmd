@@ -1,0 +1,828 @@
+---
+title: "Applied research projects"
+---
+
+Use the twelve project IDs from Appendix L. The downloads include each assignment, worksheet, input index, engine routes, reference values and worked report.
+
+| Project | Research study | Deliverable |
+| --- | --- | --- |
+| [P01](#p01) | Economic growth and macroeconomic forecasting | Forecast evaluation |
+| [P02](#p02) | Household poverty and welfare measurement | Survey poverty profile |
+| [P03](#p03) | Social protection impact evaluation | Evaluation protocol and policy note |
+| [P04](#p04) | Public health risk and healthcare utilisation | Health-access report |
+| [P05](#p05) | Health insurance and health economics | Health-financing note |
+| [P06](#p06) | Bank credit risk and financial performance | Dashboard specification and validation report |
+| [P07](#p07) | Business intelligence and customer analytics | Management brief |
+| [P08](#p08) | Agricultural productivity and technology adoption | Farm productivity study |
+| [P09](#p09) | Food security and rural household vulnerability | Vulnerability profile |
+| [P10](#p10) | Policy reform and difference-in-differences | Event-study design report |
+| [P11](#p11) | Regional inequality and spatial development | Spatial diagnostic and map |
+| [P12](#p12) | Integrated multi-software research publication | Journal-style article and replication package |
+
+## P01 Economic growth and macroeconomic forecasting {#p01}
+
+
+P01 · Forecast evaluation
+
+
+**Research question.** Can an autoregression improve forecasts of annual real GDP growth in Ghana, Kenya and Senegal, and does the answer change when the target is the level of an output index?
+
+**Design and data.** Use the Chapter 29 rolling origins from 2015 through 2022, with one- and two-year horizons. Compare an autoregression with the trailing five-year mean in percentage points. Chapter 22 forms a separate output-index comparison with a naïve benchmark, AR(1) and conditional MA. Retain a distinct origin, target year, horizon and data-vintage field in each ledger.
+
+**Prepare the extract.** Key by country and year. Check contiguous training periods and verify that an origin-horizon target follows its training window. Match the model and comparator to the same scored keys. For monetary context, expand the published effective dates before taking the day-weighted annual policy rate.
+
+**Assignment**
+
+1. Reproduce the Ghana growth errors in the two horizons. Recalculate RMSE and MAE from the keyed errors and provide the full three-country scorecard.
+2. Compare the three Chapter 22 index forecasts at matched origins and one-, two- and three-year horizons. Label the growth and index units separately.
+3. Build 95% predictive intervals for Ghana’s growth autoregression and five-year mean. Use rolling one-step residuals available by each origin, or a documented model-based variance. Report interval coverage and average width by horizon. Check whether revised inputs limit the real-time interpretation.
+
+**Change one assumption.** Change from the one-year to the two-year growth horizon. Then compare the 2024 calendar-day mean policy rate with the rate on 31 December. Treat the rate as contextual evidence with its own time basis.
+
+**Submit.** Submit a 750-word forecast brief, source-vintage register, origin–horizon ledger, score table and one plot with a text alternative. Record your interval construction in an appendix.
+
+**Evidence to retain**
+
+- Observed sample keys and exclusions
+- Selected estimate, interval or scoring denominator
+- Engine result, version and original execution or replay status
+- Change in result or interpretation under the declared variation
+
+Use the project specification for the input paths and the teaching rubric for submission criteria.
+
+
+
+P01 · Forecast evaluation
+
+### Decision and research design
+
+Can an autoregression improve forecasts of annual real GDP growth in Ghana, Kenya and Senegal, and does the answer change when the target is the level of an output index?
+
+Use the Chapter 29 rolling origins from 2015 through 2022, with one- and two-year horizons. Compare an autoregression with the trailing five-year mean in percentage points. Chapter 22 forms a separate output-index comparison with a naïve benchmark, AR(1) and conditional MA. Retain a distinct origin, target year, horizon and data-vintage field in each ledger.
+
+### Observed results
+
+| Quantity | Result | Unit |
+| --- | ---: | --- |
+| Ghana mean RMSE, one year | 2.65 | pp |
+| Ghana AR(1) RMSE, one year | 2.65 | pp |
+| Ghana mean RMSE, two years | 1.93 | pp |
+| Ghana AR(1) RMSE, two years | 2.54 | pp |
+| Ghana conditional MA index RMSE | 3.32 | log points |
+| Ghana policy-rate daily mean, 2024 | 28.55 | % |
+
+### Interpretation
+
+The small one-year gain in Ghana does not carry over to two years. Choosing a model by target and horizon is more defensible than naming one winner. The conditional MA check is in index log points and uses a different training window. Historical-vintage lab scores do not establish real-time forecast performance.
+
+### Sensitivity and replication
+
+Change from the one-year to the two-year growth horizon. Then compare the 2024 calendar-day mean policy rate with the rate on 31 December. Treat the rate as contextual evidence with its own time basis.
+
+### Data and verification
+
+Primary files include gdp22.csv · macro29.csv · revision29.csv. The specification records the exact files, observational units, fingerprints, output paths and engine scope. The archived Stata outputs accompany the original chapter specification.
+
+
+## P02 Household poverty and welfare measurement {#p02}
+
+
+P02 · Survey poverty profile
+
+
+**Research question.** How sensitive are poverty estimates to the poverty line, the weighting unit and the rural–urban comparison?
+
+**Design and data.** Use the D13 synthetic welfare fixture. Establish the declared welfare unit and time basis before contrasting a household-weighted headcount with a person-weighted headcount. The national teaching lines are GHS 2,200 and 2,600. Use Chapter 12 survey-domain methods for the rural and urban extension.
+
+**Prepare the extract.** Keep one row per household. Bring strata, primary sampling units and weights to the calculation. Use household weight for a household estimand and multiply by household size for the person estimand. Keep the full design frame when forming domains.
+
+**Assignment**
+
+1. Reproduce national headcounts and normalised gaps at both lines using household and person weights. Verify the survey denominator in each calculation.
+2. Construct rural and urban ratios with the common welfare basis. Compute a design-linearised interval and the rural-minus-urban gap on the full survey frame.
+3. Run the common sensitivity query for alternative poverty lines. Explain what matched denominator, price base and equivalence scale would be needed for a Ghana poverty estimate.
+
+**Change one assumption.** Raise the line from GHS 2,200 to GHS 2,600 with the household sample fixed. Then change the weights on the same line and document the target population for each statistic.
+
+**Submit.** Submit a poverty profile with national and rural–urban results, denominator ledger, variance procedure and an exhibit showing threshold and weighting sensitivity.
+
+**Evidence to retain**
+
+- Observed sample keys and exclusions
+- Selected estimate, interval or scoring denominator
+- Engine result, version and original execution or replay status
+- Change in result or interpretation under the declared variation
+
+Use the project specification for the input paths and the teaching rubric for submission criteria.
+
+
+
+P02 · Survey poverty profile
+
+### Decision and research design
+
+How sensitive are poverty estimates to the poverty line, the weighting unit and the rural–urban comparison?
+
+Use the D13 synthetic welfare fixture. Establish the declared welfare unit and time basis before contrasting a household-weighted headcount with a person-weighted headcount. The national teaching lines are GHS 2,200 and 2,600. Use Chapter 12 survey-domain methods for the rural and urban extension.
+
+### Observed results
+
+| Quantity | Result | Unit |
+| --- | ---: | --- |
+| GHS 2,200 household headcount | 51.35 | % |
+| GHS 2,200 person headcount | 50.97 | % |
+| GHS 2,600 household headcount | 63.22 | % |
+| GHS 2,600 household gap | 21.33 | % |
+
+### Interpretation
+
+The higher teaching line increases the weighted headcount and raises the average normalised gap. National household and person headcounts differ because the person target gives larger households more representation. These are synthetic teaching rates. The empirical GLSS VII route requires the official welfare and survey files under GSS terms. A higher GHS 3,000 teaching line is included in the sensitivity output.
+
+### Sensitivity and replication
+
+Raise the line from GHS 2,200 to GHS 2,600 with the household sample fixed. Then change the weights on the same line and document the target population for each statistic.
+
+The additional sensitivity check was rerun in Python and DuckDB on the frozen inputs.
+
+| Line | Basis | N | Denominator | Headcount | Gap |
+| --- | --- | --- | --- | --- | --- |
+| 2200 | household | 600 | 782.5600 | 0.5135 | 0.1472 |
+| 2200 | person | 600 | 3,897.3900 | 0.5097 | 0.1439 |
+| 2600 | household | 600 | 782.5600 | 0.6322 | 0.2133 |
+| 2600 | person | 600 | 3,897.3900 | 0.6345 | 0.2106 |
+| 3000 | household | 600 | 782.5600 | 0.7301 | 0.2767 |
+| 3000 | person | 600 | 3,897.3900 | 0.7268 | 0.2741 |
+
+### Data and verification
+
+Primary files include welfare36.csv · survey.csv. The specification records the exact files, observational units, fingerprints, output paths and engine scope. The archived Stata outputs accompany the original chapter specification.
+
+
+## P03 Social protection impact evaluation {#p03}
+
+
+P03 · Evaluation protocol and policy note
+
+
+**Research question.** What does a paired village experiment establish about an offer, and how far does incomplete follow-up limit the decision?
+
+**Design and data.** Use the 24-pair, 48-village synthetic eligibility roster in Chapter 33. The observed-case analysis averages matched village contrasts. Define the original eligible-cohort ITT before seeing the outcome, recognising that follow-up is missing for some households. Chapter 17 offers an independently enumerated blocked-lottery check.
+
+**Prepare the extract.** Validate one assignment per village, one offered village in each pair and eligibility before assigning observation status. Join the assignment to the screened roster using the village key. Align sample, pairing and sign draws before inference.
+
+**Assignment**
+
+1. Register target population, assignment unit, primary outcome, pairing, covariance and missing-outcome plan before preparing the results table.
+2. Reconcile screening to follow-up by arm. Reproduce the observed-case estimate, paired interval and randomisation calculation with frozen sign vectors. Describe the sharp-null claim.
+3. Compare the three- and six-point missingness departures with the full outcome-range bounds. Write a conditional recommendation against the prespecified three-point planning threshold in Chapter 33 and defend it in a replication exchange.
+
+**Change one assumption.** Replace the observed-case interpretation with an eligible-cohort claim using the documented completion bounds. Trace what changes when assumptions about missing outcomes are relaxed.
+
+**Submit.** Submit the pre-analysis plan, one-page trial flow, effect table, verified sensitivity ledger, policy note and a reviewer rerun instruction.
+
+**Evidence to retain**
+
+- Observed sample keys and exclusions
+- Selected estimate, interval or scoring denominator
+- Engine result, version and original execution or replay status
+- Change in result or interpretation under the declared variation
+
+Use the project specification for the input paths and the teaching rubric for submission criteria.
+
+
+
+P03 · Evaluation protocol and policy note
+
+### Decision and research design
+
+What does a paired village experiment establish about an offer, and how far does incomplete follow-up limit the decision?
+
+Use the 24-pair, 48-village synthetic eligibility roster in Chapter 33. The observed-case analysis averages matched village contrasts. Define the original eligible-cohort ITT before seeing the outcome, recognising that follow-up is missing for some households. Chapter 17 offers an independently enumerated blocked-lottery check.
+
+### Observed results
+
+| Quantity | Result | Unit |
+| --- | ---: | --- |
+| Comparison households observed | 417 | households |
+| Offered households observed | 414 | households |
+| Observed-case matched contrast | 4.25 | points |
+| Paired interval lower bound | 2.78 | points |
+| Paired interval upper bound | 5.72 | points |
+| Eligible-cohort completion lower limit | −9.55 | points |
+| Eligible-cohort completion upper limit | 17.33 | points |
+
+### Interpretation
+
+The observed-case contrast is positive. Its reference interval and the full cohort bounds cross the three-point decision threshold from the chapter protocol, and the latter include zero. Additional follow-up or a credible missingness assumption matters more for expansion than the nominal randomisation probability. LEAP 1000 provides programme context and has its own data access and design.
+
+### Sensitivity and replication
+
+Replace the observed-case interpretation with an eligible-cohort claim using the documented completion bounds. Trace what changes when assumptions about missing outcomes are relaxed.
+
+### Data and verification
+
+Primary files include assignment33.csv · roster33.csv · draws33.csv · households17.csv · villages17.csv · allocations17.csv. The specification records the exact files, observational units, fingerprints, output paths and engine scope. The archived Stata outputs accompany the original chapter specification.
+
+
+## P04 Public health risk and healthcare utilisation {#p04}
+
+
+P04 · Health-access report
+
+
+**Research question.** What is facility-delivery coverage for recent live births, how does it differ by residence, and how sensitive is it to missing recorded delivery location?
+
+**Design and data.** The Chapter 30 synthetic estimate is a weighted ratio for live births aged 0–23 months with known delivery location. Use the complete stratum and PSU frame for linearisation and a Student reference with 16 design degrees of freedom. Keep a common covariate distribution for the additional adjusted residence contrast.
+
+**Prepare the extract.** Check the birth key and survey design identifiers. Preserve ineligible observations as zero contributions to domain totals. Reconcile the live-birth window, missing facilities and the all, rural and urban denominator weights.
+
+**Assignment**
+
+1. Reproduce all three domain ratios and the rural-minus-urban difference with a covariance-aware interval. Show how the numerator and denominator produce the overall result.
+2. Implement the separate residence standardisation query. Estimate observed risks within the declared insurance-by-age cells and apply pooled cell weights. Check support and label its target as associational.
+3. Bound the overall coverage by assigning all missing locations first to nonfacility and then to facility deliveries. Explain why the Ghana DHS comparator must match the published eligibility and geography.
+
+**Change one assumption.** Expand the reference window to 0–35 months as a sensitivity. Compare this result and the missing-location bounds while retaining the primary denominator.
+
+**Submit.** Submit the birth-flow ledger, design-weighted access table, adjusted contrast, sensitivity plot and a technical note that defines the population and uncertainty.
+
+**Evidence to retain**
+
+- Observed sample keys and exclusions
+- Selected estimate, interval or scoring denominator
+- Engine result, version and original execution or replay status
+- Change in result or interpretation under the declared variation
+
+Use the project specification for the input paths and the teaching rubric for submission criteria.
+
+
+
+P04 · Health-access report
+
+### Decision and research design
+
+What is facility-delivery coverage for recent live births, how does it differ by residence, and how sensitive is it to missing recorded delivery location?
+
+The Chapter 30 synthetic estimate is a weighted ratio for live births aged 0–23 months with known delivery location. Use the complete stratum and PSU frame for linearisation and a Student reference with 16 design degrees of freedom. Keep a common covariate distribution for the additional adjusted residence contrast.
+
+### Observed results
+
+| Quantity | Result | Unit |
+| --- | ---: | --- |
+| Eligible births with known location | 374 | births |
+| Facility delivery coverage | 69.41 | % |
+| Rural minus urban coverage | −25.10 | pp |
+| Residence contrast, lower limit | −34.12 | pp |
+| Residence contrast, upper limit | −16.08 | pp |
+
+### Interpretation
+
+The synthetic residence gap is substantial under the common observed-case definition. Changing the time window changes the sampled target, while the bounds keep the original window and vary the missing responses. Local service planning would require design-matched real data and contextual evidence about barriers and capacity.
+
+### Sensitivity and replication
+
+Expand the reference window to 0–35 months as a sensitivity. Compare this result and the missing-location bounds while retaining the primary denominator.
+
+The additional sensitivity check was rerun in Python and DuckDB on the frozen inputs.
+
+| Rural | Matched Cells | Minimum Cell N | Risk |
+| --- | --- | --- | --- |
+| 0 | 4 | 35 | 0.8535 |
+| 1 | 4 | 35 | 0.6230 |
+
+### Data and verification
+
+Primary files include births30.csv · delivery14.csv · prediction14.csv. The specification records the exact files, observational units, fingerprints, output paths and engine scope. The archived Stata outputs accompany the original chapter specification.
+
+
+## P05 Health insurance and health economics {#p05}
+
+
+P05 · Health-financing note
+
+
+**Research question.** How do weighted insurance coverage and expected healthcare spending vary across the declared populations, and what interpretation survives voluntary insurance selection?
+
+**Design and data.** Use Chapter 36 for a design-weighted insurance coverage contrast by residence. Use the separate Chapter 30 household file for expenditure. Keep observed zero expenditure and fit participation and conditional positive expenditure under matched predictors. Standardise the expected total to a common covariate grid.
+
+**Prepare the extract.** Separate the survey household from the synthetic spending household. Preserve the surveys’ strata, PSUs and weights, and keep legitimate zeros in the expenditure file. Record the currency, scope and case-specific denominator.
+
+**Assignment**
+
+1. Reproduce the Chapter 36 total and estimate the rural and urban coverage contrast with a design-linearised standard error. Record denominator weight and design degrees of freedom.
+2. Reconcile positive counts and positive spending means. Reproduce the two-part adjusted spending terms and show why the mean of products can differ from the product of means.
+3. Compare the unweighted observed insurance-group differences with the standardised costs. State the source and approvals needed to adapt the exercise to Ghana DHS and the additional conditions for causal interpretation.
+
+**Change one assumption.** Exclude zero costs solely as a deliberate diagnostic. Compare the positive-only mean with the full mean and quantify the effect of switching the stated estimand.
+
+**Submit.** Submit a coverage-and-spending note, design and flow tables, two-part ledger and a page documenting selection, common support and limitations.
+
+**Evidence to retain**
+
+- Observed sample keys and exclusions
+- Selected estimate, interval or scoring denominator
+- Engine result, version and original execution or replay status
+- Change in result or interpretation under the declared variation
+
+Use the project specification for the input paths and the teaching rubric for submission criteria.
+
+
+
+P05 · Health-financing note
+
+### Decision and research design
+
+How do weighted insurance coverage and expected healthcare spending vary across the declared populations, and what interpretation survives voluntary insurance selection?
+
+Use Chapter 36 for a design-weighted insurance coverage contrast by residence. Use the separate Chapter 30 household file for expenditure. Keep observed zero expenditure and fit participation and conditional positive expenditure under matched predictors. Standardise the expected total to a common covariate grid.
+
+### Observed results
+
+| Quantity | Result | Unit |
+| --- | ---: | --- |
+| Weighted insurance coverage | 46.74 | % |
+| Households with positive expenditure | 250 | households |
+| Observed mean when cost is positive | 104.49 | GHS |
+| Observed mean including zeros | 52.24 | GHS |
+| Standardised uninsured-grid mean | 68.46 | GHS |
+| Standardised insured-grid mean | 43.58 | GHS |
+
+### Interpretation
+
+Positive expenses and full-sample expenses answer different questions. The modelled spending contrast is associational in this fixture. Insurance selection, access to care and severity of need complicate interpretation. The coverage and expenditure estimates come from separate study files and should remain separate results.
+
+### Sensitivity and replication
+
+Exclude zero costs solely as a deliberate diagnostic. Compare the positive-only mean with the full mean and quantify the effect of switching the stated estimand.
+
+The additional sensitivity check was rerun in Python and DuckDB on the frozen inputs.
+
+| Measure | Group Id | N | Value |
+| --- | --- | --- | --- |
+| coverage | 0 | 302 | 0.5766 |
+| coverage | 1 | 298 | 0.3719 |
+| observed zero count | all | 250 | 0.0000 |
+| positive mean | all | 250 | 104.4852 |
+
+### Data and verification
+
+Primary files include welfare36.csv · expenditure30.csv · births30.csv · followup30.csv. The specification records the exact files, observational units, fingerprints, output paths and engine scope. The archived Stata outputs accompany the original chapter specification.
+
+
+## P06 Bank credit risk and financial performance {#p06}
+
+
+P06 · Dashboard specification and validation report
+
+
+**Research question.** Can the bank-quarter filing available at the forecast date predict the declared next-quarter asset-quality event, and how much apparent accuracy comes from late restatements?
+
+**Design and data.** Use the original synthetic filing and identity histories. Freeze the next-quarter outcome and the Chapter 31 training and test windows. Compare training prevalence and the time-valid model on the same holdout. Score the late-value model separately as a leakage control.
+
+**Prepare the extract.** Reconcile source, reported quarter, release date and legal segment. Select the latest filing released by the declared cutoff. Require a comparable next-quarter outcome in the same segment. Check that labels were available at the start of the forecasting window.
+
+**Assignment**
+
+1. Reconstruct the filing flow from revisions to bank-quarter snapshots, same-segment outcomes, training and held-out rows. Report the features’ maximum availability date.
+2. Reproduce discrimination, calibration and log loss on the matched holdout. Show the event count and score denominators for the baseline and time-valid models.
+3. Specify a dashboard with a vintage selector, probability calibration and override log. Identify monetary field units using the BankFind field guide and report threshold costs separately from AUC.
+
+**Change one assumption.** Replace the time-valid file by the later restatement, keeping target keys fixed. Count future-feature rows and explain how the availability error changes the apparent score.
+
+**Submit.** Submit the data-definition ledger, holdout validation report, calibration exhibit and a dashboard specification with thresholds and escalation ownership.
+
+**Evidence to retain**
+
+- Observed sample keys and exclusions
+- Selected estimate, interval or scoring denominator
+- Engine result, version and original execution or replay status
+- Change in result or interpretation under the declared variation
+
+Use the project specification for the input paths and the teaching rubric for submission criteria.
+
+
+
+P06 · Dashboard specification and validation report
+
+### Decision and research design
+
+Can the bank-quarter filing available at the forecast date predict the declared next-quarter asset-quality event, and how much apparent accuracy comes from late restatements?
+
+Use the original synthetic filing and identity histories. Freeze the next-quarter outcome and the Chapter 31 training and test windows. Compare training prevalence and the time-valid model on the same holdout. Score the late-value model separately as a leakage control.
+
+### Observed results
+
+| Quantity | Result | Unit |
+| --- | ---: | --- |
+| Comparable next-quarter outcomes | 543 | bank-quarters |
+| Time-valid test observations | 138 | bank-quarters |
+| Time-valid AUC | 0.835 | score |
+| Late-restatement AUC | 0.996 | score |
+| Late feature rows | 138 | bank-quarters |
+
+### Interpretation
+
+The change from AUC 0.835 to 0.996 accompanies 138 future-feature rows. The stronger score is unusable for an ex-ante decision. The federal data are contextual and retrospective here. A live asset-quality deployment needs a time-stamped validation, prevalence monitoring and an independently justified operational threshold.
+
+### Sensitivity and replication
+
+Replace the time-valid file by the later restatement, keeping target keys fixed. Count future-feature rows and explain how the availability error changes the apparent score.
+
+### Data and verification
+
+Primary files include assets31.csv · bank_filings31.csv · bank_ids31.csv. The specification records the exact files, observational units, fingerprints, output paths and engine scope. The archived Stata outputs accompany the original chapter specification.
+
+
+## P07 Business intelligence and customer analytics {#p07}
+
+
+P07 · Management brief
+
+
+**Research question.** What net bookings and forecast losses follow from a defined transaction contract, and which procurement rule is defensible for the three-product fixture?
+
+**Design and data.** Use the attributed UCI Online Retail adaptation. Organise the revenue reconciliation by eligible invoice before repeating customer or product measures. Freeze the forecasting window and compare naïve and trailing-four-week rules against a shared demand proxy and shortage cost.
+
+**Prepare the extract.** Classify positive sales, eligible cancellations, exceptions and anonymous customer rows before joining. Keep the original sign and integer pence. Establish aggregate grain for booked revenue, product-week forecasts and customer cohorts.
+
+**Assignment**
+
+1. Rebuild the net bookings and the wrong repeated-invoice join in SQL. Show how preaggregation fixes the amount and keep cancellation and return credits separate.
+2. Reproduce the held-out MAE and cost table for each product, with an explicit forecasting cutoff. Check keys and loss denominators before comparing forecasts.
+3. Draft a decision memo that explains how lead time, stockouts and returns affect a demand proxy. Design an alert for a plausible sensitivity in one replenishment cost.
+
+**Change one assumption.** Score the last six holdout weeks separately, maintaining their observation keys, and compare with the original twelve-week loss. Trace the effect of counting repeated invoice balances as separate revenue.
+
+**Submit.** Submit a management brief, metric dictionary, revenue groups, matched forecasts and loss table. Include the source attribution and recoding note.
+
+**Evidence to retain**
+
+- Observed sample keys and exclusions
+- Selected estimate, interval or scoring denominator
+- Engine result, version and original execution or replay status
+- Change in result or interpretation under the declared variation
+
+Use the project specification for the input paths and the teaching rubric for submission criteria.
+
+
+
+P07 · Management brief
+
+### Decision and research design
+
+What net bookings and forecast losses follow from a defined transaction contract, and which procurement rule is defensible for the three-product fixture?
+
+Use the attributed UCI Online Retail adaptation. Organise the revenue reconciliation by eligible invoice before repeating customer or product measures. Freeze the forecasting window and compare naïve and trailing-four-week rules against a shared demand proxy and shortage cost.
+
+### Observed results
+
+| Quantity | Result | Unit |
+| --- | ---: | --- |
+| Net booked value | 295,491.85 | GBP |
+| Repeated-invoice overstatement | 75,156.93 | GBP |
+| Product 85123A naïve MAE | 475.83 | units |
+| Product 85123A mean-of-four MAE | 335.44 | units |
+
+### Interpretation
+
+Corrected booked revenue is £295,491.85 in the scoped extract. Repeating balances overstates it by £75,156.93. The trailing mean has lower held-out MAE for the reported product, but transactional quantity may reflect lost sales and stock availability. A commercial rollout calls for fresh calibration.
+
+### Sensitivity and replication
+
+Score the last six holdout weeks separately, maintaining their observation keys, and compare with the original twelve-week loss. Trace the effect of counting repeated invoice balances as separate revenue.
+
+### Data and verification
+
+Primary files include retail34.csv · returns34.csv · ch07_invoices.csv · ch07_lines.csv. The specification records the exact files, observational units, fingerprints, output paths and engine scope. The archived Stata outputs accompany the original chapter specification.
+
+
+## P08 Agricultural productivity and technology adoption {#p08}
+
+
+P08 · Farm productivity study
+
+
+**Research question.** How much does the choice of plot area change measured maize productivity, and what does a paired offer design establish about adoption?
+
+**Design and data.** Use D13 plot-season data for area and yield, then analyse the separate paired adoption trial. The D00 Chapter 13 regression supplies an associational benchmark. Freeze the primary total-output-to-total-planted-area estimand and report a plot-average companion statistic.
+
+**Prepare the extract.** Validate plot-season identifiers and the plot-to-household join. Harmonise harvested mass, moisture and local measurement units. Retain planted plots with zero verified harvest and apply the declared treatment of missing harvest. Keep trial offer and uptake codes distinct.
+
+**Assignment**
+
+1. Calculate the ratio of totals with GPS and reported area on the same sample. Show the corresponding plot-average yield and investigate why it is different.
+2. Reproduce the maize offer ITT, first stage and paired Wald ratio. Write a short defence of exclusion and monotonicity in a hypothetical design, then label the descriptive comparison.
+3. Describe a Ghana Socioeconomic Panel Survey extension using the documented farm, plot and crop keys. Check season alignment and confirm each allowed variable with the data dictionary.
+
+**Change one assumption.** Substitute reported for GPS area while holding harvest and plot membership fixed. Next apply the positive-harvest restriction and label the sample change separately.
+
+**Submit.** Submit a farm productivity report, area and yield reconciliations, treatment and uptake ledger, and measurement-versus-design sensitivity table.
+
+**Evidence to retain**
+
+- Observed sample keys and exclusions
+- Selected estimate, interval or scoring denominator
+- Engine result, version and original execution or replay status
+- Change in result or interpretation under the declared variation
+
+Use the project specification for the input paths and the teaching rubric for submission criteria.
+
+
+
+P08 · Farm productivity study
+
+### Decision and research design
+
+How much does the choice of plot area change measured maize productivity, and what does a paired offer design establish about adoption?
+
+Use D13 plot-season data for area and yield, then analyse the separate paired adoption trial. The D00 Chapter 13 regression supplies an associational benchmark. Freeze the primary total-output-to-total-planted-area estimand and report a plot-average companion statistic.
+
+### Observed results
+
+| Quantity | Result | Unit |
+| --- | ---: | --- |
+| Common maize plots | 267 | plots |
+| GPS-based yield | 1,635.80 | kg/ha |
+| Reported-area yield | 1,543.78 | kg/ha |
+| Paired offer ITT | 117.51 | kg/ha |
+| Offer effect on uptake | 46.67 | pp |
+| Paired Wald ratio | 251.81 | kg/ha |
+
+### Interpretation
+
+Reported area gives a smaller yield ratio on the identical plots. That difference is a measurement effect. The synthetic adoption estimate has a separate paired encouragement design and additional assumptions. A Ghana productivity claim needs a specific survey frame, crop and seasonal measure.
+
+### Sensitivity and replication
+
+Substitute reported for GPS area while holding harvest and plot membership fixed. Next apply the positive-harvest restriction and label the sample change separately.
+
+### Data and verification
+
+Primary files include plots32.csv · trial32.csv · maize_pilot.csv. The specification records the exact files, observational units, fingerprints, output paths and engine scope. The archived Stata outputs accompany the original chapter specification.
+
+
+## P09 Food security and rural household vulnerability {#p09}
+
+
+P09 · Vulnerability profile
+
+
+**Research question.** How does an eligible seven-day meal-shortfall indicator vary by residence, and how sensitive is a separate expenditure-based screening measure to the chosen cutoff?
+
+**Design and data.** Use the synthetic Chapter 32 household survey. Estimate a domain ratio and design-based interval for the meal-shortfall indicator. Construct a separate low food-spending indicator on the same observed-outcome universe. Use two explicitly labelled thresholds in fixture units.
+
+**Prepare the extract.** Freeze household grain, survey weights, missing codes and recall definition. Create the complete domain frame before summing PSU-level contributions. Keep weighted numerator, denominator and observed count for both measures.
+
+**Assignment**
+
+1. Reproduce the all, rural and urban shortfall estimates and intervals, retaining the original survey design and outcome window.
+2. Run the supplied threshold extension at 200 and 300 synthetic expenditure units per person. Report each threshold, number of households and weighted headcount. Explain why it is a distinct indicator from meal shortfall.
+3. Describe how an approved CFSVA analysis would check instrument wording, recall windows, spatial coverage and the interpretation of the resulting rates.
+
+**Change one assumption.** Raise the per-person expenditure threshold from 200 to 300 and then compare the change by domain. Retain the recorded shortfall outcome and its definition.
+
+**Submit.** Submit a two-page food security brief, design-based table, sensitivity chart and a short statement on suitability for prioritising further survey work.
+
+**Evidence to retain**
+
+- Observed sample keys and exclusions
+- Selected estimate, interval or scoring denominator
+- Engine result, version and original execution or replay status
+- Change in result or interpretation under the declared variation
+
+Use the project specification for the input paths and the teaching rubric for submission criteria.
+
+
+
+P09 · Vulnerability profile
+
+### Decision and research design
+
+How does an eligible seven-day meal-shortfall indicator vary by residence, and how sensitive is a separate expenditure-based screening measure to the chosen cutoff?
+
+Use the synthetic Chapter 32 household survey. Estimate a domain ratio and design-based interval for the meal-shortfall indicator. Construct a separate low food-spending indicator on the same observed-outcome universe. Use two explicitly labelled thresholds in fixture units.
+
+### Observed results
+
+| Quantity | Result | Unit |
+| --- | ---: | --- |
+| Households with observed shortfall | 231 | households |
+| Overall meal shortfall | 36.14 | % |
+| Rural meal shortfall | 46.57 | % |
+| Urban meal shortfall | 17.41 | % |
+
+### Interpretation
+
+The frozen weighted shortfall is higher in the synthetic rural domain. The alternative threshold changes the screening rate by design. The exercise indicators do not stand in for a verified CFSVA measurement protocol. Conclusions about actual populations require approved source records and scope alignment.
+
+### Sensitivity and replication
+
+Raise the per-person expenditure threshold from 200 to 300 and then compare the change by domain. Retain the recorded shortfall outcome and its definition.
+
+The additional sensitivity check was rerun in Python and DuckDB on the frozen inputs.
+
+| Line | Domain | N | Denominator | Prevalence |
+| --- | --- | --- | --- | --- |
+| 200 | All | 231 | 431.6600 | 0.0000 |
+| 200 | Rural | 136 | 277.2800 | 0.0000 |
+| 200 | Urban | 95 | 154.3800 | 0.0000 |
+| 300 | All | 231 | 431.6600 | 0.3759 |
+| 300 | Rural | 136 | 277.2800 | 0.3738 |
+| 300 | Urban | 95 | 154.3800 | 0.3796 |
+
+### Data and verification
+
+Primary files include households32.csv · survey.csv · welfare36.csv. The specification records the exact files, observational units, fingerprints, output paths and engine scope. The archived Stata outputs accompany the original chapter specification.
+
+
+## P10 Policy reform and difference-in-differences {#p10}
+
+
+P10 · Event-study design report
+
+
+**Research question.** How sensitive is the event-study estimate to the comparator, the anticipation window and the support requirement?
+
+**Design and data.** Use Chapter 18's synthetic staggered adoption panel, with explicit municipal cohorts and clean baselines. Compute group-time treatment effects with never-treated or eligible not-yet-treated comparisons and aggregate at event time using support-aware weights. Use shared multiplier draws and report the stated band.
+
+**Prepare the extract.** Check uniqueness at municipality-period grain. Freeze cohort and treatment timing, eligibility, anticipation horizon and calendar support. Record target and control counts by cell, and preserve the stable shared replicate keys.
+
+**Assignment**
+
+1. Write the design and identification assumptions in a pre-analysis protocol, including the target, never-treated alternatives and admissible pre-reform periods.
+2. Rebuild comparator membership, selected cohort-time estimates and event-time aggregates. Reproduce the published band with frozen draws and report supported periods.
+3. Compare the conventional diagnostic with the adjusted cell path and the deliberately risky comparator. Use supported pre-policy contrasts as plausibility checks and state what they can and cannot establish about parallel counterfactual paths.
+
+**Change one assumption.** Admit municipal controls during their anticipation window as a controlled failure, then inspect the shock response and event-time estimates under the original eligibility definition.
+
+**Submit.** Submit a preregistration-style design note, cohort-time sample ledger, event-study figure, band and replication handoff. Include assumptions, code and an audit of unsupported cells.
+
+**Evidence to retain**
+
+- Observed sample keys and exclusions
+- Selected estimate, interval or scoring denominator
+- Engine result, version and original execution or replay status
+- Change in result or interpretation under the declared variation
+
+Use the project specification for the input paths and the teaching rubric for submission criteria.
+
+
+
+P10 · Event-study design report
+
+### Decision and research design
+
+How sensitive is the event-study estimate to the comparator, the anticipation window and the support requirement?
+
+Use Chapter 18's synthetic staggered adoption panel, with explicit municipal cohorts and clean baselines. Compute group-time treatment effects with never-treated or eligible not-yet-treated comparisons and aggregate at event time using support-aware weights. Use shared multiplier draws and report the stated band.
+
+### Observed results
+
+| Quantity | Result | Unit |
+| --- | ---: | --- |
+| Never-treated comparator, event time zero | 2.573 | points |
+| Eligible comparator, event time zero | 2.573 | points |
+| Risky comparator, event time zero | 1.620 | points |
+| Published band lower bound | 2.128 | points |
+| Published band upper bound | 3.019 | points |
+
+### Interpretation
+
+The two admissible comparator routes agree at event time zero. The deliberately risky comparator gives a smaller estimate. Comparator choice changes the counterfactual and therefore should be resolved before fitting. A convincing policy design needs substantive evidence about anticipation, comparability and exposure.
+
+### Sensitivity and replication
+
+Admit municipal controls during their anticipation window as a controlled failure, then inspect the shock response and event-time estimates under the original eligibility definition.
+
+### Data and verification
+
+Primary files include rollout18.csv · multipliers18.csv. The specification records the exact files, observational units, fingerprints, output paths and engine scope. The archived Stata outputs accompany the original chapter specification.
+
+
+## P11 Regional inequality and spatial development {#p11}
+
+
+P11 · Spatial diagnostic and map
+
+
+**Research question.** Are regional access values spatially clustered under the 2021 geography, and how much does the result depend on the neighbour graph?
+
+**Design and data.** Use 16 published regional percentages from the 2021 census and the pinned Ghana ADM1 geometry. Compare row-standardised rook contiguity with a symmetrised three-nearest-neighbour graph. Reconcile keys and exact permutations before comparing global Moran’s I.
+
+**Prepare the extract.** Join the regional table to the geometry identifiers through the 2021 crosswalk. Confirm all 16 matched regions and log graph weights, diagonal and row sums. Store geometry release, geographic reference system and original-source attribution.
+
+**Assignment**
+
+1. Produce directed edge and neighbour counts and verify that each row has a valid weight sum. Cross-check the weights against the frozen files.
+2. Reproduce global Moran’s I and the fixed-permutation probabilities under both graphs. Describe the null, precision of the fixed draw count and the unit of inference.
+3. Deliver an accessible map and describe two scale sensitivities. Discuss why a region-level cluster cannot establish household-level mechanisms.
+
+**Change one assumption.** Switch from rook contiguity to symmetrised three-nearest neighbours on the same regions and percentages. Document the change in weights, edge count and statistic.
+
+**Submit.** Submit an accessible map, spatial diagnostic note, crosswalk and weighted-edge audit with original credits and source citations.
+
+**Evidence to retain**
+
+- Observed sample keys and exclusions
+- Selected estimate, interval or scoring denominator
+- Engine result, version and original execution or replay status
+- Change in result or interpretation under the declared variation
+
+Use the project specification for the input paths and the teaching rubric for submission criteria.
+
+
+
+P11 · Spatial diagnostic and map
+
+### Decision and research design
+
+Are regional access values spatially clustered under the 2021 geography, and how much does the result depend on the neighbour graph?
+
+Use 16 published regional percentages from the 2021 census and the pinned Ghana ADM1 geometry. Compare row-standardised rook contiguity with a symmetrised three-nearest-neighbour graph. Reconcile keys and exact permutations before comparing global Moran’s I.
+
+### Observed results
+
+| Quantity | Result | Unit |
+| --- | ---: | --- |
+| Rook directed edge count | 64 | edges |
+| Rook Moran’s I | 0.4945 | index |
+| Three-nearest directed edge count | 56 | edges |
+| Three-nearest Moran’s I | 0.4657 | index |
+| Fixed-permutation probability | 0.0050 | probability |
+
+### Interpretation
+
+Both graphs suggest positive clustering in this 16-region display. The statistic changes with the neighbour definition. The inference is conditional on the chosen fixed permutation design and on region-level measures. Maintain the geoBoundaries and OpenStreetMap notices when reusing the geography.
+
+### Sensitivity and replication
+
+Switch from rook contiguity to symmetrised three-nearest neighbours on the same regions and percentages. Document the change in weights, edge count and statistic.
+
+### Data and verification
+
+Primary files include regions23.csv · weights23.csv · crosswalk23.csv · permutations23.csv. The specification records the exact files, observational units, fingerprints, output paths and engine scope. The archived Stata outputs accompany the original chapter specification.
+
+
+## P12 Integrated multi-software research publication {#p12}
+
+
+P12 · Journal-style article and replication package
+
+
+**Research question.** How does life expectancy covary with log real GDP per resident within selected economies after allowing for economy and year effects?
+
+**Design and data.** Freeze the World Development Indicators and Penn World Table 11.0 inputs for 2000–2023. Use ten balanced economies with equal weights for the principal regression, with economy-clustered covariance and the declared small-sample Student reference. State the distinction between within-economy association and a policy effect.
+
+**Prepare the extract.** Reconcile provider codes, the economy crosswalk, price concept and missing-year dispositions before joining. Preserve the 312-key audit and the 240-row balanced set. Use a stable model key in every output.
+
+**Assignment**
+
+1. Prepare a protocol, reconstruct balanced and expanded ledgers and compute scope summaries for Ghana and the comparison economies.
+2. Fit the four specified models and tabulate estimates, intervals, number of economies and weights. Distinguish income measurement, weighting and sample membership in the sensitivity analysis.
+3. Write a journal-style article, produce figure data, package the manifest and assign a second reader to rebuild the primary table. Seed a weighted-value substitution and record how the verification rejects it.
+
+**Change one assumption.** Insert the weighted slope under the equal-weight key as a controlled error. Restore the original result and explain why its estimand and interval differ from the weighted fit.
+
+**Submit.** Submit the article with data-availability statement, tables and figures, both estimation samples, dependency and source manifests, discrepancy register and a second-reader rerun record.
+
+**Evidence to retain**
+
+- Observed sample keys and exclusions
+- Selected estimate, interval or scoring denominator
+- Engine result, version and original execution or replay status
+- Change in result or interpretation under the declared variation
+
+Use the project specification for the input paths and the teaching rubric for submission criteria.
+
+
+
+P12 · Journal-style article and replication package
+
+### Decision and research design
+
+How does life expectancy covary with log real GDP per resident within selected economies after allowing for economy and year effects?
+
+Freeze the World Development Indicators and Penn World Table 11.0 inputs for 2000–2023. Use ten balanced economies with equal weights for the principal regression, with economy-clustered covariance and the declared small-sample Student reference. State the distinction between within-economy association and a policy effect.
+
+### Observed results
+
+| Quantity | Result | Unit |
+| --- | ---: | --- |
+| Balanced observations | 240 | economy-years |
+| Balanced equal-weight slope | −1.33 | years/log point |
+| Balanced-model lower interval bound | −7.65 | years/log point |
+| Balanced-model upper interval bound | 4.99 | years/log point |
+| Population-weighted slope | 2.98 | years/log point |
+| Expanded-sample slope | 2.41 | years/log point |
+
+### Interpretation
+
+The weighted estimate reverses the sign of the equal-weight estimate. The intervals under the four specifications include zero. Ten balanced economies, selected coverage and time-varying confounding limit interpretation. The replication handoff preserves original licensed Stata results and specifies who can rerun each engine.
+
+### Sensitivity and replication
+
+Insert the weighted slope under the equal-weight key as a controlled error. Restore the original result and explain why its estimand and interval differ from the weighted fit.
+
+### Data and verification
+
+Primary files include map35.csv · pwt35.csv · wdi35.csv. The specification records the exact files, observational units, fingerprints, output paths and engine scope. The archived Stata outputs accompany the original chapter specification.

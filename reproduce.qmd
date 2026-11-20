@@ -1,0 +1,56 @@
+---
+title: "Reproduce and check results"
+---
+
+## Set up the downloaded companion
+
+Download and extract the [complete ZIP](https://zenodo.org/records/24382209/files/Statistical_Programming_Stage8_Reader_Companion.zip?download=1), or extract both site volumes into the same directory. Open the resulting
+`Statistical_Programming_Reader_Companion` folder. Check the manifest with
+the supplied SHA-256 command and restore the documented Python and R
+environments in `environments/README.md`.
+
+```sh
+sha256sum -c --quiet MANIFEST.sha256
+python projects/build.py --output build/project-reports
+```
+
+On macOS, `shasum -a 256 -c MANIFEST.sha256` checks the same manifest.
+The project generator checks 63 baseline report metrics against the frozen
+outputs and performs 90 fresh Python–DuckDB sensitivity comparisons.
+For a complete model refit, use the chapter route in the project specification.
+
+## Select an analytical route
+
+Run Python, R and supported SQL examples with the matching source files and
+the documented environment. Run Stata locally using an installed licensed
+copy and the supplied do-file. The archived licensed Stata results provide
+a reference when a new native Stata process is unavailable.
+
+The full book runner also checks provider files whose originals are not
+redistributed in the public ZIP. Follow `data/reader_access.md` before
+attempting that author-review audit. The released teaching projects and
+their checked outputs remain available in the reader package.
+
+## Read the verification evidence
+
+The Stage 8 run executed all ten parts in Python, R and DuckDB with matched
+licensed Stata evidence replay. Parts I–IX passed 81,910 primary comparisons.
+Part X records the pilot, reporting, disclosure and tagged capstone checks
+separately. The optional causal forest retains its earlier archived run.
+
+- [Stage 8 run summary](run_summary.json)
+- [Review and editing scope](review_scope.md)
+- [Chapter review matrix](chapter_review.csv)
+- [Solution calculation checks](solution_verification.json)
+
+Detailed logs, output files and comparison ledgers are in
+`verification/stage8/` inside the downloads. The review record documents
+AI-assisted assessment and the separate external human sign-off still required.
+
+## Cite this companion
+
+Felix Larry Essilfie, PhD (2026). *Statistical Programming and Reproducible Data Science Reader Companion* (version stage8-2026-11-19). Zenodo. [https://doi.org/10.5281/zenodo.24382209](https://doi.org/10.5281/zenodo.24382209).
+
+Use this DOI when citing the reference outputs for this edition. [Zenodo’s all-versions DOI](https://doi.org/10.5281/zenodo.24382208) leads to the latest release. Cite the original dataset when using a project. [Download the citation metadata](CITATION.cff).
+
+The deposited ZIP has SHA-256 `4b5f0398bf441b2da6621a597c11831a2758690aae325cb7c6160cba1dae6d7d`. The [two-volume checksums](sha256.txt) apply to the smaller downloads.

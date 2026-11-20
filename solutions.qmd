@@ -1,0 +1,1372 @@
+---
+title: "Selected solutions and marking guidance"
+---
+
+The guides below give 80 selected worked answers: the first conceptual and first statistical reasoning question in every chapter. They accompany the full exercise collection. The remaining 812 questions do not have complete worked answer guides in this release.
+
+The downloads also include `teaching/sample_exam_solutions.md`, a five-question, 100-point worked marking guide, and `teaching/project_marking.md` for the twelve applied studies.
+
+## Chapter 1 Statistical Programming, Data Science, and the Reproducibility Imperative {#chapter-1}
+
+
+Chapter 1 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Classify the claims *four plots were excluded*, *two engines agreed*, *the coefficient survived a restriction*, *sessions increased yield*, and *the association recurred in a new survey*. Name the evidence required for each.
+
+A description needs its population, denominator and units. Reproducing a computation needs the same inputs and steps. Sensitivity changes a declared assumption. A causal claim needs identification and uncertainty. Replication with new data also needs comparable measurement and a defensible target population.
+
+### Statistical reasoning 1
+
+Compute hectares and kg/ha for P001 and P002. Calculate the mean of their yields.
+
+P001 has 5,000 square metres, or 0.5 ha. Its 595 kg harvest gives 1,190 kg/ha. P002 has 1 ha and 1,210 kg/ha. Their equal-plot mean is 1,200 kg/ha. A hectare-weighted mean uses the combined harvest divided by 1.5 ha and answers a different question.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Fitted slope · slope / full | 80.000 | `verification/evidence/Part_I/python.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 2 The Integrated Python–R–Stata–SQL Research Ecosystem {#chapter-2}
+
+
+Chapter 2 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Allocate source validation, aggregation, model fitting and reporting across the available tools. Justify each boundary.
+
+Validate source keys and aggregate refunds at invoice grain in SQL. Statistical runtimes independently check the canonical exchange table and any fitted model. A report consumes the verified keyed result. Record the file format, schema, amount units and executable command at each transfer.
+
+### Statistical reasoning 1
+
+Derive the net amount for each of the seven posted in-scope invoices and reconcile the grand total.
+
+Subtract the settled refunds at the invoice cutoff before grouping. Agent contributes 180,000 pesewas, branch 190,000 and digital 175,000. The seven posted invoices total 545,000 pesewas, or GHS 5,450. Preserve the fully refunded invoice as an observed zero.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Agent · invoices / agent | 2 | `verification/evidence/Part_I/python.csv` |
+| Agent · net_minor / agent | 180,000 | `verification/evidence/Part_I/python.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 3 Statistical Computing Foundations and Cross-Language Equivalence {#chapter-3}
+
+
+Chapter 3 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Explain why an identifier that looks numeric may require a character field.
+
+An identifier denotes identity and need not support arithmetic. Text preserves leading zeroes and exact digits that may exceed a numeric format's precision. Declare the type at import and compare the original identifiers before joining or fitting a model.
+
+### Statistical reasoning 1
+
+Compute $2^$ and $2^$ and describe the local spacing above each boundary in its respective binary representation.
+
+The boundaries are 2^24 = 16,777,216 for binary32 and 2^53 = 9,007,199,254,740,992 for binary64. At each boundary the next larger representable number is two units away. Immediately below it the spacing is one. Rounding the intervening odd integer can collapse distinct identifiers.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Usable measurements · usable / all | 3 | `verification/evidence/Part_I/python.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 4 From Research Questions to Executable Statistical Specifications {#chapter-4}
+
+
+Chapter 4 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+State the unit, population, timing and outcome for a descriptive coverage claim.
+
+Use one household-service episode, a stated eligible cohort and the day-30 observation window. Count a recorded completion in the numerator and the applicable observed or eligible population in the denominator. Define how unresolved outcomes enter the reported target before interpreting coverage.
+
+### Statistical reasoning 1
+
+Derive coverage, group rates and the crude difference from the eight complete rows.
+
+There are four completions among eight complete episodes, so coverage is 0.50. The offered group has 3/4 = 0.75 and comparison 1/4 = 0.25. The crude contrast is 0.50, or 50 percentage points. Identification of an offer effect additionally uses the assignment and missing-outcome assumptions.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Crude contrast · difference / crude | 0.50 | `verification/evidence/Part_I/python.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 5 Data Acquisition, Importation, and Interoperability {#chapter-5}
+
+
+Chapter 5 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Explain why a byte digest and a source citation answer different questions about an input.
+
+A byte digest identifies a particular sequence of file bytes. A source citation identifies the provider and publication or dataset. Preserve both with the retrieval date, snapshot, revision and access terms. The digest supports integrity checks after download or transfer.
+
+### Statistical reasoning 1
+
+Calculate the page count and final-page size for 109 rows at 20 rows per page.
+
+ceil(109/20) is six pages. The first five contain 100 records and the sixth contains nine. For cursor pagination, the equivalent control requires a progressing cursor and a terminal response, with no repeated or skipped record keys.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Distinct source text IDs · count / text_ids | 6 | `verification/evidence/Part_II/python.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 6 Data Cleaning, Transformation, and Feature Construction {#chapter-6}
+
+
+Chapter 6 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Distinguish a correction, a quality flag, quarantine, and a scope exclusion using the invoice case.
+
+A correction replaces an erroneous source value under a documented rule. A flag retains a questionable value for review. Quarantine keeps a record outside the current analytical total pending resolution. A scope exclusion implements the defined population. Preserve the original key and disposition for each.
+
+### Statistical reasoning 1
+
+Convert a three-unit posting priced at 105 US cents per unit using the January rate. Apply the invoice-level rule.
+
+The January rate numerator is 1,250 in the chapter's integer convention. Three units at 105 US cents give 315 cents. Multiplying by 1,250/100 gives 3,937.5 pesewas. Invoice-level half-away-from-zero rounding produces 3,938 pesewas, or GHS 39.38.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| I01 · net_minor / I01 | 25,000 | `verification/evidence/Part_II/python.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 7 SQL, Relational Data Modelling, and Analytical Data Pipelines {#chapter-7}
+
+
+Chapter 7 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Identify the primary key of each source and derived relation in Table 7.1.
+
+Invoice headers use invoice ID, lines use their line key, and customer history uses the customer-version key. The canonical invoice result has one row per invoice. Select the applicable dimension version before attaching it. Customer alone cannot identify a history row.
+
+### Statistical reasoning 1
+
+Use Equation in Chapter 7 and the row counts by customer to reproduce the 23-row raw-history join.
+
+For an inner join, sum a_k times b_k over customer keys, where the counts refer to the exact two input relations. Applying those multiplicities to the supplied raw history gives 23 rows. Compare the count with the canonical seven invoice keys and reconcile amounts at invoice grain.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Source headers · count / headers | 8 | `verification/evidence/Part_II/python.csv` |
+| Source headers · total / headers_minor | 860 | `verification/evidence/Part_II/python.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 8 Data Validation, Metadata, Provenance, and Research Data Governance {#chapter-8}
+
+
+Chapter 8 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Distinguish a data dictionary from a contract that also governs relationships and use.
+
+The dictionary defines fields and their meaning. The contract adds uniqueness, allowed values, relationships, eligibility, missing-value handling and use conditions. A failed household key or orphan reference is a structural problem that must be resolved before attaching a survey weight.
+
+### Statistical reasoning 1
+
+Reconstruct the person reconciliation in Equation in Chapter 8 and the five retained plot areas.
+
+The source roster has 13 persons. One scope exclusion and one invalid-age disposition leave 11. One declared unknown age leaves ten known ages. The plot register retains five positive-area in-scope plots totalling 21,000 square metres, or 2.10 ha. The two ledgers retain their distinct grains.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Eligible households · count / eligible_households | 5 | `verification/evidence/Part_II/python.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 9 Exploratory Data Analysis and Descriptive Statistical Computing {#chapter-9}
+
+
+Chapter 9 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Explain the population described by an equal-weight plot mean and the additional information needed for a hectare-weighted mean.
+
+The equal-plot mean describes a uniformly selected observed plot. A hectare-weighted mean describes output per represented unit of area and requires the relevant area for every plot in its denominator. Missing yield and plot-area rules determine the population of either calculation.
+
+### Statistical reasoning 1
+
+Derive the empirical variance and sample variance from the control totals 36 and 134. State the units of each.
+
+There are 11 observed yields. Their centred sum of squares is 134 - 36^2/11 = 178/11. The empirical variance is 178/121 = 1.471074 and the sample variance is 178/110 = 1.618182. Both have units (t/ha)^2. Their square roots have units t/ha.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Yield · count / yield | 11 | `verification/evidence/Part_III/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 10 Statistical Graphics, Data Visualization, and Analytical Communication {#chapter-10}
+
+
+Chapter 10 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Explain why position on a common scale supports direct numerical comparison across panels.
+
+Position on a shared numerical scale permits direct comparison of levels and differences. Keep units, bin edges and axis transformations common across panels when they answer the same question. A caption identifies whether an interval concerns a mean, a prediction or another target.
+
+### Statistical reasoning 1
+
+Convert Table 10.2 to within-regime shares. Show that the five shares sum to one for each group.
+
+Divide the irrigated bin counts (0,0,2,2,2) by six, giving (0,0,1/3,1/3,1/3). Divide rainfed counts (1,3,1,0,0) by five, giving (0.2,0.6,0.2,0,0). Each vector sums to one. Empty cells remain present with zero frequency.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| [2, 3) · bin / Rainfed/2 | 3 | `verification/evidence/Part_III/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 11 Probability, Statistical Simulation, and Computational Inference {#chapter-11}
+
+
+Chapter 11 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Explain why the sampling distribution in Equation in Chapter 11 can become approximately normal while the distribution of individual observations stays skewed.
+
+A sampling distribution concerns a statistic across repeated samples. A central limit approximation can apply to an average even when individual observations remain skewed. The approximation requires the stated variance and dependence conditions. Monte Carlo error adds uncertainty to the estimated coverage itself.
+
+### Statistical reasoning 1
+
+Derive $\mathrm(\bar X)$ from the variance of a sum of independent observations and explain what covariance terms would appear with dependence.
+
+Var(sum X_i/n) equals n^(-2) times [sum Var(X_i) + 2 sum_ Cov(X_i,X_j)]. Under independent equal-variance observations it reduces to sigma^2/n. Dependence leaves covariance terms that must be modelled or estimated.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Type 7 · bootstrap_type7 / lower | 1.30625 | `verification/evidence/Part_III/python/metrics.csv` |
+| Type 7 · bootstrap_type7 / upper | 6.66250 | `verification/evidence/Part_III/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 12 Survey Sampling, Complex Survey Designs, and Population Estimation {#chapter-12}
+
+
+Chapter 12 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Explain the roles of a sampling stratum, a PSU, a household, and a reporting domain.
+
+A stratum partitions the sampling frame for separate selection. A PSU is a first-stage sampled unit. Households are ultimate observed units here. A reporting domain can cross strata and PSUs. Retain the full sampled design frame when estimating a domain's variance.
+
+### Statistical reasoning 1
+
+Use Table 12.2 to compute the overall mean from the two domain means and their denominators. Compare it with their arithmetic mean.
+
+Combine the weighted totals. The overall mean is (62,260 + 79,955)/(1,375 + 1,185) = 55.552734 points. The arithmetic mean of the displayed rural and urban means is about 56.3763, reflecting equal domain weights. The actual rural weight share is 1,375/2,560.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Rural · mean / wr/rural | 45.2800 | `verification/evidence/Part_III/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 13 Linear Regression, Matrix Algebra, and Econometric Diagnostics {#chapter-13}
+
+
+Chapter 13 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Explain why the pilot uses a plot-season key and why area validation precedes the yield calculation.
+
+A plot-season identifies the outcome and exposure jointly. Convert area to hectares and validate positivity before dividing harvest. Retain a valid zero harvest. The association coefficient uses the declared sample and design matrix, with the source rows checked before fitting.
+
+### Statistical reasoning 1
+
+Derive the pilot slope, intercept, residual sum of squares, and $R^2$ from the paired fixture.
+
+The paired construction has centred session sum of squares 35 and each pair's residuals cancel. The slope is 80 kg/ha per session and the intercept is 1,200 kg/ha. Residual sum of squares is 6,950. Explained sum of squares is 80^2 times 35 = 224,000, giving R^2 = 224,000/230,950, approximately 0.9699.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Simple pilot · :nobs | 12 | `verification/evidence/pilot_licensed/python/fit.json` |
+| Simple pilot · :df_resid | 10 | `verification/evidence/pilot_licensed/python/fit.json` |
+| Simple pilot · classical/sessions:estimate | 80.0000 | `verification/evidence/pilot_licensed/python/coefficients.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 14 Generalized Linear Models and Discrete Outcome Analysis {#chapter-14}
+
+
+Chapter 14 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Distinguish the conditional family, link, and linear predictor of a GLM.
+
+The conditional family specifies the distribution and variance. The link maps the conditional mean to the predictor. The linear predictor combines the named model columns, coefficients and any offset. Each belongs in the specification because a family can be paired with more than one link.
+
+### Statistical reasoning 1
+
+Convert the logit contact and rural coefficients into odds ratios. Explain their respective units of interpretation.
+
+Exponentiate the logit slopes. Using the displayed values gives exp(0.3339) = 1.3964 for one additional contact and exp(-0.4697) = 0.6252 for rural versus nonrural at the same contacts. These are conditional odds ratios. Risk differences use the common prediction population.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Logit · logit / scalar / ll | −152.3338 | `verification/evidence/Part_IV/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 15 Limited Dependent Variables, Selection Models, and Survival Analysis {#chapter-15}
+
+
+Chapter 15 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Explain how a known reporting floor differs from excluding all observations below a threshold.
+
+Left censoring retains a record and states that its latent outcome is at or below a known bound. Left truncation excludes such records and requires a density conditional on inclusion. The censoring probability and the truncation normalising probability therefore enter different likelihoods.
+
+### Statistical reasoning 1
+
+Calculate the probability of censoring for C001 at the shared evaluation point.
+
+For C001, resources are 0.240175. The shared index is 0.9 + 0.8 × 0.240175 = 1.09214 and sigma is 1.2. The censoring probability is Phi(−1.09214/1.2), approximately 0.18138. Its natural logarithm is approximately −1.7072. The rounded probability must not be substituted into the likelihood before taking the log.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| 1 · riskset / risk / 1 | 100 | `verification/evidence/Part_IV/python/metrics.csv` |
+| 1 · riskset / km / 1 | 0.9200 | `verification/evidence/Part_IV/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 16 Multilevel, Hierarchical, and Mixed-Effects Models {#chapter-16}
+
+
+Chapter 16 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Identify the observational unit, group, and fixed predictor in the facility fixture.
+
+A patient is the observed unit and a facility supplies the grouping factor. Baseline is the fixed predictor. The balanced and unbalanced selections use their stated patient keys. Distinguish the population mean, a facility's conditional mean and a new patient's predictive distribution.
+
+### Statistical reasoning 1
+
+Compute the fitted ICC for each row in Table 16.2.
+
+The random-intercept ICC is facility variance divided by the sum of facility and residual variance. The balanced displayed values give 8.3495/(8.3495+0.8122), approximately 0.9113. The unbalanced values give 7.9598/(7.9598+0.7550), approximately 0.9134.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Unbalanced · unbalanced / beta / intercept | 21.8902 | `verification/evidence/Part_IV/python/metrics.csv` |
+| Unbalanced · unbalanced / beta / baseline | 1.4083 | `verification/evidence/Part_IV/python/metrics.csv` |
+| Unbalanced · unbalanced / scalar / tau2 | 7.9598 | `verification/evidence/Part_IV/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 17 Randomized Experiments, Power Analysis, and Experimental Evaluation {#chapter-17}
+
+
+Chapter 17 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Define the offer, receipt, and observation mechanisms in the trial.
+
+Offer is the village-level assignment. Receipt records whether support was obtained and can differ from the offer. Observation records whether the survey outcome is available. The fully observed administrative endpoint and the incompletely observed survey endpoint have separate denominators.
+
+### Statistical reasoning 1
+
+Recover the observed ITT from the integer arm totals and denominators.
+
+Use the complete administrative arm totals and the blocked weighting rule. The realised administrative contrast is 5.3125 points. It uses all 48 eligible households in each assigned arm. The observed survey contrast uses 33 versus 45 respondents and addresses a different observed-case population.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Offer effect on administrative score · trial / scalar / itt | 5.3125 | `verification/evidence/Part_V/python/metrics.csv` |
+| Blocked Neyman standard error · trial / scalar / se_neyman | 3.4047 | `verification/evidence/Part_V/python/metrics.csv` |
+| Exact sharp-null probability · trial / scalar / ri_p | 0.1500 | `verification/evidence/Part_V/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 18 Difference-in-Differences, Event Studies, and Heterogeneous Treatment Effects {#chapter-18}
+
+
+Chapter 18 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Define the missing counterfactual change in a two-period design.
+
+The missing counterfactual is the treated group's untreated outcome change over the comparison periods. Conditional parallel trends identifies that change using eligible controls under the declared covariates and support. No anticipation also determines which pre-periods and not-yet-treated controls are admissible.
+
+### Statistical reasoning 1
+
+Derive the saturated two-period interaction coefficient from the four means.
+
+In the saturated two-period model the interaction coefficient is (treated post minus treated pre) minus (control post minus control pre). At event zero the supported cohort effects 2.30, 3.84 and 1.70 with sizes 8,10,12 aggregate to 2.5733 points. Equal cohort weighting gives 2.6133 and defines a different aggregation.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| 3 and 3 · notyet / control_n / 3/3 | 31 | `verification/evidence/Part_V/python/metrics.csv` |
+| 3 and 3 · never / att / 3/3 | 2.300 | `verification/evidence/Part_V/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 19 Instrumental Variables, Regression Discontinuity, and Generalized Method of Moments {#chapter-19}
+
+
+Chapter 19 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Distinguish relevance, independence, and exclusion.
+
+Relevance requires the excluded instrument to predict exposure conditional on included controls. Independence concerns its relation to potential outcomes or structural disturbances. Exclusion rules out an outcome path other than the specified exposure. A strong first stage supplies evidence about relevance.
+
+### Statistical reasoning 1
+
+Calculate the IV slope and its units from the first stage and reduced form.
+
+Divide the reduced-form outcome coefficient by the first-stage dose coefficient using the same residualisation and sample. The full-precision strong-design result is 2.8102 points per dose and the weak-design result is 3.2709. Use unrounded exports for computation. In the RD table the fuzzy ratio uses the separate fuzzy outcome jump.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Strong · strong / scalar / first_t2 | 53.9225 | `verification/evidence/Part_V/python/metrics.csv` |
+| Weak · weak / scalar / effect | 3.2709 | `verification/evidence/Part_V/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 20 Matching, Weighting, Doubly Robust Estimation, and Synthetic Controls {#chapter-20}
+
+
+Chapter 20 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+State a policy question for the ATE and for the ATT.
+
+The ATE can inform a decision covering all eligible applicants. The ATT concerns those participating under the observed arrangement. Their covariate distributions and overlap requirements differ. Define the intended policy population before choosing the weights or interpreting the fitted effect.
+
+### Statistical reasoning 1
+
+Derive the conditional mean of each ATE inverse-probability weight.
+
+If p(X) is the true propensity, E[D/p(X) given X] = 1 and E[(1-D)/(1-p(X)) given X] = 1. These identities establish the conditional mean of the unnormalised ATE weights under positivity. Estimated-propensity and finite-sample normalised estimates have additional sampling variability.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Treated ESS · full / scalar / ess1 | 53.42 | `verification/evidence/Part_V/python/metrics.csv` |
+| Treated ESS · trim / scalar / ess1 | 82.73 | `verification/evidence/Part_V/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 21 Panel Data Econometrics and Longitudinal Statistical Modelling {#chapter-21}
+
+
+Chapter 21 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Explain why a country-year key needs both components and a stable calendar definition.
+
+The country component identifies the entity and year identifies the period within it. Both are needed for panel uniqueness and lag construction. Preserve the actual calendar gaps. A lag after a missing year and a previous observed row can represent different time intervals.
+
+### Statistical reasoning 1
+
+Derive the within regression from the country-intercept model.
+
+Subtract each entity mean from y_it = alpha_i + x_it' beta + u_it. The constant entity effect cancels, leaving y_it-ybar_i = (x_it-xbar_i)' beta + u_it-ubar_i. Estimate on the exact retained panel and record singleton handling and covariance normalisation.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Level comparison · within / scalar / n | 153 | `verification/evidence/Part_VI/python/metrics.csv` |
+| Dynamic IV · dynamic / scalar / n | 120 | `verification/evidence/Part_VI/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 22 Time-Series Econometrics, Macroeconomic Modelling, and Forecasting {#chapter-22}
+
+
+Chapter 22 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Distinguish a GDP reference year from a release date and give an example of a revision that could affect a forecast backtest.
+
+A reference year gives the price or index basis. A release date states when a value became available. Revised national accounts can change historical values without changing their reference year. A real-time forecast uses the vintage available at its origin.
+
+### Statistical reasoning 1
+
+Derive the unit-root coefficient $\gamma$ in a Dickey–Fuller regression from an AR(1) coefficient.
+
+Starting from q_t = a + phi q_(t-1) + u_t, subtract q_(t-1). The Dickey–Fuller coefficient on q_(t-1) is gamma = phi - 1. Its unit-root null is gamma = 0. The deterministic terms and lagged differences determine the appropriate test reference.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Ghana · naive / rmse / 1/1 | 6.459 | `verification/evidence/Part_VI/python/metrics.csv` |
+| Ghana · ar1 / rmse / 1/1 | 3.341 | `verification/evidence/Part_VI/python/metrics.csv` |
+| Ghana · ma1 / rmse / 1/1 | 3.318 | `verification/evidence/Part_VI/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 23 Spatial Econometrics, Geographic Analysis, and Location-Based Modelling {#chapter-23}
+
+
+Chapter 23 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Explain why the national household share and the simple mean of regional rates differ.
+
+A national household share weights regions by their represented household denominators. The simple mean gives each region one vote. A region-level spatial analysis also targets the selected spatial units and the particular weights matrix. Align geography vintage and rate definition before joining.
+
+### Statistical reasoning 1
+
+Derive $E[I]=-1/(n-1)$ from uniform reassignment and the zero-sum centred vector.
+
+For a fixed centred vector under uniform reassignment, E[z_i z_j] = -sum(z_i^2)/(n(n-1)) for i different from j. With zero diagonal weights, substituting in I = (n/S0) z'Wz/(z'z) gives E[I] = -1/(n-1). Check the zero diagonal and fixed weights assumptions.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Rook contiguity · rook / scalar / edges | 64 | `verification/evidence/Part_VI/python/metrics.csv` |
+| Rook contiguity · rook / scalar / I | 0.4945 | `verification/evidence/Part_VI/python/metrics.csv` |
+| Rook contiguity · rook / scalar / p | 0.0050 | `verification/evidence/Part_VI/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 24 Robust Statistical Inference, Bootstrap Methods, and Multiple Testing {#chapter-24}
+
+
+Chapter 24 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Distinguish observation, assignment and inference units in the fixture.
+
+Households supply observation-level outcomes. Assignment occurs at service-area clusters and inference preserves those independent assignment units. Within-cluster outcomes can move together. Blocking and the permitted assignment set also enter the uncertainty procedure.
+
+### Statistical reasoning 1
+
+Expand one cluster score outer product and identify the terms absent from HC0.
+
+For cluster g, (sum_i s_i)(sum_j s_j)' equals sum_i s_i s_i' plus all i-different-from-j cross-products within that cluster. HC0 retains the individual terms. CR0 retains both terms before applying its declared correction. The cross-products can have either sign.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| CR1 · y1 / se / cr1 | 0.5062 | `verification/evidence/Part_VI/python/metrics.csv` |
+| CR1 · y1 / scalar / t_cr1 | 3.509 | `verification/evidence/Part_VI/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 25 Statistical Learning, Feature Engineering, and Model Validation {#chapter-25}
+
+
+Chapter 25 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Specify the unit, scoring time, outcome window and action for a monthly account review.
+
+Use the account-month available at the review date, define the future outcome window and state the review action. Features must precede scoring. Separate development, selection, calibration and final holdout roles, and preserve any repeated-account or calendar dependence.
+
+### Statistical reasoning 1
+
+Derive the threshold rule using the expected cost of a false positive and a false negative.
+
+With zero cost for correct classifications and false-positive cost C_FP and false-negative cost C_FN, choose a positive action when C_FP(1-p) is at most C_FN p. The threshold is C_FP/(C_FP+C_FN). This rule assumes probabilities calibrated for the deployment population and the stated costs.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Final holdout · holdout / scalar / events | 92 | `verification/evidence/Part_VII/python/metrics.csv` |
+| Final holdout · holdout / scalar / auc | 0.7944 | `verification/evidence/Part_VII/python/metrics.csv` |
+| Final holdout · holdout / scalar / logloss | 0.5432 | `verification/evidence/Part_VII/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 26 Advanced Predictive Models and Ensemble Learning {#chapter-26}
+
+
+Chapter 26 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Explain why the weighted mean likelihood is unchanged when all case weights are multiplied by a constant.
+
+Multiplying every case weight by a positive constant multiplies the weighted loss numerator and its weight sum by that constant. Their ratio stays the same. A sum-loss formulation changes the effective penalty unless its penalty strength is transformed consistently.
+
+### Statistical reasoning 1
+
+Derive Equation in Chapter 26 from the weighted logistic loss.
+
+Differentiating log(1+exp eta)-y eta gives p-y. With normalised weights and penalty matrix P that leaves the intercept unpenalised, the gradient is X' [w_tilde times (p-y)] + lambda P beta. Differentiating again gives X' diag(w_tilde p(1-p)) X + lambda P.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Ridge baseline · ridge / scalar / logloss | 0.41695 | `verification/evidence/Part_VII/python/metrics.csv` |
+| Python forest · py_forest / scalar / brier | 0.12870 | `verification/evidence/Part_VII/python/metrics.csv` |
+| R forest · r_forest / scalar / brier | 0.13075 | `verification/evidence/Part_VII/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 27 Explainable Artificial Intelligence, Algorithmic Fairness, and Model Diagnostics {#chapter-27}
+
+
+Chapter 27 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Distinguish calibration from discrimination and name one statistic for each.
+
+Calibration compares assigned probabilities with observed event rates on an evaluation population. Discrimination assesses how scores rank events relative to non-events. ECE or a calibration slope addresses calibration. AUC addresses discrimination. State which cases have observed labels.
+
+### Statistical reasoning 1
+
+Recompute ECE from the three populated bins using unrounded values.
+
+Compute each bin's absolute mean-score minus event-rate gap with the unrounded exports. Multiply by n_bin/223 and sum over the three occupied bins. The result is about 0.0171. Empty bins have zero weight and undefined bin means. Computing from rounded display values gives only an approximation.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| 0.0–0.2 · audit / bin_n / 1 | 151 | `verification/evidence/Part_VII/python/metrics.csv` |
+| 0.0–0.2 · audit / bin_mean_p / 1 | 0.1069 | `verification/evidence/Part_VII/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 28 Causal Machine Learning, Heterogeneous Effects, and Model Governance {#chapter-28}
+
+
+Chapter 28 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Define the full-population ATE and describe a decision for which an overlap target is more relevant.
+
+The full-population ATE averages across the stated population. An overlap target concentrates on covariate regions where both treatment states have support. The target can suit a policy concerned with realistically comparable recipients. Declare the trimming or target weights and its population consequence.
+
+### Statistical reasoning 1
+
+Derive Equation in Chapter 28 from the conditional expectation of the augmented score.
+
+Let delta_a = m_a-m_a0 and e0 be the true propensity. Conditional on X, the augmented score's bias is (e-e0)[delta_1/e + delta_0/(1-e)]. It is zero when the propensity is correct or both outcome regressions are correct. Rate, moment and overlap conditions remain necessary for inference with fitted nuisances.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| 1 · shared / fold_train_treat / 1 | 392 | `verification/evidence/Part_VII/python/metrics.csv` |
+| 1 · shared / fold_treat / 1 | 131 | `verification/evidence/Part_VII/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 29 Applied Economic Research and Macroeconomic Policy Analysis {#chapter-29}
+
+
+Chapter 29 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Explain why a balanced country-year grid may still contain incomplete indicators.
+
+A balanced grid contains a row for every selected country-year. An indicator in an existing row can still be missing or refer to an incompatible unit. Check indicator-specific observed values and source vintage after validating the key grid.
+
+### Statistical reasoning 16
+
+Compare Ghana's 2024 implied nominal growth with the sum of real growth and deflator inflation. Quantify the interaction.
+
+The nominal-growth identity expands to g+d+g*d/100 when rates are in percentage units. With the displayed Ghana 2024 rates 5.8475 and 25.8754, the interaction is about 1.5131 percentage points. Full-precision inputs give nominal growth 33.2359%, compared with a sum near 31.7228%.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Lending interest rate · country1 / available / lending | 0 | `verification/evidence/Part_VIII/python/metrics.csv` |
+| Lending interest rate · country2 / available / lending | 25 | `verification/evidence/Part_VIII/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 30 Public Health, Epidemiology, and Health Economics {#chapter-30}
+
+
+Chapter 30 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Define the unit, denominator and reference period of the reported 2022 GDHS live-birth statistic.
+
+The published GDHS comparator concerns live births in the stated two-year reference window and the report's specified maternal population. Match that birth universe, the recorded place of delivery and the design weights before interpreting the comparison. The teaching file uses synthetic person records with one index delivery.
+
+### Statistical reasoning 16
+
+Recompute coverage after multiplying every weight by three. Explain the result for the point estimate and design standard error.
+
+Multiplying every weight by three triples numerator and denominator, leaving their ratio unchanged. Each ratio linearisation contribution also stays the same because its weight and denominator both triple. With the same PSUs, strata and variance rule, the design standard error stays the same. Population total estimates do scale.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| All observed · all / scalar / n | 374 | `verification/evidence/Part_VIII/python/metrics.csv` |
+| All observed · all / scalar / denominator | 523.05 | `verification/evidence/Part_VIII/python/metrics.csv` |
+| All observed · all / scalar / numerator | 363.03 | `verification/evidence/Part_VIII/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 31 Finance, Banking, Investment, and Business Analytics {#chapter-31}
+
+
+Chapter 31 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Define the numerator and denominator of the gross NPL ratio.
+
+The gross NPL ratio divides the declared nonperforming loan balance by the compatible gross loan balance. Use the same institution boundary, consolidation scope, date and currency units. A denominator decrease can increase the ratio with an unchanged numerator.
+
+### Statistical reasoning 16
+
+Compare Brier and log loss for two forecasts that rank every case identically but assign different probabilities.
+
+A strictly increasing transformation preserves the ordering used by AUC while changing the numerical probabilities. Brier loss averages (y-p)^2. Log loss averages -y log p -(1-y) log(1-p). Compare both on the same labelled keys. A confident erroneous prediction incurs a particularly large log loss.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Original and revised filings · flow / scalar / filings | 1,136 | `verification/evidence/Part_VIII/python/metrics.csv` |
+| Same-segment next-quarter outcomes · flow / scalar / outcome_rows | 543 | `verification/evidence/Part_VIII/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 32 Agricultural Economics, Food Security, and Rural Development {#chapter-32}
+
+
+Chapter 32 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Define the grain of each of the three synthetic agricultural files.
+
+Household rows support household-level vulnerability. Plot-season rows support crop output and area. The assignment and adoption experiment has its own pair and treatment keys. Join each table only at the grain justified by the question and preserve separate eligibility ledgers.
+
+### Statistical reasoning 16
+
+Quantify the GPS-versus-reported planted-area yield difference and explain which elements were held fixed.
+
+The GPS-area ratio is about 1,635.80 kg/ha and the reported-area ratio about 1,543.78 kg/ha, a difference near 92.02 kg/ha from the displayed values. The sample and moisture-standardised harvest numerator stay fixed. The crop-area denominator changes. Use the unrounded ratio exports for the final difference.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| GPS planted area · gps / scalar / n | 267 | `verification/evidence/Part_VIII/python/metrics.csv` |
+| GPS planted area · gps / scalar / kg | 218,003.75 | `verification/evidence/Part_VIII/python/metrics.csv` |
+| GPS planted area · gps / scalar / ratio | 1,635.80 | `verification/evidence/Part_VIII/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 33 End-to-End Impact Evaluation of a Development Intervention {#chapter-33}
+
+
+Chapter 33 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Identify the units of assignment, observation and estimation.
+
+Village is the assignment unit. Household supplies baseline and follow-up measurements. The primary observed-case estimator averages the 24 village-pair contrasts. Its independent assignment decisions occur at the pair level. Cohort eligibility precedes follow-up availability.
+
+### Statistical reasoning 16
+
+Recalculate the planning MDE when the intraclass correlation is 0.20.
+
+At rho = 0.20, the design effect is 1+19*0.20 = 4.8. The stated approximation is (z_0.975+z_0.80)*8*sqrt(2*4.8/(24*20)), giving about 3.17 points. This is the specified planning model. The observed paired interval uses its realised pair differences and 23 reference degrees of freedom.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Follow-up observed · arm0 / scalar / observed | 417 | `verification/evidence/Part_IX/python/metrics.csv` |
+| Follow-up observed · arm1 / scalar / observed | 414 | `verification/evidence/Part_IX/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 34 Reproducible Business Intelligence and Financial Decision Analytics {#chapter-34}
+
+
+Chapter 34 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Distinguish a line, invoice and customer-origin key.
+
+A line identifies one source sale or cancellation entry. An invoice groups its entries. A customer-origin key identifies a customer at the frozen prediction date for the future outcome. Their denominators differ. Reconcile line-level financial values before constructing customer-origin features.
+
+### Statistical reasoning 16
+
+Explain the apparent reversal when comparing two different holdout periods.
+
+An error or loss averaged over one holdout period need not rank models in the same order as an average over another period. Their target outcomes, season mix and demand regime can differ. Recompute both models on identical week-origin-target keys before interpreting an apparent reversal.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Scoped lines · revenue / scalar / lines | 5,904 | `verification/evidence/Part_IX/python/metrics.csv` |
+| Eligible invoice balances · revenue / scalar / invoices | 4,893 | `verification/evidence/Part_IX/python/metrics.csv` |
+| Eligible invoice balances · revenue / scalar / net | £295,491.85 | `verification/evidence/Part_IX/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 35 Comparative Cross-Country Economic and Social Development Analysis {#chapter-35}
+
+
+Chapter 35 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Explain why WLD belongs in the coverage audit and outside the regression.
+
+WLD is an aggregate of economies. Including it as another economy would overlap with underlying country information and change the empirical population. Keep it in coverage checks under an aggregate entity type and use the declared country set for the regression.
+
+### Statistical reasoning 16
+
+Translate the baseline slope to a fitted difference for a 10% income increase.
+
+For a natural-log income regressor, an increase of 10% changes x by log(1.10), approximately 0.09531. Multiplying the equal-weight baseline slope near -1.33 gives a fitted association near -0.127 years. It carries the model's sample and uncertainty assumptions and has an associational interpretation.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Balanced, equal weights · common:n | 240 | `verification/evidence/Part_IX/python/metrics.csv` |
+| Balanced, equal weights · common:countries | 10 | `verification/evidence/Part_IX/python/metrics.csv` |
+| Balanced, equal weights · common:estimate | −1.33 | `verification/evidence/Part_IX/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 36 Reproducible Public Health and Social Protection Policy Research {#chapter-36}
+
+
+Chapter 36 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Define the teaching population and eligibility rule.
+
+The lab population is the synthetic household survey under its declared frame and eligibility rule. Eligibility defines the target population for coverage and exclusion. Receipt defines the denominator for inclusion error. Maintain those indicator definitions and the full design frame.
+
+### Statistical reasoning 16
+
+Explain how targeted participation can correlate with health need before any causal effect.
+
+A programme may select people because of prior health need. That targeting creates an association between participation and need before any programme effect. Baseline differences can also reflect access and response. An observed adjusted association requires a separate identification argument before supporting an effect claim.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Transfer coverage · coverage / scalar / n | 175 | `verification/evidence/Part_IX/python/metrics.csv` |
+| Transfer coverage · coverage / scalar / estimate | 75.05% | `verification/evidence/Part_IX/python/metrics.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 37 Version Control, Dependency Management, Automated Testing, and Continuous Integration {#chapter-37}
+
+
+Chapter 37 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Explain why a tag and its resolved commit are both recorded.
+
+Record both the tag name and its resolved commit because a tag reference can change. The commit identifies the source tree used for the build. An annotated tag adds metadata. A cryptographic signature, when present and verified, supplies additional origin evidence under its key trust assumptions.
+
+### Statistical reasoning 16
+
+Derive the pilot slope using the paired residual construction.
+
+At each session count the paired outcomes have equal and opposite residuals around 1,200+80*x. The within-pair residual sum is zero, so the residual cross-product with sessions is zero. The OLS numerator is 80*Sxx. Dividing by Sxx = 35 yields slope 80.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Public checkouts · reference_check_count | 267 | `verification/evidence/pilot_first/validation.json` |
+| Public checkouts · pairwise_check_count | 243 | `verification/evidence/pilot_first/validation.json` |
+| Licensed replay · reference_check_count | 364 | `verification/evidence/pilot_licensed/validation.json` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 38 Reproducible Research Documents, Tables, Figures, and Academic Manuscripts {#chapter-38}
+
+
+Chapter 38 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Define the grain of the pilot coefficient record.
+
+The pilot coefficient table has one record per scenario, term and covariance convention, with sample and interval metadata. The key prevents a corrected-harvest estimate from replacing the original fit. Round after comparing the full-precision records and carry the same scenario into tables and narrative.
+
+### Statistical reasoning 16
+
+Derive the one-record slope change for a model with intercept.
+
+With an intercept, fixed x values and the same sample, the slope equals sum (x_i-xbar)y_i / Sxx. Changing only y_j by Delta y_j therefore changes the slope by (x_j-xbar)*Delta y_j/Sxx. Changes to x or the sample require a new calculation of the centre and denominator.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Baseline · baseline:n | 12 | `verification/evidence/reporting/report_values.json` |
+| Baseline · baseline:estimate | 80.00 | `verification/evidence/reporting/report_values.json` |
+| Baseline · baseline:std_error | 4.66 | `verification/evidence/reporting/report_values.json` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 39 Research Ethics, Data Protection, Open Science, and Computational Accountability {#chapter-39}
+
+
+Chapter 39 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+Distinguish access, redistribution and software reuse permissions.
+
+Access permission governs obtaining or viewing the source. Redistribution permission governs making copies available to others. A software licence governs permitted reuse of code. A research approval or source login can leave redistribution subject to a separate decision. Follow each asset's documented route.
+
+### Statistical reasoning 16
+
+Reconstruct the omitted cell from the example's total and subtotal.
+
+For the stated exhaustive, mutually exclusive table, the omitted count is 42-38 = 4. The subtraction uses the same population, window and outcome definition. Review complementary releases and totals together when deciding whether a suppressed cell remains protected.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Domain 1 · Domain 1:status | Released | `verification/evidence/disclosure/public_domains.csv` |
+| Domain 1 · Domain 1:estimate | 37.84% | `verification/evidence/disclosure/public_domains.csv` |
+| Domain 2 · Domain 2:status | Released | `verification/evidence/disclosure/public_domains.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).
+
+## Chapter 40 The Complete Reproducible Statistical Research and Publication System {#chapter-40}
+
+
+Chapter 40 selected solutions
+
+The worked answers below correspond to the named exercises. Use the chapter exposition and the released outputs when marking the other tasks. Open-ended submissions require a defensible design, executable evidence and interpretation appropriate to their stated target.
+
+### Conceptual question 1
+
+State the research question and unit of analysis.
+
+The case asks how life expectancy and log real GDP per resident covary within the selected economies after economy and year effects. The source observation is an economy-year. The balanced baseline has ten economies and 24 years, or 240 records, under its prespecified source and eligibility rules.
+
+### Statistical reasoning 16
+
+Translate the primary coefficient for a 10% rise in income.
+
+A 10% income increase corresponds to log(1.10), about 0.09531. Multiply the exact primary coefficient by that change, giving a fitted difference near -0.127 years with the displayed equal-weight slope. Transform the interval endpoints with the same positive factor. All four model intervals include zero.
+
+### Computational evidence
+
+Rebuild the exact sample and match its keys before comparing values. The chapter coverage and listing indexes identify the executable route, supported SQL quantities and retained licensed Stata evidence. Run Stata on a local licensed installation when generating new native results.
+
+| Checked result | Display | Evidence file |
+| --- | ---: | --- |
+| Balanced, equal weights · common:n | 240 | `verification/evidence/capstone_report/panel_results.csv` |
+| Balanced, equal weights · common:estimate | −1.33 | `verification/evidence/capstone_report/panel_results.csv` |
+| Balanced, equal weights · common:lo/hi | −7.65 to 4.99 | `verification/evidence/capstone_report/panel_results.csv` |
+
+### Marking the replication task
+
+Award credit for the declared sample and output keys, units and model settings, the permitted source and run route, and the explanation of the first discrepancy. A changed specification receives its own scenario key. Compare full-precision outputs before applying the display rounding.
+
+[Browse all chapter exercises](exercises.html).

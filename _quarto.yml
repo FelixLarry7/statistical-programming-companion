@@ -1,0 +1,26 @@
+project:
+  type: default
+  output-dir: _render
+  render:
+    - index.qmd
+    - projects.qmd
+    - data.qmd
+    - exercises.qmd
+    - solutions.qmd
+    - reproduce.qmd
+lang: en-GB
+author: "Felix Larry Essilfie, PhD"
+execute:
+  enabled: false
+format:
+  html:
+    theme: flatly
+    embed-resources: true
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    anchor-sections: true
+    css: styles.css
+    include-before-body: nav.html
+    include-after-body: footer.html
+    link-external-newwindow: true

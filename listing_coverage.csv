@@ -1,0 +1,80 @@
+chapter,listing,title,language,form,tested_route,anchor
+1,1.1,Reproduce and inspect the agricultural pilot,bash,Standalone command,listing_1_1,sec-ch01
+2,2.1,DuckDB grouping after the sample is fixed,sql,Contextual excerpt,part_I,sec-ch02
+2,2.2,Python aggregation from the typed export,python,Complete script with declared input,listing_2_2,sec-ch02
+2,2.3,Restore invoice grain before calculating net amounts,sql,Contextual excerpt,part_I,sec-ch02
+2,2.4,Reproduce the controlled benchmark,bash,Standalone command,listing_2_4,sec-ch02
+3,3.1,Recompute the single-precision loss in DuckDB,sql,Contextual excerpt,part_I,sec-ch03
+4,4.1,Assign one primary disposition per episode,sql,Contextual excerpt,part_I,sec-ch04
+4,4.2,Calculate the crude and baseline-stratified contrasts in R,r,Contextual excerpt,part_I,sec-ch04
+5,5.1,Replay the source pages and run the comparison,sh,Standalone command,listing_5_1 and part_II,sec-ch05
+5,5.2,Explicit string fields in the Stata import,stata,Contextual excerpt,part_II,sec-ch05
+6,6.1,Select an eligible rate with a window function,sql,Contextual excerpt,part_II,sec-ch06
+7,7.1,Identify line records without a corresponding header,sql,Contextual excerpt,part_II,sec-ch07
+7,7.2,Choose a single customer version per key,sql,Contextual excerpt,part_II,sec-ch07
+7,7.3,Define a stable invoice-by-invoice cumulative sum,sql,Contextual excerpt,part_II,sec-ch07
+8,8.1,Locate duplicate household identifiers,sql,Contextual excerpt,part_II,sec-ch08
+9,9.1,Joint sample and covariance in DuckDB,sql,Contextual excerpt,part_III,sec-ch09
+9,9.2,Explicit sample quantile and spread choices in R,r,Contextual excerpt,part_III,sec-ch09
+10,10.1,Count the observations represented by each bar,sql,Contextual excerpt,part_III,sec-ch10
+10,10.2,Render fixed bin counts in Python,python,Complete script with declared input,listing_10_2,sec-ch10
+11,11.1,Verify draw counts and sample moments at replicate grain,sql,Contextual excerpt,part_III,sec-ch11
+11,11.2,Reconcile coverage and directional noncoverage,sql,Contextual excerpt,part_III,sec-ch11
+12,12.1,Check first-stage and domain support in DuckDB,sql,Contextual excerpt,part_III,sec-ch12
+12,12.2,Preserve the declared sampling design in a Stata domain estimate,stata,Contextual excerpt,part_III,sec-ch12
+13,13.1,Recover selected design moments in DuckDB,sql,Contextual excerpt,part_IV,sec-ch13
+13,13.2,Fit the two covariance specifications in Stata,stata,Contextual excerpt,part_IV,sec-ch13
+14,14.1,Declare one log-exposure convention in R,r,Contextual excerpt,part_IV,sec-ch14
+14,14.2,Fit the matching NB2 variance rule in Stata,stata,Contextual excerpt,part_IV,sec-ch14
+15,15.1,Construct the risk set at each recorded event time,sql,Contextual excerpt,part_IV,sec-ch15
+15,15.2,Fit the Cox model with an explicit tie rule in R,r,Contextual excerpt,part_IV,sec-ch15
+16,16.1,Declare maximum likelihood in the R mixed model,r,Contextual excerpt,part_IV,sec-ch16
+16,16.2,Reproduce the random intercept and predictions in Stata,stata,Contextual excerpt,part_IV,sec-ch16
+17,17.1,DuckDB construction of the analysis rows,sql,Contextual excerpt,part_V,code-ch17-01
+17,17.2,Exact probability on integer numerators in R,r,Contextual excerpt,part_V,code-ch17-02
+18,18.1,Paired changes and comparison eligibility in DuckDB,sql,Contextual excerpt,part_V,code-ch18-01
+18,18.2,Diagnostic event study in Stata,stata,Contextual excerpt,part_V,code-ch18-02
+19,19.1,IV and a transformed-outcome test in Stata,stata,Contextual excerpt,part_V,code-ch19-01
+19,19.2,Positive-weight records at the primary bandwidth,sql,Contextual excerpt,part_V,code-ch19-02
+20,20.1,AIPW calculation in R,r,Contextual excerpt,part_V,code-ch20-01
+20,20.2,Synthetic path from fixed donor weights,sql,Contextual excerpt,part_V,code-ch20-02
+21,21.1,Calendar lags before first differencing,sql,Contextual excerpt,part_VI,code-ch21-01
+21,21.2,Native fixed-effects slope check in Stata,stata,Contextual excerpt,part_VI,code-ch21-02
+22,22.1,Restrict calendar lags and the forecast information set,sql,Contextual excerpt,part_VI,code-ch22-01
+22,22.2,Reconstruct the autoregressive forecast path,python,Contextual excerpt,part_VI,code-ch22-02
+23,23.1,Compute spatial lags from ordered edges,sql,Contextual excerpt,part_VI,code-ch23-01
+23,23.2,Decompose the fitted SAR response,python,Contextual excerpt,part_VI,code-ch23-02
+24,24.1,Check the working regression and cluster covariance in Stata,stata,Contextual excerpt,part_VI,code-ch24-01
+24,24.2,Retrieve the four cluster score sums for y1,sql,Contextual excerpt,part_VI,code-ch24-02
+25,25.1,Compare reconstructed fold roles with the frozen manifest,sql,Contextual excerpt,part_VII,code-ch25-01
+25,25.2,Apply a training-fitted transformation,python,Contextual excerpt,part_VII,code-ch25-02
+26,26.1,Match the weighted Newton step,python,Contextual excerpt,part_VII,code-ch26-01
+26,26.2,Read the common held-out counts and losses,sql,Contextual excerpt,part_VII,code-ch26-02
+27,27.1,Retrieve calibrated-bin denominators and means,sql,Contextual excerpt,part_VII,code-ch27-01
+27,27.2,Reconstruct a local log-odds contribution,python,Contextual excerpt,part_VII,code-ch27-02
+28,28.1,Compute a score on matched held-out nuisance rows,sql,Contextual excerpt,part_VII,code-ch28-01
+28,28.2,Export held-out causal-forest predictions in R,r,Contextual excerpt,part_VII,code-ch28-02
+29,29.1,Construct a country-year forecast key and an implied nominal growth rate,sql,Contextual excerpt,part_VIII,code-ch29-01
+29,29.2,Select the last admissible release within each reference year,sql,Contextual excerpt,part_VIII,code-ch29-02
+30,30.1,"Preserve eligible records, group weights and the full sampling frame",sql,Contextual excerpt,part_VIII,code-ch30-01
+30,30.2,Average complete two-part predictions over the same rows,python,Contextual excerpt,part_VIII,code-ch30-02
+31,31.1,Select a time-admissible filing before constructing the next-quarter label,sql,Contextual excerpt,part_VIII,code-ch31-01
+31,31.2,Reconcile monthly sales and returns on the posting basis,sql,Contextual excerpt,part_VIII,code-ch31-02
+32,32.1,Construct comparable quantities before applying area conventions,sql,Contextual excerpt,part_VIII,code-ch32-01
+32,32.2,Keep offered and unoffered records together when computing the Wald ratio,python,Contextual excerpt,part_VIII,code-ch32-02
+33,33.1,Count each stage on the original assignment roster,sql,Contextual excerpt,part_IX,code-ch33-01
+33,33.2,Build one change contrast per pair,python,Contextual excerpt,part_IX,code-ch33-02
+34,34.1,Sum eligible booked amounts to one row per invoice,sql,Contextual excerpt,part_IX,code-ch34-01
+34,34.2,Use a calendar window and filter the holdout afterward,sql,Contextual excerpt,part_IX,code-ch34-02
+35,35.1,Preserve PWT key presence before applying the analysis rule,sql,Contextual excerpt,part_IX,code-ch35-01
+35,35.2,Check the unweighted balanced slope by two-way centring,sql,Contextual excerpt,part_IX,code-ch35-02
+36,36.1,"Preserve eligibility, receipt and observed need as distinct fields",sql,Contextual excerpt,part_IX,code-ch36-01
+36,36.2,Assign a common rank to each tied welfare block,sql,Contextual excerpt,part_IX,code-ch36-02
+37,37.1,Restore and verify the tagged pilot,bash,Standalone command,pilot_first and pilot_licensed,code-ch37-01
+37,37.2,Compare finite values using the declared continuous rule,python,Contextual excerpt,pilot_licensed,code-ch37-02
+38,38.1,Select the baseline result by scenario key,python,Complete script with declared input,listing_38_1,code-ch38-01
+38,38.2,Audit a displayed estimate against the source record,python,Contextual excerpt,ch38_reports,code-ch38-02
+39,39.1,Construct the public record from permitted fields,python,Contextual excerpt,ch39_disclosure,code-ch39-01
+39,39.2,Reject stored publication notebook content,python,Contextual excerpt,ch39_disclosure,code-ch39-02
+40,40.1,Check the balanced slope on the centred design,sql,Contextual excerpt,ch40_tagged_replay,code-ch40-01
+40,40.2,Select an estimate by its verified model key,python,Contextual excerpt,ch40_tagged_replay,code-ch40-02

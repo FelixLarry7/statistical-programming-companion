@@ -1,0 +1,11 @@
+{
+  "release": "stage8-2026-11-19",
+  "release_date": "2026-11-19",
+  "github_repository": "https://github.com/FelixLarry7/statistical-programming-companion",
+  "quarto_site": "https://felixlarry7.github.io/statistical-programming-companion/",
+  "zenodo_status": "Published, open",
+  "zenodo_record": "https://zenodo.org/records/24382209",
+  "version_doi": "10.5281/zenodo.24382209",
+  "all_versions_doi": "10.5281/zenodo.24382208",
+  "archive_sha256": "4b5f0398bf441b2da6621a597c11831a2758690aae325cb7c6160cba1dae6d7d"
+}

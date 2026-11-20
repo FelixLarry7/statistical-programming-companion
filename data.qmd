@@ -1,0 +1,44 @@
+---
+title: "Data and analytical code"
+---
+
+Start from the project ID or chapter number. The catalogue identifies each
+file's observational grain, primary key, source, row count, checksum and
+codebook. The chapter and listing indexes identify the supported analytical
+role of Python, R, SQL and Stata.
+
+| Index | Download | What it identifies |
+| --- | --- | --- |
+| Datasets | [CSV catalogue](dataset_catalogue.csv) | Versioned files, keys, units and source IDs |
+| Fields | [CSV field index](field_index.csv) | Variable definitions and allowed values |
+| Chapter execution | [CSV coverage](chapter_coverage.csv) | All 40 chapter run routes and evidence |
+| Printed code | [CSV listing index](listing_coverage.csv) | All 79 listings and executable context |
+| Exercises | [CSV exercise index](exercise_index.csv) | All 892 chapter questions |
+| Selected result checks | [Published value register](published_values.csv) | 123 printed cells and exact source keys |
+
+## Included data and provider access
+
+All twelve project baselines have their teaching inputs and worked reports
+in the two ZIP volumes. The package preserves source attribution, software
+notices and the documented provider conditions.
+
+Selected WDI and Penn World Table fields and the attributed retail teaching
+extract are included. The historical Bank of Ghana input has an official
+reconstruction route. FAOSTAT contextual holdings and controlled Ghanaian
+survey or programme microdata use the documented provider or custodian
+route. Use the included synthetic teaching fixtures for the baseline labs.
+
+[Read the complete access guide](reader_access.md) and [reader use terms](READER_USE.md).
+
+## Find and run code
+
+After extracting both volumes, open `projects/results/portfolio/P01` through
+`P12`. Each project's `engine_routes.csv` gives the actual paths for Python,
+R, SQL and the local Stata do-file. The chapter listing index explains
+which printed code is a contextual excerpt and where its executable
+context lives. Keep the source, sample, model and inference keys together.
+
+Python and R model-fitting routes and supported DuckDB preparation and
+likelihood checks are documented by chapter. The SQL role varies with the
+statistical problem. The retained licensed Stata outputs and their logs
+can be read without installing Stata.

@@ -1,0 +1,632 @@
+{
+  "started_utc": "2026-11-19T22:39:57.809278+00:00",
+  "status": "PASSED",
+  "selected_parts": [
+    "I",
+    "II",
+    "III",
+    "IV",
+    "V",
+    "VI",
+    "VII",
+    "VIII",
+    "IX",
+    "X"
+  ],
+  "parts": {
+    "I": {
+      "comparisons": 449,
+      "failures": 0,
+      "comparisons_by_chapter": {
+        "CH01": 100,
+        "CH02": 89,
+        "CH03": 146,
+        "CH04": 114
+      },
+      "metrics": {
+        "python": {
+          "rows": 91,
+          "sha256": "dd0cb33eea26b98c1e7521a796ca29a2af0a46d087933af7692c7f1166145b7f",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "r": {
+          "rows": 91,
+          "sha256": "89761d6ac3099326a5713d348ab08144d69166e55e28b90ce52481df3cdd57e3",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "duckdb": {
+          "rows": 91,
+          "sha256": "2494fca3eb1424c6d45d9cd4b0575d680f6782f40c46235b28ea419c7f063cee",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "stata": {
+          "rows": 91,
+          "sha256": "ff66cb3b3188c6563b1b3f96f4120de024dca5f353417f9c87dc27d1e2ed92df",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "archived_licensed_evidence"
+        }
+      },
+      "comparison_schema": [
+        "comparison",
+        "chapter",
+        "metric",
+        "grp",
+        "expected",
+        "observed",
+        "absolute_difference",
+        "tolerance",
+        "passed"
+      ],
+      "chapter_range": [
+        1,
+        4
+      ],
+      "runner": "chapter_companions/Part_I/companion/run.py"
+    },
+    "II": {
+      "comparisons": 1720,
+      "failures": 0,
+      "comparisons_by_chapter": {
+        "CH05": 270,
+        "CH06": 460,
+        "CH07": 580,
+        "CH08": 410
+      },
+      "metrics": {
+        "python": {
+          "rows": 172,
+          "sha256": "a0b53d63478c361d94a3c468964c1d94c29711bddf4decedf28d466c4ece5361",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "r": {
+          "rows": 172,
+          "sha256": "5da1d6a3f5760b688d36521a53834f16baf9adc99f05ba165dbc4dfa2a4fd76c",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "duckdb": {
+          "rows": 172,
+          "sha256": "e7f4a1c04fd4e75be6ce9b5f36f404863eaeb74bee5861b09d904569e2ce382c",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "stata": {
+          "rows": 172,
+          "sha256": "ef396db0e81ffd898b30fa6ae6d01e15a120e112f5686891c944a7995c1d313d",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "archived_licensed_evidence"
+        }
+      },
+      "comparison_schema": [
+        "comparison",
+        "chapter",
+        "metric",
+        "key",
+        "expected",
+        "observed",
+        "difference",
+        "tolerance",
+        "passed"
+      ],
+      "chapter_range": [
+        5,
+        8
+      ],
+      "runner": "chapter_companions/Part_II/companion/run.py"
+    },
+    "III": {
+      "comparisons": 6870,
+      "failures": 0,
+      "comparisons_by_chapter": {
+        "CH09": 345,
+        "CH10": 100,
+        "CH11": 6190,
+        "CH12": 235
+      },
+      "metrics": {
+        "python": {
+          "rows": 215,
+          "sha256": "81d8310a379a75c1fb165e92771e6625b158ac02ce510343c281d37dfdd6dd4c",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "r": {
+          "rows": 215,
+          "sha256": "8edc55c890cdd4655d2ca13203d5ca1746bf7db9cb492d52a0ff33b26a4094ff",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "duckdb": {
+          "rows": 215,
+          "sha256": "15a6e84b91efdc505faa944915c610fcc47d25bb78729616b2abeef79d42da16",
+          "byte_identical": false,
+          "max_same_engine_difference": "5E-16",
+          "status": "executed"
+        },
+        "stata": {
+          "rows": 215,
+          "sha256": "313bac0238d9e6f9eb1e8f5ffccb7a5450a683e885c31b9b9501af156e26ba08",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "archived_licensed_evidence"
+        }
+      },
+      "comparison_schema": [
+        "group",
+        "engine",
+        "key",
+        "observed",
+        "reference",
+        "abs_error"
+      ],
+      "chapter_range": [
+        9,
+        12
+      ],
+      "runner": "chapter_companions/Part_III/companion/run.py"
+    },
+    "IV": {
+      "comparisons": 8232,
+      "failures": 0,
+      "comparisons_by_chapter": {
+        "CH13": 712,
+        "CH14": 5620,
+        "CH15": 1458,
+        "CH16": 442
+      },
+      "metrics": {
+        "python": {
+          "rows": 2813,
+          "sha256": "4b2085d4777c01b31429d3f4cdae8e54b0a63d2336ee75a0580ac80edb72e2c5",
+          "byte_identical": false,
+          "max_same_engine_difference": "1E-10",
+          "status": "executed"
+        },
+        "r": {
+          "rows": 2813,
+          "sha256": "5a274655711d536db58971d4d3ae33e710d4c974584ce62c2464cd154a170a00",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "duckdb": {
+          "rows": 2584,
+          "sha256": "1e01088072c8d469b295ef04c1e51d2b8da1a247e20c088d2976913fed66c328",
+          "byte_identical": false,
+          "max_same_engine_difference": "1.4E-10",
+          "status": "executed"
+        },
+        "stata": {
+          "rows": 2813,
+          "sha256": "48de4ceaab76025d9cd4d75d858b24faa176ae7f88e37bcdfb288da208ed9404",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "archived_licensed_evidence"
+        }
+      },
+      "comparison_schema": [
+        "engine",
+        "chapter",
+        "model",
+        "quantity",
+        "key",
+        "value",
+        "python",
+        "abs_error",
+        "tolerance",
+        "passed"
+      ],
+      "chapter_range": [
+        13,
+        16
+      ],
+      "runner": "chapter_companions/Part_IV/companion/verify.py"
+    },
+    "V": {
+      "comparisons": 9514,
+      "failures": 0,
+      "comparisons_by_chapter": {
+        "CH17": 1325,
+        "CH18": 2133,
+        "CH19": 1220,
+        "CH20": 4836
+      },
+      "metrics": {
+        "python": {
+          "rows": 3376,
+          "sha256": "9b31c9b74bf7f3e7b7bc929ec51eb7db266b1dcadfa195f077982249c378dd77",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "r": {
+          "rows": 3376,
+          "sha256": "b16b481b71c9bb642c1ad6966f707154eed8e0ea4b10e44f4279ea7159e833d0",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "duckdb": {
+          "rows": 2736,
+          "sha256": "fed9962bccc5efa3850d81beb1bb1730371877dd44025b4e9afac7acc207bab8",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "stata": {
+          "rows": 3376,
+          "sha256": "0a240ffc6c6e49d00276c96442cc05aa61e82899bb10f59c13cf379c195ceb10",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "archived_licensed_evidence"
+        }
+      },
+      "comparison_schema": [
+        "engine",
+        "chapter",
+        "model",
+        "quantity",
+        "key",
+        "value",
+        "python",
+        "abs_error",
+        "tolerance",
+        "passed"
+      ],
+      "chapter_range": [
+        17,
+        20
+      ],
+      "runner": "chapter_companions/Part_V/companion/verify.py"
+    },
+    "VI": {
+      "comparisons": 15687,
+      "failures": 0,
+      "comparisons_by_chapter": {
+        "CH21": 1894,
+        "CH22": 2853,
+        "CH23": 2921,
+        "CH24": 8019
+      },
+      "metrics": {
+        "python": {
+          "rows": 5756,
+          "sha256": "2398159e57f78b1d0c079f097a0f07cd77aa1bfc3a9e4e6265192cf391034933",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "r": {
+          "rows": 5756,
+          "sha256": "8dd396bbde9d3bccfbee05a6991116be6293ee8d0f7cb868b40cdbb28e35bb5c",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "duckdb": {
+          "rows": 4137,
+          "sha256": "b8bdc0cf7962912cd3ba38e5ea56cca5c973774dfdd561ab4a25115db4a88925",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "stata": {
+          "rows": 5756,
+          "sha256": "cdf103fe02b91f657c03cafb2c2d2cdd40a1224343cc843b0be91a2677409263",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "archived_licensed_evidence"
+        }
+      },
+      "comparison_schema": [
+        "engine",
+        "chapter",
+        "model",
+        "quantity",
+        "key",
+        "value",
+        "python",
+        "abs_error",
+        "tolerance",
+        "passed"
+      ],
+      "chapter_range": [
+        21,
+        24
+      ],
+      "runner": "chapter_companions/Part_VI/companion/verify.py"
+    },
+    "VII": {
+      "comparisons": 12149,
+      "failures": 0,
+      "comparisons_by_chapter": {
+        "CH25": 4148,
+        "CH26": 1369,
+        "CH27": 333,
+        "CH28": 6299
+      },
+      "metrics": {
+        "python": {
+          "rows": 5042,
+          "sha256": "9a1d0c847c85fccfc4aec77d860cefe9d266a889f90b80dafe4103bfb97cd62a",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "r": {
+          "rows": 5042,
+          "sha256": "332f9d2f7c90ad9532fb5f23a8d69e379097d3c08f5f46bc9f9eb794a2f980bd",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "duckdb": {
+          "rows": 2045,
+          "sha256": "a2981e6cf53e11f42c6c39023aa2c95414cea107b9f7998aaefd1643dc247791",
+          "byte_identical": false,
+          "max_same_engine_difference": "4E-14",
+          "status": "executed"
+        },
+        "stata": {
+          "rows": 5042,
+          "sha256": "a18e8304e6d5d8e8c164d5a6e7da5c486660cde8c7952b38bc3823e26f310835",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "archived_licensed_evidence"
+        }
+      },
+      "comparison_schema": [
+        "engine",
+        "chapter",
+        "model",
+        "quantity",
+        "key",
+        "value",
+        "python",
+        "abs_error",
+        "tolerance",
+        "passed"
+      ],
+      "chapter_range": [
+        25,
+        28
+      ],
+      "runner": "chapter_companions/Part_VII/companion/verify.py"
+    },
+    "VIII": {
+      "comparisons": 7074,
+      "failures": 0,
+      "comparisons_by_chapter": {
+        "CH29": 1320,
+        "CH30": 272,
+        "CH31": 2965,
+        "CH32": 2517
+      },
+      "metrics": {
+        "python": {
+          "rows": 2502,
+          "sha256": "5bcb989e656e772e22999e7e190a728af973b9a9d762a19004055d4bef535657",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "r": {
+          "rows": 2502,
+          "sha256": "54f1556445232a17b8875e59ba00b0b731de3c9c710e38a5e3a8f2663b643fa5",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "duckdb": {
+          "rows": 2050,
+          "sha256": "edf3df928b10e07ffbda634c27afbe369b4ac161728b7dc778903b3ec8cec603",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "stata": {
+          "rows": 2502,
+          "sha256": "e75b90ea6ff42f7bb3a7ebdcc0876417ac072b21f622f42236220437d5761572",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "archived_licensed_evidence"
+        }
+      },
+      "comparison_schema": [
+        "engine",
+        "chapter",
+        "model",
+        "quantity",
+        "key",
+        "value",
+        "python",
+        "abs_error",
+        "tolerance",
+        "passed"
+      ],
+      "chapter_range": [
+        29,
+        32
+      ],
+      "runner": "chapter_companions/Part_VIII/companion/verify.py"
+    },
+    "IX": {
+      "comparisons": 20215,
+      "failures": 0,
+      "comparisons_by_chapter": {
+        "CH33": 2537,
+        "CH34": 15854,
+        "CH35": 1282,
+        "CH36": 542
+      },
+      "metrics": {
+        "python": {
+          "rows": 6739,
+          "sha256": "db1d076e01b852324889cc731f4e899821bfb5b6ed30803478167e38c4f11c27",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "r": {
+          "rows": 6739,
+          "sha256": "60e29c7038e04263bae7e2f9ec603d746a2044252f3bd19b5fda3eab343d7840",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "duckdb": {
+          "rows": 6717,
+          "sha256": "875509ee539290aa94c77dd060bf91ebbd9b2835f79d51c5f865e8e3f8607a24",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "executed"
+        },
+        "stata": {
+          "rows": 6739,
+          "sha256": "4b0944b04aae475803151c8d4ee6f0de165cfd9e958a6c33838407e763041840",
+          "byte_identical": true,
+          "max_same_engine_difference": "0",
+          "status": "archived_licensed_evidence"
+        }
+      },
+      "comparison_schema": [
+        "engine",
+        "chapter",
+        "model",
+        "quantity",
+        "key",
+        "value",
+        "python",
+        "abs_error",
+        "tolerance",
+        "passed"
+      ],
+      "chapter_range": [
+        33,
+        36
+      ],
+      "runner": "chapter_companions/Part_IX/companion/verify.py"
+    },
+    "X": {
+      "pilot_reference": 364,
+      "pilot_pairwise": 510,
+      "pilot_stable_files": 15,
+      "reporting_values": [
+        80.0,
+        81.43
+      ],
+      "reporting_seeded_overwrite_rejected": true,
+      "disclosure_seeded_faults_rejected": 2,
+      "disclosure_public_files": 6,
+      "capstone_corrected_fields": 24,
+      "capstone_replay_comparisons": 20215,
+      "source_tags": {
+        "pilot": {
+          "tag": "stage3-part-x-pilot-v1",
+          "commit": "c65e792cab05652fdc29bc41a4f9f734da233e86",
+          "bundle_sha256": "ee84536fc69aa4d1cb7b0ab7c84bfa256bd758fcc7585f499ef0885b3dc2a544"
+        },
+        "capstone": {
+          "tag": "stage3-part-x-capstone-v1",
+          "commit": "2ae71f2d661b795d883ff9b1362a3c23f703972e",
+          "bundle_sha256": "ceb5b5b859c0d3f3f8f7d46c1800d1bda132b63ad4b1413b7c117022a8d0bf43"
+        }
+      },
+      "document_examples": {
+        "notebook_code_cells": 1,
+        "r_markdown_code_chunks": 1,
+        "quarto_python_listings": 1
+      }
+    }
+  },
+  "fresh_engines": [
+    "Python",
+    "R",
+    "DuckDB"
+  ],
+  "stata_scope": "Original licensed Stata evidence validated against the matching inputs and driver",
+  "frozen_tables": 94,
+  "coverage": {
+    "chapters": 40,
+    "listings": 79,
+    "listing_forms": {
+      "Standalone command": 4,
+      "Contextual excerpt": 72,
+      "Complete script with declared input": 3
+    }
+  },
+  "output_schema": {
+    "validated_csvs": 53,
+    "validated_rows": 125978,
+    "rows_by_file": {
+      "Part_I/python.csv": 91,
+      "Part_I/r.csv": 91,
+      "Part_I/duckdb.csv": 91,
+      "Part_I/stata.csv": 91,
+      "Part_II/python.csv": 172,
+      "Part_II/r.csv": 172,
+      "Part_II/duckdb.csv": 172,
+      "Part_II/stata.csv": 172,
+      "Part_III/python/metrics.csv": 215,
+      "Part_III/r/metrics.csv": 215,
+      "Part_III/duckdb/metrics.csv": 215,
+      "Part_III/stata/metrics.csv": 215,
+      "Part_IV/python/metrics.csv": 2813,
+      "Part_IV/r/metrics.csv": 2813,
+      "Part_IV/duckdb/metrics.csv": 2584,
+      "Part_IV/stata/metrics.csv": 2813,
+      "Part_V/python/metrics.csv": 3376,
+      "Part_V/r/metrics.csv": 3376,
+      "Part_V/duckdb/metrics.csv": 2736,
+      "Part_V/stata/metrics.csv": 3376,
+      "Part_VI/python/metrics.csv": 5756,
+      "Part_VI/r/metrics.csv": 5756,
+      "Part_VI/duckdb/metrics.csv": 4137,
+      "Part_VI/stata/metrics.csv": 5756,
+      "Part_VII/python/metrics.csv": 5042,
+      "Part_VII/r/metrics.csv": 5042,
+      "Part_VII/duckdb/metrics.csv": 2045,
+      "Part_VII/stata/metrics.csv": 5042,
+      "Part_VIII/python/metrics.csv": 2502,
+      "Part_VIII/r/metrics.csv": 2502,
+      "Part_VIII/duckdb/metrics.csv": 2050,
+      "Part_VIII/stata/metrics.csv": 2502,
+      "Part_IX/python/metrics.csv": 6739,
+      "Part_IX/r/metrics.csv": 6739,
+      "Part_IX/duckdb/metrics.csv": 6717,
+      "Part_IX/stata/metrics.csv": 6739,
+      "Part_III/python/fixed.csv": 256,
+      "Part_III/r/fixed.csv": 256,
+      "Part_III/duckdb/fixed.csv": 256,
+      "Part_III/stata/fixed.csv": 256,
+      "Part_III/python/simulation.csv": 8000,
+      "Part_III/r/simulation.csv": 8000,
+      "Part_III/stata/simulation.csv": 8000,
+      "Part_VII/ensemble_tuning.csv": 32,
+      "pilot_licensed/duckdb/analytical.csv": 12,
+      "pilot_licensed/duckdb/sample_audit.csv": 16,
+      "pilot_licensed/python/coefficients.csv": 4,
+      "pilot_licensed/r/coefficients.csv": 4,
+      "pilot_licensed/stata/coefficients.csv": 4,
+      "reporting/figure_data.csv": 2,
+      "disclosure/public_domains.csv": 4,
+      "capstone_report/panel_results.csv": 4,
+      "ch07_sqlite/analytical_invoices.csv": 7
+    }
+  },
+  "primary_comparisons_parts_I_to_IX": 81910
+}

@@ -1,0 +1,451 @@
+{
+  "status": "PASSED",
+  "numeric_anchors": 49,
+  "selected_worked_answers": 80,
+  "sample_exam_answers": 5,
+  "derivation_review": "AI-assisted reading of the 80 selected solutions and five examination answers",
+  "scope": "These numerical checks supplement the 90 independent formula anchors in the full computational audit. They do not certify worked answers for all 892 exercises.",
+  "checks": [
+    {
+      "chapter": 1,
+      "item": "P001 yield",
+      "calculated": 1190.0,
+      "expected": 1190.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 1,
+      "item": "P002 yield",
+      "calculated": 1210.0,
+      "expected": 1210.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 1,
+      "item": "Equal plot mean",
+      "calculated": 1200.0,
+      "expected": 1200.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 2,
+      "item": "Net channel total",
+      "calculated": 545000.0,
+      "expected": 545000.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 3,
+      "item": "binary32 consecutive integer boundary",
+      "calculated": 2.0,
+      "expected": 2.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 3,
+      "item": "binary64 consecutive integer boundary",
+      "calculated": 2.0,
+      "expected": 2.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 4,
+      "item": "Overall completion",
+      "calculated": 0.5,
+      "expected": 0.5,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 4,
+      "item": "Observed arm contrast",
+      "calculated": 0.5,
+      "expected": 0.5,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 5,
+      "item": "Pagination ceiling",
+      "calculated": 6.0,
+      "expected": 6.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 6,
+      "item": "Rounded converted invoice",
+      "calculated": 3938.0,
+      "expected": 3938.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 9,
+      "item": "Empirical variance",
+      "calculated": 1.4710743801652897,
+      "expected": 1.4710743801652892,
+      "absolute_error": 4.440892098500626e-16,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 9,
+      "item": "Sample variance",
+      "calculated": 1.6181818181818186,
+      "expected": 1.6181818181818182,
+      "absolute_error": 4.440892098500626e-16,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 10,
+      "item": "Irrigated relative frequencies",
+      "calculated": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 10,
+      "item": "Rainfed relative frequencies",
+      "calculated": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 12,
+      "item": "Combined survey mean",
+      "calculated": 55.552734375,
+      "expected": 55.552734375,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 13,
+      "item": "Intercept from original plots",
+      "calculated": 1200.0000000000002,
+      "expected": 1200.0,
+      "absolute_error": 2.2737367544323206e-13,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 13,
+      "item": "Slope from original plots",
+      "calculated": 79.9999999999998,
+      "expected": 80.0,
+      "absolute_error": 1.9895196601282805e-13,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 13,
+      "item": "RSS from original plots",
+      "calculated": 6950.0,
+      "expected": 6950.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 13,
+      "item": "R squared identity",
+      "calculated": 0.9699069062567656,
+      "expected": 0.9699069062567656,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 14,
+      "item": "Contact odds ratio from display",
+      "calculated": 1.3964034962426308,
+      "expected": 1.3964,
+      "absolute_error": 3.4962426307405536e-06,
+      "tolerance": 5e-05,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 14,
+      "item": "Rural odds ratio from display",
+      "calculated": 0.6251897970911003,
+      "expected": 0.6252,
+      "absolute_error": 1.0202908899636931e-05,
+      "tolerance": 5e-05,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 15,
+      "item": "C001 shared predictor",
+      "calculated": 1.09214,
+      "expected": 1.09214,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 15,
+      "item": "C001 censoring probability",
+      "calculated": 0.18138049291993058,
+      "expected": 0.18138049291993058,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 15,
+      "item": "C001 likelihood contribution",
+      "calculated": -1.707158283357352,
+      "expected": -1.7071582833573524,
+      "absolute_error": 4.440892098500626e-16,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 16,
+      "item": "balanced ICC",
+      "calculated": 0.9113494686037776,
+      "expected": 0.9113,
+      "absolute_error": 4.9468603777635956e-05,
+      "tolerance": 5e-05,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 16,
+      "item": "unbalanced ICC",
+      "calculated": 0.9133681603031284,
+      "expected": 0.9134,
+      "absolute_error": 3.1839696871593937e-05,
+      "tolerance": 5e-05,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 18,
+      "item": "Size weighted event zero",
+      "calculated": 2.573333333333333,
+      "expected": 2.5733333333333333,
+      "absolute_error": 4.440892098500626e-16,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 19,
+      "item": "strong IV ratio",
+      "calculated": 2.810219084809368,
+      "expected": 2.810219084809646,
+      "absolute_error": 2.779998453661392e-13,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 19,
+      "item": "weak IV ratio",
+      "calculated": 3.2709456603085485,
+      "expected": 3.270945660309987,
+      "absolute_error": 1.4384049507043528e-12,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 19,
+      "item": "Fuzzy RD ratio bandwidth 125",
+      "calculated": 4.265004181390278,
+      "expected": 4.265004181390278,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 19,
+      "item": "Fuzzy RD ratio bandwidth 250",
+      "calculated": 4.751713596899672,
+      "expected": 4.751713596899672,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 19,
+      "item": "Fuzzy RD ratio bandwidth 375",
+      "calculated": 4.665602489055619,
+      "expected": 4.665602489055619,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 27,
+      "item": "ECE with unrounded occupied bins",
+      "calculated": 0.017083257839182752,
+      "expected": 0.017083257839182752,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 32,
+      "item": "gps planted area ratio",
+      "calculated": 1635.802252881584,
+      "expected": 1635.802252881584,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 32,
+      "item": "reported planted area ratio",
+      "calculated": 1543.784431829961,
+      "expected": 1543.784431829961,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 32,
+      "item": "Constant harvest numerator",
+      "calculated": 218003.74756533845,
+      "expected": 218003.74756533845,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 32,
+      "item": "Area definition yield difference",
+      "calculated": 92.01782105162306,
+      "expected": 92.01782105162302,
+      "absolute_error": 4.263256414560601e-14,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 33,
+      "item": "Planning MDE with rho 0.20",
+      "calculated": 3.169631849279477,
+      "expected": 3.17,
+      "absolute_error": 0.00036815072052309716,
+      "tolerance": 0.005,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 35,
+      "item": "Ten percent log income change",
+      "calculated": 0.09531017980432493,
+      "expected": 0.09531017980432493,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 37,
+      "item": "Slope from paired pilot",
+      "calculated": 79.9999999999998,
+      "expected": 80.0,
+      "absolute_error": 1.9895196601282805e-13,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 38,
+      "item": "Single outcome slope update",
+      "calculated": -0.14285714285693984,
+      "expected": -0.14285714285714285,
+      "absolute_error": 2.0300428005270987e-13,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": 39,
+      "item": "Complementary table disclosure",
+      "calculated": 4.0,
+      "expected": 4.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": "Exam 1",
+      "item": "Net revenue overstatement",
+      "calculated": 145000.0,
+      "expected": 145000.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": "Exam 1",
+      "item": "Overstatement percent",
+      "calculated": 26.605504587155963,
+      "expected": 26.60550458715596,
+      "absolute_error": 3.552713678800501e-15,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": "Exam 3",
+      "item": "Observed cohort response",
+      "calculated": 831.0,
+      "expected": 831.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASSED"
+    },
+    {
+      "chapter": "Exam 3",
+      "item": "Paired effect display",
+      "calculated": 4.248872614440513,
+      "expected": 4.25,
+      "absolute_error": 0.001127385559486882,
+      "tolerance": 0.005,
+      "status": "PASSED"
+    },
+    {
+      "chapter": "Exam 3",
+      "item": "Lower completion bound",
+      "calculated": -9.54635625,
+      "expected": -9.55,
+      "absolute_error": 0.0036437500000001677,
+      "tolerance": 0.005,
+      "status": "PASSED"
+    },
+    {
+      "chapter": "Exam 3",
+      "item": "Upper completion bound",
+      "calculated": 17.32864375,
+      "expected": 17.33,
+      "absolute_error": 0.0013562499999970612,
+      "tolerance": 0.005,
+      "status": "PASSED"
+    },
+    {
+      "chapter": "Exam 3",
+      "item": "Adverse six point departure",
+      "calculated": 2.6363726144405133,
+      "expected": 2.64,
+      "absolute_error": 0.0036273855594868287,
+      "tolerance": 0.005,
+      "status": "PASSED"
+    }
+  ]
+}

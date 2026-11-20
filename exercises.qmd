@@ -1,0 +1,1857 @@
+---
+title: "Chapter exercises"
+---
+
+All 892 questions from the forty chapters are reproduced below. Use the chapter explanation and the versioned teaching files when completing a task.
+
+## Chapter 1 Statistical Programming, Data Science, and the Reproducibility Imperative {#chapter-1}
+
+
+Chapter 1 exercises
+
+### Conceptual questions
+
+1. Classify the claims *four plots were excluded*, *two engines agreed*, *the coefficient survived a restriction*, *sessions increased yield*, and *the association recurred in a new survey*. Name the evidence required for each.
+2. Explain how a duplicate plot attribute row can change the fitted result even when the season table is unchanged.
+3. Explain why plot-season is the unit of analysis and when it would be appropriate to cluster uncertainty by plot.
+4. Give a reproducibility statement with enough information to locate the data, estimator, checks and open items.
+5. Map the canonical CSV and exclusion ledger to their FERAF stage and identify the review that depends on each.
+6. Explain how two engines can return identical coefficients from a scientifically defective input.
+7. Describe a change in sample definition that alters the target even when the fitted slope remains stable.
+8. Distinguish the evidence for a repeated execution, a sensitivity analysis and a new data study.
+9. Explain why a small confidence interval can accompany an estimate with weak causal identification.
+10. Describe one environmental difference that can change numerical serialization while leaving the statistical conclusion intact.
+
+### Programming exercises
+
+1. Compute SHA-256 hashes of the raw plot and season files. Compare them with the run manifest and save the result.
+2. Write a keyed join that fails when a plot attribute appears twice. Inject a duplicate and capture the resulting message.
+3. Export the ordered sample IDs and one primary exclusion reason per excluded plot-season. Compare with the retained ledger.
+4. In Python or R, calculate fitted yields by multiplying the declared design matrix by the fitted coefficient vector. Compare by plot-season key.
+5. Change the area divisor in a fresh copy. Implement a unit assertion based on P001 and report the first check that fails.
+
+### Statistical reasoning
+
+1. Compute hectares and kg/ha for P001 and P002. Calculate the mean of their yields.
+2. For the twelve eligible observations, compute $\bar x$, the centred predictor sum of squares and the centred cross-product. Reconstruct the slope.
+3. Using the paired deviations, calculate the residual sum of squares and residual degrees of freedom.
+4. Compute the ratio of the reported HC1 and classical slope standard errors. Interpret the difference in uncertainty units.
+5. If all outcome values are divided by ten, derive the corresponding changes to the intercept, slope, residual sum of squares and slope $t$ statistic.
+
+### Cross-platform replication exercises
+
+1. Reproduce the four-environment comparison on the original inputs using the retained Stata evidence or a fresh licensed run. Submit the ordered key list, slope, covariance method and a comparison row for each engine. Record the source of the Stata outputs.
+2. Restrict to zero through four sessions in two independent engines. Record the changed keys, estimand, slope and standard errors, and reconcile the result with the pair structure.
+
+### Applied assignment
+
+Prepare a one-page reproducibility audit and a separate machine-readable evidence folder. Audit the maize case for a colleague writing an agricultural advisory report. Provide the input version, eligible IDs, transformations, output checksum, comparable results and limitations. Explain the slope and standard-error behaviour under both the support restriction and the scale transformation. Include a short diagnosis of the shared area error and a proposal for an independently collected replication. Evaluate the final report against source integrity, computational agreement, interpretation and clarity of the execution record.
+
+### Recommended reading and resources
+
+Read the National Academies report for distinctions between reproducibility and replication [@nas2019] and the practical research workflow in Wilson et al. [-@wilson2017]. Use the Stage 2 release, its synthetic input codebook, comparison records and technical note as the computational companion. Chapter 13 explains the fitted model and covariance calculations in detail.
+
+## Chapter 2 The Integrated Python–R–Stata–SQL Research Ecosystem {#chapter-2}
+
+
+Chapter 2 exercises
+
+### Conceptual questions
+
+1. Allocate source validation, aggregation, model fitting and reporting across the available tools. Justify each boundary.
+2. Explain the deployment differences among DuckDB, PostgreSQL and SQLite for this research task.
+3. Explain what information a CSV file needs for a stable handoff to four runtimes.
+4. Explain when `count(*)` and `count(net_minor)` answer different questions.
+5. Describe the implications of exporting one row per channel before an invoice-level model is fitted.
+6. Give one example of interactive state that can alter the result in each statistical environment.
+7. Explain why a Stata do-file and a licensed run record contribute different evidence.
+8. Explain how the time scope changes when a benchmark starts with an already loaded data frame.
+9. Explain why monetary units and currency codes belong in the exchange contract.
+10. Describe one reason that a measured runtime ranking may change at a different input scale.
+
+### Programming exercises
+
+1. Run the SQL preparation script and export the canonical invoice table in key order. Record its row count and hash.
+2. Verify each input invoice identifier is present and unique. Add one duplicate to a copy and confirm that the guard fails.
+3. Read the typed table in Python and R. Export counts and totals keyed by channel.
+4. In a licensed Stata session, run the invoice calculation in a fresh session and save the version and output. If execution is unavailable, document the available evidence and the commands to run.
+5. Create a 70,000-row benchmark input and run both complete aggregation routes. Record the versions, timer scope and all measured durations.
+
+### Statistical reasoning
+
+1. Derive the net amount for each of the seven posted in-scope invoices and reconcile the grand total.
+2. Compute the average net amount for each channel. Recalculate the digital average after dropping the fully refunded invoice.
+3. Compute the digital share of total receipts and its share of posted invoices. Explain their difference.
+4. Calculate the absolute and percentage changes to the agent total if I003 were mistakenly treated as posted.
+5. Compute the scaled counts and totals after 10,000 copies. Compare the grand total with the signed 32-bit integer limit and the binary64 exact integer range.
+
+### Cross-platform replication exercises
+
+1. Compare the DuckDB, Python, R and Stata group summaries. Submit a keyed equality table for counts and currency minor units. Deliberately change one filter and locate the first mismatch.
+2. Construct one query route and one statistical-runtime route on the same benchmark file. Submit equivalent output and describe how an interactive-state change would invalidate the comparison.
+
+### Applied assignment
+
+Prepare a tool decision record for a research team monitoring quarterly receipts from a shared ledger. Define the source, target grain, data access rules, sample filters, handoff and expected checks. Reconcile the event ledger to the invoice balances, show the expanded-join error, and state whether the reporting mean is invoice-weighted or channel-weighted. Provide independent entry points and a benchmark record. Justify the proposed arrangement using execution environment, data size, reliability, maintainability and licensing.
+
+### Recommended reading and resources
+
+Use the DuckDB, PostgreSQL and SQLite documentation for the analytical, server and embedded deployment models [@duckdbdocs; @postgres; @sqlite]. The companion provides the synthetic invoice input, typed export, executed comparisons, benchmark script and observed timing record.
+
+## Chapter 3 Statistical Computing Foundations and Cross-Language Equivalence {#chapter-3}
+
+
+Chapter 3 exercises
+
+### Conceptual questions
+
+1. Explain why an identifier that looks numeric may require a character field.
+2. Distinguish a categorical rank map from an assumption about distances between levels.
+3. Describe the difference between a missing measurement and a non-finite computed value.
+4. Explain how an R formula and a manually constructed Python design can produce different model matrices from the same data.
+5. Give a keyed example in which comparing positional predictions reports the wrong residuals.
+6. Explain why two estimates of coefficients can differ even when fitted values agree in a rank-deficient design.
+7. Describe the roles of absolute and relative allowance in Equation in Chapter 3.
+8. Explain why the same numeric seed is insufficient to establish pointwise equality across two generators.
+9. Explain why inspecting average error alone may hide a permutation of observations.
+10. Design separate checks for schema, exact analytical keys and floating-point results.
+
+### Programming exercises
+
+1. Read the representation file with type inference and with a declared schema. Export a field-by-field comparison of types and two affected values.
+2. Generate a keyed manifest containing `row_id`, `unit_id`, rank and eligibility. Shuffle the source rows and compare by key.
+3. Preserve the original measurement tokens while converting finite values to a double column. Count each audit state.
+4. Apply Equation in Chapter 3 to two valid values, one material discrepancy and one pair containing a non-finite value. Record the disposition and reason.
+5. Implement the fixed-draw rule in two environments and identify the changed draw when the inequality is weak.
+
+### Statistical reasoning
+
+1. Compute $2^$ and $2^$ and describe the local spacing above each boundary in its respective binary representation.
+2. Recalculate the mean of the three usable observations after rounding r02 to binary32. Derive the change in the mean.
+3. Calculate the keyed residuals and the residual sum of squares for the three-row illustration. Repeat with a positional comparison.
+4. Compute the allowable difference for values 0 and $5\times10^$ under Equation in Chapter 3. Compare the result with a difference of $2\times10^$.
+5. In a simulation with 10,000 independent Bernoulli draws and an observed rate of 0.5, calculate the estimated Monte Carlo standard error and explain how it would enter a comparison.
+
+### Cross-platform replication exercises
+
+1. Reconcile the representation lab across DuckDB, Python, R and Stata. Compare the exact IDs, ranks and value states, then compare the usable-value mean. Cite the runtime and source for each result.
+2. Apply the strict and weak threshold rules to the supplied draw IDs in two environments. Submit a pointwise result and explain why a fresh draw generator requires a different comparison.
+
+### Applied assignment
+
+Design a representation audit for a survey, finance or agricultural dataset with identifiers, ordered categories and unavailable measurements. Provide a schema, three deliberate edge cases, exact and numerical comparison rules, and reproducible outputs from at least two independently executed environments. Include one change of coefficient basis and show how to compare an invariant fitted vector or contrast. Use the Part I file as a benchmark, then explain which rules would have to change for the intended field measurements.
+
+### Recommended reading and resources
+
+Review the binary floating-point discussion in the Python documentation [@pyfloat], the numerical analysis treatment in Higham [-@higham2002], and the Stata documentation on numeric missing values [@statamissing]. The companion includes the original tokens, the canonical audit and the executed comparisons.
+
+## Chapter 4 From Research Questions to Executable Statistical Specifications {#chapter-4}
+
+
+Chapter 4 exercises
+
+### Conceptual questions
+
+1. State the unit, population, timing and outcome for a descriptive coverage claim.
+2. Distinguish an estimand, estimator and estimate in the reminder example.
+3. Identify the evidence needed for a causal interpretation of the offer contrast.
+4. Explain which arrow in Figure in Chapter 4 changes under simple randomisation.
+5. Trace how conditioning on opening can affect a total offer-effect analysis.
+6. Explain why an outcome missing after assignment affects interpretation of a complete-case difference.
+7. Describe a leakage-free forecast protocol for predicting coverage before the offer.
+8. Explain why adjustment and standardisation require a declared target population.
+9. Describe how clustering by service centre affects uncertainty when centres were randomised.
+10. Give an example of an implementation deviation and an estimand deviation. Describe the evidence needed for each.
+
+### Programming exercises
+
+1. Implement the sample and primary-reason rules. Export the keyed audit and reconcile all exclusions.
+2. Compute the group rates in Python or R and verify the reported crude contrast by fitting a model with an intercept and offer.
+3. Add externally supplied risk weights and compute the corresponding standardised contrast. Check missing strata and the weight sum.
+4. Score the frozen prediction rule and the constant rule by episode. Reconcile the total squared errors and report their means.
+5. Create a fresh output directory for a documented change to the missing-outcome rule. Export the original and revised estimates with a deviation record.
+
+### Statistical reasoning
+
+1. Derive coverage, group rates and the crude difference from the eight complete rows.
+2. Compute the within-risk differences and the standardised result with equal weights. Describe the result under alternative weights in this fixture.
+3. Reconstruct the Brier scores from the individual squared errors.
+4. Calculate the crude contrast under both extreme completions of the missing offered outcome. State the assumed denominator.
+5. Calculate the independent-groups standard error of the complete-case difference using sample variances and group sizes. Discuss whether a small synthetic fixture supports a policy inference.
+
+### Cross-platform replication exercises
+
+1. Compare sample IDs, crude and standardised rates in two statistical runtimes and DuckDB. Record the available Stata evidence and each accepted tolerance.
+2. Change the missing-outcome decision in two implementations. Reconcile the new sample and values, then describe whether and how the research claim changes.
+
+### Applied assignment
+
+Write a pre-analysis specification for a service coverage question of your choice. Produce one descriptive target, one prediction target and one causal target. Include a causal diagram, decision timing, outcome, eligibility rules, key and sample audit, proposed estimator and covariance, validation criteria and a plan for deviations. Implement a small synthetic version, reconcile two independent calculations, and explain how missing outcomes and target weights affect the reported contrast. For the prediction question, show what a direct score and a group calibration check each reveal.
+
+### Recommended reading and resources
+
+Read Hernán and Robins for potential outcomes, identification and causal diagrams [@hernan2020], and Shmueli for distinctions among predictive, descriptive and explanatory tasks [@shmueli2010]. The companion provides the synthetic episode ledger, eligibility audit, executed results and cross-environment checks.
+
+## Chapter 5 Data Acquisition, Importation, and Interoperability {#chapter-5}
+
+
+Chapter 5 exercises
+
+### Conceptual questions
+
+1. Explain why a byte digest and a source citation answer different questions about an input.
+2. Define the grain of the service-index extract and explain why the identifier type matters to it.
+3. Explain how a successful HTTP response can still yield an incomplete analytical file.
+4. Distinguish a calendar date from a timestamp used to assign a local reporting date.
+5. Explain how a valid observed zero, an allowed null token, and a parse failure should enter an audit.
+6. Describe the difference between a typed Parquet schema and a data dictionary.
+7. Explain how a spreadsheet format can hide the stored representation of an identifier.
+8. Give a reason to preserve the original JSON envelope after extracting its rows.
+9. State which claims a round-trip comparison can support and which require an independent reference.
+10. Explain how a revision appearing between page requests can affect a count or total.
+
+### Programming exercises
+
+1. Write a manifest for the two saved response pages. Verify each digest and the declared revision.
+2. Import the landing CSV with an explicit text identifier. Produce a separate table for allowed missing values and any invalid tokens.
+3. Inject a duplicate page into a copy of the acquisition. Capture the diagnostic and repair the sequence.
+4. Export and reopen the typed table. Check its column types, ordered keys, null state, and two calendar dates.
+5. Force a numeric identifier cast. Write a JSON comparison that records the expected type, observed type, and colliding source IDs.
+
+### Statistical reasoning
+
+1. Calculate the page count and final-page size for 109 rows at 20 rows per page.
+2. Convert `1.234,50` and `99,95` to integer hundredths and calculate their combined value in index points.
+3. Compute the observed-value mean for the six-row fixture. Recompute it after treating the missing row as zero and describe the denominator change.
+4. Compute the relative loss of distinct identifiers after coercion and identify the source records involved.
+5. Suppose the raw index `4,25` is read as 425 index points. Calculate the resulting error in the reported total measured in index points.
+
+### Cross-platform replication exercises
+
+1. Compare the date, label, missingness, and value records for every identifier in two independent importers. Submit the exact identities and discrepancies before comparing totals.
+2. Use DuckDB to round-trip the Parquet and CSV outputs. Reopen the CSV in a statistical runtime with the supplied schema and compare the same five fields.
+
+### Applied assignment
+
+Design an acquisition and interchange package for a public indicator or a clearly labelled synthetic service register. Declare the provider, requested geography and time, exact schema, null semantics, key, and applicable reuse terms. Capture an immutable snapshot or an offline replay and produce two exchange formats. Inject one pagination fault and one type fault, keep both diagnostic records, and submit a fresh corrected result with hashes and a keyed comparison. Explain one version change that would require regeneration of a downstream table.
+
+### Recommended reading and resources
+
+Use the World Bank API basic call guide for a documented public service and the Apache Parquet documentation for file and logical type conventions [@wbapi; @parquet]. The companion supplies the acquisition records, schema sidecar, raw responses, round-trip files, and reference ledger.
+
+## Chapter 6 Data Cleaning, Transformation, and Feature Construction {#chapter-6}
+
+
+Chapter 6 exercises
+
+### Conceptual questions
+
+1. Distinguish a correction, a quality flag, quarantine, and a scope exclusion using the invoice case.
+2. Explain why a missing unit price and an observed zero require different dispositions.
+3. Define the candidate and analytical grains in the exchange-rate join.
+4. Explain why a same-day rate is selected under the declared inequality.
+5. Give an example of an effective date that precedes the date on which a value becomes available.
+6. Explain why signed returns and absolute amounts should both appear in diagnostic summaries.
+7. Describe how a correctly flagged large invoice can affect a sensitivity result.
+8. Explain why an exact net total can conceal equal and opposite rounding errors.
+9. Distinguish deterministic feature construction from learned preprocessing.
+10. Explain how a data split can preserve time order while still leaking group information.
+
+### Programming exercises
+
+1. Implement the priority ledger and verify one disposition per source invoice.
+2. Insert a duplicate currency–date rate and show the first check that rejects it.
+3. Select rates for an invoice dated one day before, on, and one day after a rate change.
+4. Fit the scale on the training keys and apply the saved parameters to the holdout keys.
+5. Produce a discrepancy record comparing the currency-only join with the date-aware join.
+
+### Statistical reasoning
+
+1. Convert a three-unit posting priced at 105 US cents per unit using the January rate. Apply the invoice-level rule.
+2. Calculate the overstatement in row count produced by a currency-only join and express it as a percentage of the original rows.
+3. Verify the retained positive postings, return subtotal, and net in Table 6.2. Report the change if I07 is excluded.
+4. Calculate the training sample standard deviation with denominator $n_T-1$. Compare the resulting F04 score with the declared score.
+5. Compute the difference in F05’s transformed value across the two columns of Table 6.3 and explain the cause.
+
+### Cross-platform replication exercises
+
+1. Produce one keyed amount and one disposition per invoice using two independently executed environments. Reconcile the date boundary, rounding tie, and observed zero.
+2. Compare training centres, spreads, and holdout values across two engines. Introduce the full-sample fit and record the first changed input to the scoring step.
+
+### Applied assignment
+
+Prepare a harmonisation and feature memo for an invoice or similarly structured administrative dataset. Define the analytical unit, quantity and unit-price domains, recognition date, unit conversion, missing-value policy, and exclusion priority. Submit a row-level reconciliation, two deliberately failed checks, and a corrected rerun. Define a prediction use case and construct one deterministic and one learned feature under a declared time or group split. Include the fit keys and a comparison that exposes leakage.
+
+### Recommended reading and resources
+
+Read the scikit-learn guidance on consistent preprocessing and evaluation leakage [@skpitfalls]. Review the Part II companion for the dated candidate join, independent amounts, row dispositions, and numerical outputs. The next chapter develops the relational structure and window rules that govern these pipelines.
+
+## Chapter 7 SQL, Relational Data Modelling, and Analytical Data Pipelines {#chapter-7}
+
+
+Chapter 7 exercises
+
+### Conceptual questions
+
+1. Identify the primary key of each source and derived relation in Table 7.1.
+2. Explain why a valid source key may still have an invalid foreign key.
+3. Explain how invoice detail and customer history can multiply rows in a join.
+4. Describe the condition under which a left join preserves the left grain.
+5. Explain why the regional attribute in the report depends on the reference date.
+6. Describe how a second ordering variable resolves ties in a ranking.
+7. Distinguish a grouped sum from a window sum with the same partition keys.
+8. Explain how to interpret an absent cohort-month cell.
+9. Give a reason to compare a physical query plan with observed cardinalities.
+10. Explain how counting at the invoice level can misstate customer activity.
+
+### Programming exercises
+
+1. Assert the uniqueness of all source and derived keys and write the orphan lines to a keyed file.
+2. Build the current dimension with a cutoff and explicit tie breaker. Test the C01 and C03 cases.
+3. Calculate both running totals in Table 7.3 using the same data and two frames.
+4. Construct a month-by-cohort activity table and record the cohort denominator.
+5. Run both benchmark queries. Identify the portable query clauses and DuckDB-specific setup. Retain the input digest, plans, execution times, and equality check.
+
+### Statistical reasoning
+
+1. Use Equation in Chapter 7 and the row counts by customer to reproduce the 23-row raw-history join.
+2. Reconcile the 1,470 minor units in the raw-history join to the customer contributions and calculate the difference from 660.
+3. Recover the January and March totals from Table 7.4. Compute the share of January value attributed to Coastal.
+4. Recalculate the first two cumulative sums for C01 when T02 is ordered before T01. Identify the value both rows share in the date-peer frame.
+5. Recalculate the two cohort activity shares in February. Explain why the customer counts need different denominators.
+
+### Cross-platform replication exercises
+
+1. Construct the same monthly report independently in SQL and a statistical runtime. Compare the orphan ledger, selected dimension keys, seven retained invoices, and grouped totals.
+2. Reproduce the date-tie case in two environments. Submit the row and peer running totals and identify the difference at T01.
+
+### Applied assignment
+
+Build a version-aware relational view for a transaction, survey, or programme dataset with three linked relations. Draw the entity relationships and declare the source and analysis grains. Demonstrate a join that violates the intended cardinality, locate the first affected keys, and repair it. Include one period summary, one window calculation with tied order values, and an equivalent-query plan comparison on a frozen input. Submit the conservation identities and the complete keyed audit.
+
+### Recommended reading and resources
+
+Review DuckDB’s window and analysed-plan documentation for the behaviours used in this chapter [@duckwindows; @duckexplain]. The companion includes the original relational fixture, independent calculation scripts, customer selection and invoice ledgers, and the two full physical plans.
+
+## Chapter 8 Data Validation, Metadata, Provenance, and Research Data Governance {#chapter-8}
+
+
+Chapter 8 exercises
+
+### Conceptual questions
+
+1. Distinguish a data dictionary from a contract that also governs relationships and use.
+2. Explain why a household can be valid while a linked age record is quarantined.
+3. State the keys of the household, roster, and plot modules and explain the role of each.
+4. Explain why an orphan person cannot receive eligibility or weight from a valid household.
+5. Distinguish a known zero area from an unavailable area in a household summary.
+6. Explain how coding an unknown age as adult changes the target share.
+7. Describe what a file digest can verify and which provenance fields supply context.
+8. Explain how a direct person–plot join can change a weighted estimate through both duplication and loss.
+9. Describe an asset-level restriction that applies to a log or derived table.
+10. Explain how a corrected source should be linked to its predecessor and dependent outputs.
+
+### Programming exercises
+
+1. Implement and test uniqueness of household and composite person keys. Save the keys from the deliberate duplicate case.
+2. Locate the orphan person by anti-join and produce a one-record failure report.
+3. Write an age disposition ledger and reconcile all 13 roster rows by reason.
+4. Produce a household-level area table and attach it to the roster without increasing person rows.
+5. Build a manifest linking input hashes, code hashes, validation status, and output hashes for a corrected run.
+
+### Statistical reasoning
+
+1. Reconstruct the person reconciliation in Equation in Chapter 8 and the five retained plot areas.
+2. Compute the weighted numerator and known-age denominator directly from the supplied household weights and roster.
+3. Compute the known-age and all-retained denominators and explain the 3.66 percentage-point change under the stated classification.
+4. Derive the bounds in Equation in Chapter 8 and report their width in percentage points.
+5. Reproduce the 245 and 140 weight units after the direct join and attribute the changes to H01 and H03.
+
+### Cross-platform replication exercises
+
+1. Compare the rejected key and orphan counts in SQL and a statistical runtime. Rerun the corrected fixture and submit the identical retained keys and reason ledger.
+2. Reproduce the known-age share and the shifted person–plot share in two environments. Compare numerator, denominator, and membership before interpreting the ratio.
+
+### Applied assignment
+
+Prepare a reproducible validation and governance dossier for a multi-module household, business, or programme dataset. Define each grain, key, field domain, unit, null rule, and response to a failure. Submit a source and rights register, a relation diagram, an exact inclusion ledger, and an independently reproduced statistic with its numerator and denominator. Introduce one duplicate key and one orphan, show the recorded failures, and repeat the analysis after authorised correction. Describe one plausible restriction on distributing a linked output and how the companion can document the analysis.
+
+### Recommended reading and resources
+
+Read the W3C overview for provenance concepts and Wilkinson et al. for principles of research data stewardship [@w3cprov; @fair2016]. Use the companion’s source dictionary, release register, failure cases, validation output, and population ledgers as worked examples.
+
+## Chapter 9 Exploratory Data Analysis and Descriptive Statistical Computing {#chapter-9}
+
+
+Chapter 9 exercises
+
+### Conceptual questions
+
+1. Explain the population described by an equal-weight plot mean and the additional information needed for a hectare-weighted mean.
+2. Why does dividing a centred sum of squares by $n-1$ produce an unbiased estimator under independent sampling?
+3. Give a substantive interpretation of the raw MAD in the yield example. What changes when a normal-consistency constant is used?
+4. Describe how tied values can produce the same upper quartile under two different interpolation rules.
+5. Explain why a sample correlation is invariant to converting kilograms into tonnes while covariance is not.
+6. What evidence would support generalising a complete-case yield summary to the full plot register?
+7. Describe an operation that requires a positive semidefinite covariance matrix. Why can available-pair entries cause a failure?
+8. Explain how the between-regime contribution in Equation in Chapter 9 can exceed the within-regime contribution in magnitude.
+9. Identify a plausible confounder of the within-regime relationship and describe how it might affect the sign.
+10. Give two ways an analyst could retain the same number of plot records as a colleague and nevertheless analyse a different population.
+
+### Programming exercises
+
+1. Import the plot CSV in two environments with explicit identifier and numeric types. Export missingness flags and compare the exact plot IDs for each field.
+2. Implement type 7 and type 1 quantiles from sorted values. Include boundary tests at probabilities 0 and 1 and a constant vector.
+3. Generate a long table of available-pair and common-sample memberships. Assert uniqueness of the compound key before computing covariances.
+4. Add $10^9$ to every valid yield. Compare a raw-moment variance calculation with a centred variance calculation and report the numerical discrepancy.
+5. Rebuild the group fit from $S_$ and $S_$. Save the pair count, slope, and observed fertiliser range with each fit.
+
+### Statistical reasoning
+
+1. Derive the empirical variance and sample variance from the control totals 36 and 134. State the units of each.
+2. Recalculate the first quartile after appending a valid yield of 1.5 t/ha. Compare the two quantile rules.
+3. Replace 5.5 by 20 in the observed vector. Calculate the new mean, median, and raw MAD.
+4. From the given within- and between-regime cross-products, calculate the pooled sample covariance and slope. Explain the different denominators.
+5. Using the common-sample correlations in the full-precision ledger, compute the determinant of the correlation matrix. Repeat for available pairs and interpret what the result establishes for this dataset.
+
+### Cross-platform replication exercises
+
+1. Reproduce Tables 9.1–9.3 from the frozen CSV in DuckDB and a second environment. Compare exact keys first, then numeric values. Supply a minimal record that would diagnose an IQR mismatch.
+2. Reproduce the three fitted slopes in Python, R, and Stata. Document the paired sample for each fit and check the pooled cross-product against Equation in Chapter 9.
+
+### Applied assignment
+
+A district extension office wants to use plot monitoring records to prioritise a fertiliser advisory. Produce a two-page analytical brief and a runnable audit using the supplied data as a prototype. Specify the outcome and input units, publish the missingness and matched-sample profiles, report a robust and a moment-based description, and interpret the pooled and within-regime relationships. Propose what data or design would support a later estimate of the yield response to changing fertiliser intensity. Include an appendix with one reproducibility check and one sensitivity comparison.
+
+## Chapter 10 Statistical Graphics, Data Visualization, and Analytical Communication {#chapter-10}
+
+
+Chapter 10 exercises
+
+### Conceptual questions
+
+1. Explain why position on a common scale supports direct numerical comparison across panels.
+2. Give a question that is easier to answer from an empirical CDF than from a histogram.
+3. Explain the difference between count height and density height for unequal-width bins.
+4. Why do zero-count bin rows belong in a reusable figure dataset?
+5. Explain how truncating the baseline changes the interpretation of a count bar’s length.
+6. State the repeated-sampling interpretation of the 95% interval in Figure in Chapter 10.
+7. Identify the information needed to compute an interval for the difference of the group means.
+8. Explain why a count and a rate choropleth can suggest different priority districts.
+9. Describe the respective roles of a short alt description and a detailed figure-data table.
+10. What should stay fixed across the print and small-screen variants of this figure?
+
+### Programming exercises
+
+1. Construct a ten-row regime-by-bin grid in DuckDB. Show the errors produced by counting left-join placeholders.
+2. Assign test yields 1.0, 2.0, and 6.0 to the declared bins. Write a test that each valid value is assigned exactly once.
+3. Render the two count panels with distinct markers or patterns that survive greyscale. Export the exact plotted values.
+4. Render horizontal confidence intervals from `figure_intervals.csv` in one environment. Assert that each point lies between its interval endpoints.
+5. Build a narrow-screen version at 360 pixels. Compare legibility, clipping, axes, and ordering with the print figure.
+
+### Statistical reasoning
+
+1. Convert Table 10.2 to within-regime shares. Show that the five shares sum to one for each group.
+2. From the rainfed observations, compute the shifted-bin counts and explain which boundary changes account for the differences.
+3. Verify the irrigated interval from its standard error, degrees of freedom, and critical value.
+4. Calculate the approximate standard error of the mean difference assuming independent samples. Explain why a shared cluster design can change it.
+5. Find the density heights for counts 8 and 12 in bins of widths 0.5 and 2. Explain how the order of bar heights differs from the order of counts.
+
+### Cross-platform replication exercises
+
+1. Rebuild `figure_bins.csv` and `figure_intervals.csv` with DuckDB and one other environment. Compare keys, counts, and endpoints with the frozen versions.
+2. Produce the same three panels in two graphics systems. Submit each plot, its figure data and text equivalent, and a record of visual discrepancies.
+
+### Applied assignment
+
+Prepare an accessible one-page yield briefing for a district agricultural committee. Include an observed distribution and a clearly labelled estimate with uncertainty. Provide the source values, sample and measurement definitions, and a short description for a reader using assistive technology. Show how a decision about a yield threshold depends on the quantity selected. Include a separately labelled diagnostic figure that demonstrates one misleading choice of bins or scale and explain the correction.
+
+## Chapter 11 Probability, Statistical Simulation, and Computational Inference {#chapter-11}
+
+
+Chapter 11 exercises
+
+### Conceptual questions
+
+1. Explain why the sampling distribution in Equation in Chapter 11 can become approximately normal while the distribution of individual observations stays skewed.
+2. Identify the normal-model properties that lead to an exact Student $t$ statistic.
+3. Explain how the plug-in $z$ interval differs from a normal interval with known population variance.
+4. Why can increasing the number of replicates leave true coverage unchanged?
+5. Describe which implementation errors are easiest to diagnose with shared draws.
+6. What information beyond a seed is needed to reproduce a sequence of normal draws?
+7. Explain why the two method coverage estimates from the same stream are dependent.
+8. Explain how reporting coverage only among successful fits can change the interpretation of a simulation.
+9. Distinguish the Monte Carlo error from limited inner bootstrap resamples and the sampling uncertainty of the original estimator.
+10. What aspect of a clustered sampling design would an independent row bootstrap discard?
+
+### Programming exercises
+
+1. Assert that each fixed draw key occurs once and each scenario has the planned replicate sizes. Demonstrate the failure caused by one repeated draw position.
+2. Implement both intervals as functions of the mean, sample standard deviation, and $n$. Check the known first replicate from the chapter.
+3. Add mean interval length and lower- and upper-tail noncoverage counts to the stream summary.
+4. Compare paired coverage differences on shared samples with an independent-stream difference. Export the MCSE calculation for each.
+5. Replace the fixed bootstrap index for one draw, rebuild the replicate mean, and trace its effect on both endpoint rules.
+
+### Statistical reasoning
+
+1. Derive $\mathrm(\bar X)$ from the variance of a sum of independent observations and explain what covariance terms would appear with dependence.
+2. Calculate the critical-value ratio and the ratio of interval widths at $n=8$ and $n=32$.
+3. Using Table 11.2, compute the paired coverage gain from the Stata exponential $n=8$ run and its MCSE. Use the exact hits in the companion.
+4. Determine the replication budget required for an approximate 95% Monte Carlo half-width of 0.003 when coverage is 0.90.
+5. Compute the ranks and endpoints in Table 11.4 by hand, and repeat for probabilities 0.10 and 0.90.
+
+### Cross-platform replication exercises
+
+1. Compare all 256 fixed intervals between SQL and two other environments. Compare sample means and standard deviations before the endpoints and indicators.
+2. Run two independent streams with recorded generators and seeds. Recreate one scenario from Table 11.2 with new seeds and explain its differences using the pooled MCSE.
+
+### Applied assignment
+
+A research office is choosing a mean interval for a pilot with right-skewed time-to-service outcomes. Write a simulation protocol specifying a plausible distribution, a sensitivity distribution, the parameter, interval methods, replication budget, and performance criteria. Implement at least two sample sizes and evaluate calibration, mean width, and directional noncoverage. Provide a reproducibility record with a fixed-draw arithmetic check, generator and seed information, and a concise interpretation of Monte Carlo precision.
+
+## Chapter 12 Survey Sampling, Complex Survey Designs, and Population Estimation {#chapter-12}
+
+
+Chapter 12 exercises
+
+### Conceptual questions
+
+1. Explain the roles of a sampling stratum, a PSU, a household, and a reporting domain.
+2. Why is the first-stage cluster key a combination of stratum and PSU in this dataset?
+3. Describe the difference between a base weight, a nonresponse-adjusted weight, and a calibrated weight.
+4. Explain why a ratio of unbiased total estimators can be biased for the ratio of the finite population totals.
+5. Why can the uncertainty of a rural mean depend on a PSU with no rural observation?
+6. Explain why an artificial singleton and a true certainty PSU call for different treatment.
+7. Give the conditions under which the first-stage correction in Equation in Chapter 12 is appropriate.
+8. Identify when the covariance of the rural and urban means can matter to a policy statement about their difference.
+9. Explain what a weight-only effective sample size measures and why it can differ from the information supplied by the first-stage design.
+10. Describe one condition under which a replicate-weight procedure would be preferable to a hand-coded linearisation.
+
+### Programming exercises
+
+1. Construct an eligibility and design ledger with domain counts, frame PSU totals, and a unique stratum–PSU key. Detect an inconsistent frame count.
+2. Compute all domain totals with grouped SQL and export the ratios. Test the zero-denominator branch on an empty domain.
+3. Build the three columns of PSU scores in Python and verify that their sums are zero up to numerical tolerance.
+4. Estimate the two domain means with native survey commands. Create a controlled trim and compare the variance under the documented singleton rule.
+5. Add a diagnostic that checks the gap variance from both the score difference and the joint covariance formula.
+
+### Statistical reasoning
+
+1. Use Table 12.2 to compute the overall mean from the two domain means and their denominators. Compare it with their arithmetic mean.
+2. Compute the stratum 1 rural score difference from the weighted numerator and denominator. Derive its contribution under both variance specifications.
+3. Recalculate the design degrees of freedom and the $t$ interval for the with-replacement gap in Table 12.3.
+4. Calculate the gap standard error after setting the domain covariance to zero. Quantify the difference from the correct result.
+5. Recompute the weight-only effective size for each domain and discuss its relationship to the domain’s PSU support.
+
+### Cross-platform replication exercises
+
+1. Match the native R and Stata domain estimates to the explicit DuckDB and Python results. Present weighted totals, the joint covariance, design df, and numerical tolerances.
+2. Reproduce the FPC sensitivity and the erroneous trimming example. Record the change in the stratum and PSU ledger and the observed effect on standard errors.
+
+### Applied assignment
+
+A social protection directorate wants a rural–urban welfare comparison for a monitoring report. Prepare an analysis plan, a verified results table, and a two-page interpretation using this fixture as a prototype. Specify the design and inclusion rules, explain the weights, and report a contrast with the correct covariance. Include a design audit that identifies a zero-domain PSU and an illustration of the error from filtering it away. Document a justified strategy for variance estimation when the production survey supplies replicate weights or a genuine singleton stratum.
+
+## Chapter 13 Linear Regression, Matrix Algebra, and Econometric Diagnostics {#chapter-13}
+
+
+Chapter 13 exercises
+
+### Conceptual questions
+
+1. Explain why the pilot uses a plot-season key and why area validation precedes the yield calculation.
+2. Describe the difference between the sample regression slope and a causal effect of advisory attendance.
+3. State the rank condition for uniqueness and give an example of an exact alias in the extension.
+4. Explain why the residuals are orthogonal to all design columns and sum to zero with an intercept.
+5. Which assumptions give the Gauss–Markov variance comparison, and which additional assumption supports exact classical $t$ inference?
+6. Interpret the adjusted session coefficient using the residualised attendance column.
+7. Explain how an HC1 calculation can increase one standard error and decrease another relative to the classical covariance.
+8. Describe why a high-leverage observation can have a small residual.
+9. Identify the assumptions required to use a classical prediction interval for a new plot.
+10. Explain why the same fitted coefficients across software do not establish agreement on uncertainty.
+
+### Programming exercises
+
+1. Rebuild the 2025 pilot sample and compare its full rows to the canonical file. Introduce a duplicate plot key and verify that the check fails.
+2. Fit the extension by QR and report residual orthogonality and the sum of leverage values.
+3. Construct HC0 and HC1 covariance matrices from residuals and named design columns. Verify the scaling factor.
+4. Compute the leave-one-out session slope using Equation in Chapter 13 and compare with a refit.
+5. Add the aliased session column. Record rank, dropped coefficients, and fitted values under two implementations.
+
+### Statistical reasoning
+
+1. Derive the pilot slope, intercept, residual sum of squares, and $R^2$ from the paired fixture.
+2. Compute the classical slope standard error using the centred session sum of squares and residual degrees of freedom.
+3. From the given moment totals, construct the extension’s $X^X$ matrix and determine whether it is invertible.
+4. Use the full-sample residual variance, leverage, and residual of M036 to compute Cook’s distance.
+5. Convert the multiple-regression slope, covariance, and confidence interval to t/ha per session. Explain the effect on a zero-slope test.
+
+### Cross-platform replication exercises
+
+1. Reproduce the pilot in DuckDB and two statistical environments. Compare exact rows, rank, slope, and both covariance matrices before comparing printed intervals.
+2. Reproduce the extension in Python, R, and Stata. Diagnose a deliberate intercept omission or HC0 substitution using the keyed metric export.
+
+### Applied assignment
+
+Write a technical note for an agricultural extension research team. Use the fixtures to explain a plot-season outcome definition, a reproducible model matrix, and a defensible descriptive question. Report classical and HC1 uncertainty, an influence diagnostic, and a sensitivity analysis. Propose a study design that could support a causal claim about attendance, including how uncertainty should account for the level at which advisory sessions are assigned. Supply runnable code and an exact sample audit.
+
+## Chapter 14 Generalized Linear Models and Discrete Outcome Analysis {#chapter-14}
+
+
+Chapter 14 exercises
+
+### Conceptual questions
+
+1. Distinguish the conditional family, link, and linear predictor of a GLM.
+2. Explain why Bernoulli logit and probit use the same conditional variance at the same probability.
+3. Describe what the canonical link does to the score in Equation in Chapter 14.
+4. Why does reversing a binary event change probabilities without changing the maximised likelihood under these links?
+5. Explain the difference between an odds ratio and a probability difference.
+6. Why can a probability change at mean covariates differ from the average of row-level changes?
+7. Describe the interpretation of an offset with coefficient fixed at one.
+8. Compare the NB2 variance rule with a constant multiple of the Poisson variance.
+9. Explain why a finite optimum may fail to exist under complete separation.
+10. Identify a source of overdispersion that a change from Poisson to NB2 alone would leave substantively unexplained.
+
+### Programming exercises
+
+1. Build the binary design and prediction grid in SQL with explicit event, residence, and row keys.
+2. Compute logit scores from fitted probabilities and verify the intercept score condition.
+3. Calculate the average discrete rural probability difference and compare with the difference at three contacts.
+4. Evaluate Poisson predictions at otherwise identical rows with 30 and 60 days. Test count doubling and rate invariance.
+5. Create the separated outcome and trace coefficients, likelihood, and predictions as the iteration limit changes.
+
+### Statistical reasoning
+
+1. Convert the logit contact and rural coefficients into odds ratios. Explain their respective units of interpretation.
+2. Calculate the fitted logit probability for G05 from Table 14.2 and its design values.
+3. Evaluate the Poisson likelihood contribution for an observed count of zero at the G02 mean.
+4. Convert the reported NB2 alpha into size and calculate the variance at means 1, 3, and 6.
+5. Calculate the erroneous G03 mean when exposure enters twice and explain why G02 is insensitive to that error.
+
+### Cross-platform replication exercises
+
+1. Compare the logit and probit fits in two statistical environments. Reconcile coefficients, probability predictions, and the average discrete rural contrast against the SQL design.
+2. Match Poisson and NB2 fits in Python, R, and Stata. Compare the exact offsets, full log likelihoods, dispersion parameterisation, and grid predictions.
+
+### Applied assignment
+
+Prepare a reproducible analytic note for a service-planning team using either fixture. Define the event or observation window, document its support and eligibility, and fit two suitable models. Report predicted quantities on a shared grid and an interpretable average contrast. Include one deliberate model-specification mismatch and show how to diagnose it. Discuss what additional evidence would be required before using the predictions for a programme decision.
+
+## Chapter 15 Limited Dependent Variables, Selection Models, and Survival Analysis {#chapter-15}
+
+
+Chapter 15 exercises
+
+### Conceptual questions
+
+1. Explain how a known reporting floor differs from excluding all observations below a threshold.
+2. Give an example of a true zero that requires a different model from a censored latent outcome.
+3. Why does the uncensored Tobit contribution include the log of the scale?
+4. Distinguish a latent Tobit coefficient from a derivative of the observed mean.
+5. State what identifies the inverse Mills correction in the bivariate normal model.
+6. Explain how a response reminder could violate the proposed selection exclusion.
+7. Define the risk set when censoring and events share a recorded day.
+8. Why does the baseline hazard cancel in the Cox partial likelihood?
+9. Describe a setting in which a common hazard ratio over time would be implausible.
+10. Explain why the two Cox partial log likelihoods in Table 15.4 use different objectives.
+
+### Programming exercises
+
+1. Compute both Tobit likelihood branches and verify the two rows in Table 15.2.
+2. Check the Tobit score by a central finite-difference approximation at the common parameter vector.
+3. Build the SQL risk-set ledger and reconcile the day 2 and day 3 transitions.
+4. Recode the event flag in a working copy and identify the resulting changes in risk-set event counts.
+5. Fit the two Cox tie rules and compute uncentred linear predictors with common keys.
+
+### Statistical reasoning
+
+1. Calculate the probability of censoring for C001 at the shared evaluation point.
+2. Find the expected observed expenditure at resources zero and the shared parameter. Calculate its resource derivative.
+3. Compute the selection term for indices zero and one when $\rho\sigma_u=0.6$.
+4. Derive the day 2 Breslow contribution and show the change in the first three denominators under Efron.
+5. Convert both Efron coefficients to hazard ratios and explain their conditional interpretations.
+
+### Cross-platform replication exercises
+
+1. Match fixed-point Tobit contributions and scores across SQL, Python, R, and Stata. Reconcile any differences between log-CDF implementations.
+2. Compare Cox fits in two environments under the same tie rule. Verify risk sets, indices, and the reported partial log likelihood.
+
+### Applied assignment
+
+Prepare a protocol for an evaluation that follows participants from enrolment to a measured event. Define time origin, event, censoring, delayed entry, and the covariates available at baseline. Use the duration fixture to produce a risk-set audit, fit both tie rules, and report a proportional-hazards diagnostic. Include a short discussion of how selective outcome observation could affect the planned evaluation and describe evidence that would support a proposed selection adjustment.
+
+## Chapter 16 Multilevel, Hierarchical, and Mixed-Effects Models {#chapter-16}
+
+
+Chapter 16 exercises
+
+### Conceptual questions
+
+1. Identify the observational unit, group, and fixed predictor in the facility fixture.
+2. Derive the covariance of two distinct observations in the same facility under a random intercept.
+3. Explain why additional patients at one facility cannot replace additional facilities for a group-level predictor.
+4. Distinguish a fitted fixed part from an existing-facility prediction.
+5. Why does the fraction retained in Equation in Chapter 16 depend on both size and the variance ratio?
+6. Explain why ML and REML can give different variance estimates on the same data.
+7. Describe how a random slope changes the interpretation of the intraclass correlation.
+8. Why is a random slope on a column of ones structurally aliased with an intercept?
+9. Identify one way a Bayesian prior on the facility standard deviation can affect a small-group analysis.
+10. Describe a validation split that matches prediction at a new facility.
+
+### Programming exercises
+
+1. Build the balanced and unbalanced SQL extracts and verify their exact patient IDs and facility sizes.
+2. Fit the Gaussian model under ML and REML in one environment. Compare the estimates on the same sample.
+3. Compute the per-facility determinant and quadratic terms and reproduce the marginal log likelihood.
+4. Recreate the predicted effects from residual group means and compare all facility keys.
+5. Construct the duplicate random-slope design and demonstrate its rank deficiency.
+
+### Statistical reasoning
+
+1. Compute the fitted ICC for each row in Table 16.2.
+2. Calculate the unbalanced shrinkage factor and predicted effect for F01 from its size and mean adjusted residual.
+3. At $\tau^2/\sigma^2=0.25$, calculate the retained fractions for groups of size 3, 5, and 8.
+4. Recalculate the plug-in predictive standard deviation for a new patient at F01 and at an unobserved facility.
+5. For two patients at baseline scores 0 and 2, derive their shared covariance if the intercept–slope covariance matrix has entries $D_=4$, $D_=0.3$, and $D_=0.5$.
+
+### Cross-platform replication exercises
+
+1. Fit both extracts in Python, R, and Stata. Compare fixed effects, variance components, likelihoods, and all facility predictions under the same criterion.
+2. At one fitted vector, reproduce the Gaussian likelihood and predictions with the SQL group summaries. Explain any differences due to centring or variance scale.
+
+### Applied assignment
+
+Design an analysis for continuous patient outcomes from a network of facilities. State the sampling unit, model levels, and the decision that will use the predictions. Use the fixture to compare pooled and partially pooled estimates and report existing- and new-facility uncertainty. Include a diagnostic for a random slope and a validation plan that matches the intended prediction target. Discuss how facility-level selection or an omitted facility covariate could affect interpretation.
+
+## Chapter 17 Randomized Experiments, Power Analysis, and Experimental Evaluation {#chapter-17}
+
+
+Chapter 17 exercises
+
+### Conceptual questions
+
+1. Define the offer, receipt, and observation mechanisms in the trial.
+2. Describe within-village spillovers that the chosen assignment can accommodate.
+3. State when the village-average and household-average effects coincide.
+4. Distinguish a chance baseline difference from a defect in the assignment record.
+5. Explain why the randomisation null is sharp.
+6. Describe the source of the Neyman variance’s conservatism.
+7. Explain the distinct information gains from more villages and more households per village.
+8. Give an example of a direct offer effect that threatens exclusion.
+9. Describe a mechanism that can make survey response depend on assignment.
+10. Compare the target of the range bounds with the target of a monotone-selection bound.
+
+### Programming exercises
+
+1. Build the eligibility and survey-disposition table from raw keys.
+2. Enumerate the blocked allocations and match each to the saved manifest.
+3. Write a validation check for mixed assignments within a draw–village pair.
+4. Compare exact and invalid tails on the common integer scale.
+5. Export block means, variances, and weighted contributions.
+
+### Statistical reasoning
+
+1. Recover the observed ITT from the integer arm totals and denominators.
+2. Derive the blocked variance from the variance of a single block contrast.
+3. Compute the planning MDE at $\rho=0.25$ under the same remaining inputs.
+4. Recalculate the outcome bounds for a justified 20–80 score scale.
+5. Derive the delta variance for the Wald ratio, including the covariance of ITTs.
+
+### Cross-platform replication exercises
+
+1. Match all 400 draw statistics and extreme indicators in two statistical environments and DuckDB.
+2. Reproduce the offer effect from household rows and from village means. Compare uncertainty under the two implementations.
+
+### Applied assignment
+
+Prepare a design for a phased village programme. Specify eligibility, timing, the assignment unit and block mechanism, the target and primary outcome, and plausible intraclass correlation scenarios. Include an attrition plan, a power sensitivity, and a results table that links each estimate or bound to the decision it supports.
+
+### Recommended reading and resources
+
+Read the field-experiment toolkit by Duflo, Glennerster, and Kremer [@duflo2007]. Angrist, Imbens, and Rubin develop the compliance interpretation [@angrist1996]. Lee develops bounds under monotone selection [@lee2009]. The companion provides the exact allocation manifest, the original synthetic records, and the executable comparisons.
+
+## Chapter 18 Difference-in-Differences, Event Studies, and Heterogeneous Treatment Effects {#chapter-18}
+
+
+Chapter 18 exercises
+
+### Conceptual questions
+
+1. Define the missing counterfactual change in a two-period design.
+2. Explain how permanent level differences can coexist with parallel trends.
+3. Distinguish announcement, adoption, and effective operation.
+4. Define the clean baseline and control eligibility for two-period anticipation.
+5. Explain the consequence of an empty capacity stratum among controls.
+6. Describe the composition restriction for repeated cross-sections.
+7. Explain what pre-period estimates can establish about a later policy shock.
+8. Define a balanced-horizon target for the three cohorts.
+9. Explain why a municipality’s multiplier is reused across horizons.
+10. Describe when effects inside another event bin cancel under residualisation.
+
+### Programming exercises
+
+1. Assert panel uniqueness and invariant cohort and capacity.
+2. Materialise eligible controls for cohort 3 in period 4.
+3. Export the two conditional cell means and the standardised contrast.
+4. Plot the dynamic estimates and show the contributing municipalities below.
+5. Generate an alternative fixed multiplier manifest and compare critical values.
+
+### Statistical reasoning
+
+1. Derive the saturated two-period interaction coefficient from the four means.
+2. Recover the 3.250-point effect from the capacity-specific gaps and shares.
+3. Compute event-time zero using equal cohort weights.
+4. Derive the variance of the horizon 2 minus horizon 0 effect using signed unit contributions.
+5. Reconstruct the observed early coefficient from the three component contributions.
+
+### Cross-platform replication exercises
+
+1. Match cell support and effects between DuckDB and two statistical environments.
+2. Reproduce the six fixed-effects coefficients and refit with capacity-period adjustment.
+
+### Applied assignment
+
+Design a staggered evaluation of a district service reform. Specify and justify the cohort dates, clean baseline and controls, conditional trend assumption, event-time target, and uncertainty family. Identify one plausible confounding shock and quantify a sensitivity that shows how its size would affect the policy interpretation.
+
+### Recommended reading and resources
+
+Read Callaway and Sant’Anna on group-time effects [@callaway2021]. Sun and Abraham and Goodman-Bacon examine conventional fixed-effects estimators [@sun2021; @goodmanbacon2021]. Baker and colleagues discuss practical choices across designs [@baker2026]. The companion includes the cell tables and fixed multiplier manifest.
+
+## Chapter 19 Instrumental Variables, Regression Discontinuity, and Generalized Method of Moments {#chapter-19}
+
+
+Chapter 19 exercises
+
+### Conceptual questions
+
+1. Distinguish relevance, independence, and exclusion.
+2. Explain how an encouragement can directly affect an outcome.
+3. State when a binary Wald ratio represents a complier average effect.
+4. Explain why 2SLS covariance uses the structural residual.
+5. Describe why a finite slope can coincide with weak identification.
+6. Explain how an Anderson–Rubin test avoids dividing by the first stage.
+7. State when changing the GMM weight can alter the estimate.
+8. Define the local population for a fuzzy RD effect.
+9. Describe an audit for manipulation or rounding of the score.
+10. Explain how bandwidth affects bias and variance.
+
+### Programming exercises
+
+1. Verify the common record IDs in both encouragement analyses.
+2. Reconstruct the instrument residual and both partial regression coefficients.
+3. Export all accepted candidates and flag acceptance at either grid boundary.
+4. Save named moment residuals and the weighting matrix from both GMM steps.
+5. List the cutoff row and the exact endpoint exclusions at each bandwidth.
+
+### Statistical reasoning
+
+1. Calculate the IV slope and its units from the first stage and reduced form.
+2. Derive the HC0 sandwich using the projected design and structural residuals.
+3. Recover the quadratic acceptance rule for the proposed slope.
+4. Derive the GMM first-order conditions and the degrees of overidentification.
+5. Derive the fuzzy ratio variance, including the cross-covariance.
+
+### Cross-platform replication exercises
+
+1. Match first stages, reduced forms and weak-IV grid statistics in two statistical environments.
+2. Reproduce the three sharp RD jumps with DuckDB sufficient statistics and a statistical fit.
+
+### Applied assignment
+
+Design an evaluation of an encouragement or threshold benefit. Describe the policy target, the source of identifying variation, and a credible threat. Specify either a weak-instrument-robust test inversion or a local-linear and bias-corrected sensitivity. Present a table that separates first-stage evidence, the outcome contrast, and the assumptions needed for a structural interpretation.
+
+### Recommended reading and resources
+
+Angrist, Imbens, and Rubin establish the compliance interpretation [@angrist1996]. Andrews, Stock, and Sun review weak identification [@andrews2019]. Hansen develops GMM weighting [@hansen1982]. Calonico, Cattaneo, and Titiunik develop robust bias-corrected intervals for RD [@calonico2014]. The companion preserves the exact samples, first stages, moment records, and test-inversion outputs.
+
+## Chapter 20 Matching, Weighting, Doubly Robust Estimation, and Synthetic Controls {#chapter-20}
+
+
+Chapter 20 exercises
+
+### Conceptual questions
+
+1. State a policy question for the ATE and for the ATT.
+2. Explain how empirical overlap can be poor despite interior fitted propensities.
+3. Compare matching with and without replacement.
+4. Explain why the balance audit uses pretreatment characteristics.
+5. Describe the effect of weight stabilisation on a within-arm Hájek mean.
+6. Distinguish trimming observations from capping weights.
+7. Use conditional expectation to explain double robustness.
+8. Describe a way preprocessing can leak information across folds.
+9. Explain what the convex-hull constraint implies for a synthetic path.
+10. Explain how equal pre-fit can yield different post-treatment gaps.
+
+### Programming exercises
+
+1. Rebuild eligibility, folds, and nuisance predictions by record key.
+2. Compute raw and stabilised weight totals and ESS by arm.
+3. Reproduce the rural-exact matching with a declared distance, caliper and tie rule.
+4. Recompute AIPW under a narrower overlap restriction and export excluded IDs.
+5. Compare synthetic paths under both extreme allocations of the duplicate-history weight.
+
+### Statistical reasoning
+
+1. Derive the conditional mean of each ATE inverse-probability weight.
+2. Calculate the ATE score error and state the assumptions for inference.
+3. Derive the ATT score identity when the untreated outcome regression is correct.
+4. Derive the equality-constrained normal equations on a donor support.
+5. Compute the range of period 11 gaps from all allocations of the tied weight.
+
+### Cross-platform replication exercises
+
+1. Match held-out predictions, trimmed keys, and AIPW scores across two statistical environments and DuckDB.
+2. Compare the main and exclusion fits under two optimisation implementations, including objective and post-period paths.
+
+### Applied assignment
+
+Design an evaluation of a livelihoods programme with selective participation or a district-level reform. For the individual case, justify the target, timing, overlap, nuisance estimation, and sensitivity. For the place-based case, justify donors, fitting periods, and a placebo comparison. Provide a results table with the primary estimate, sensitivity, and causal assumptions.
+
+### Recommended reading and resources
+
+Rosenbaum and Rubin establish the propensity-score result [@rosenbaum1983]. Bang and Robins and Chernozhukov and colleagues discuss augmentation and orthogonal estimation [@bang2005; @chernozhukov2018]. Abadie and colleagues develop synthetic control and discuss feasibility [@abadie2010; @abadie2021]. The companion includes the fold scores, matching records, and donor paths.
+
+## Chapter 21 Panel Data Econometrics and Longitudinal Statistical Modelling {#chapter-21}
+
+
+Chapter 21 exercises
+
+### Conceptual questions
+
+1. Explain why a country-year key needs both components and a stable calendar definition.
+2. Describe a source of pooled bias that entity demeaning can remove.
+3. Give an example of feedback that violates strict exogeneity.
+4. Explain the information contributed by a singleton to the within slope.
+5. Distinguish a prior row from a prior calendar year.
+6. State why two-way demeaning in an unbalanced panel requires care.
+7. Explain why raw entity intercepts can differ across equivalent fits.
+8. Interpret the between coefficient of x1 in the CRE model.
+9. Explain why the lagged dependent variable is endogenous after differencing.
+10. Describe why instrument proliferation can weaken a dynamic-panel diagnostic.
+
+### Programming exercises
+
+1. Export the singleton and gap audit by entity and year.
+2. Construct the within rows in SQL and compare their means within each country.
+3. Recreate country effects using the observation-weighted normalisation.
+4. Save one row per country and covariate containing the residual score sum.
+5. Form the exact consecutive pairs and triples and compare their keys.
+
+### Statistical reasoning
+
+1. Derive the within regression from the country-intercept model.
+2. Derive the covariance of two adjacent differences under independent level errors.
+3. Calculate the CR1 factor from the observed design and use it to scale a CR0 variance.
+4. Derive the GLS quasi-demeaning factor using the two covariance eigenspaces.
+5. State a dynamic moment restriction using $y_$ and explain when serial dependence invalidates it.
+
+### Cross-platform replication exercises
+
+1. Match all fitted outcomes and within cluster scores in two statistical environments and DuckDB.
+2. Compare FE and CRE slopes after changing the working variance ratio. Record the sample and any changes in the between estimates.
+
+### Applied assignment
+
+Design an unbalanced country-year study of a development outcome and two policy or capacity indicators. Define the unit, eligibility and timing, choose a primary within or between estimand, and specify a covariance appropriate to the dependence. Deliver a sample flow, a gap audit and a results table with one sensitivity that separates measurement from estimator choice.
+
+### Recommended reading and resources
+
+Mundlak develops the correlated-effects interpretation [@mundlak1978]. Nickell and Arellano and Bond explain dynamic-panel bias and moment-based alternatives [@nickell1981; @arellano1991]. Roodman discusses instrument count and specification tests [@roodman2009]. The Part VI companion retains the synthetic panel and its complete sample, score and instrument-window records.
+
+## Chapter 22 Time-Series Econometrics, Macroeconomic Modelling, and Forecasting {#chapter-22}
+
+
+Chapter 22 exercises
+
+### Conceptual questions
+
+1. Distinguish a GDP reference year from a release date and give an example of a revision that could affect a forecast backtest.
+2. Explain how a stationary annual growth rate can be consistent with an integrated log level.
+3. Describe why adding a trend changes the reference distribution for a unit-root test.
+4. Explain the difference between the AR intercept and the stationary mean.
+5. Give a reason a conditional MA fit and a state-space likelihood fit can yield different forecasts.
+6. Describe how a drift benchmark changes the question asked of a growth forecast.
+7. Explain why adjacent three-year forecast errors may be dependent.
+8. Contrast a reduced-form innovation with an identified structural shock in a VAR.
+9. Explain the role of $\alpha$ and $\beta$ in a vector error-correction model.
+10. Compare a local projection and an iterated VAR response at a fixed horizon.
+
+### Programming exercises
+
+1. Verify the uniqueness, continuity and growth bounds of all three country series, then reproduce their log indices.
+2. Extend Listing 22.1 to return the target year for each of three horizons while keeping training and target rows separate.
+3. Export the Ghana 2021 conditional MA terminal innovation and the first five innovation rows for the selected $\theta$.
+4. Construct a forecast scoring table from the keyed errors with count, bias, MAE and RMSE.
+5. Build a key with release date and reference year and use it to select a vintage as of a declared forecast date from a small invented example.
+
+### Statistical reasoning
+
+1. Derive the unit-root coefficient $\gamma$ in a Dickey–Fuller regression from an AR(1) coefficient.
+2. Derive Equation in Chapter 22 by differentiating the conditional sum of squares with respect to $\delta$.
+3. Derive Equation in Chapter 22 for two and three horizons by summing the forecast errors in log growth.
+4. Compute the implied index-level percentage error for Ghana’s three-year AR forecast at the 2021 origin.
+5. For a two-variable Cholesky decomposition, describe the impact restrictions under each possible ordering and derive the horizon-one response.
+
+### Cross-platform replication exercises
+
+1. Use two statistical environments and DuckDB to compare the entire Ghana AR path and signed errors for the 2021 origin. Record the exact key counts.
+2. Compare the native MA fits to the conditional grid after matching the training vector and sign convention. Attribute each verified difference to the objective, the grid or numerical optimisation.
+
+### Applied assignment
+
+Prepare a forecast brief for one of the three countries. Define the intended decision, the origin and the target horizon. Use a naïve forecast with and without drift and at least one estimated model. Submit the data-vintage record, full forecast and error table, and a short discussion of release-time information, interval performance and one plausible structural break. Distinguish the evaluation result on the fixed vintage from evidence a real-time forecast would require.
+
+### Recommended reading and resources
+
+- @hyndman2021 develop practical time-series diagnostics, forecast benchmarks and rolling-origin evaluation.
+- @dickey1979 develop the unit-root test distribution. @engle1987 connect cointegration and error correction.
+- @sims1980 introduces the reduced-form VAR approach to macroeconomic dynamics. @jorda2005 develops local projections.
+
+## Chapter 23 Spatial Econometrics, Geographic Analysis, and Location-Based Modelling {#chapter-23}
+
+
+Chapter 23 exercises
+
+### Conceptual questions
+
+1. Explain why the national household share and the simple mean of regional rates differ.
+2. Give two checks for the claim that a geometry and a statistical table describe the same region.
+3. Distinguish rook and queen neighbours using three polygons that meet at one corner.
+4. Explain why row-standardisation can create asymmetric weights from symmetric adjacency.
+5. Describe the effect of an isolate on the numerator and denominator of Moran’s $I$.
+6. State the exchangeability assumption behind the permutation reference used in the lab.
+7. Explain why OLS can be inconsistent when $Wy$ is an explanatory variable.
+8. Interpret the error dependence in an SEM with positive $\lambda$.
+9. Explain why the average direct effect in the SAR differs from $\beta_k$.
+10. Distinguish the scale and zoning components of the modifiable areal unit problem.
+
+### Programming exercises
+
+1. Produce a two-way join audit for the rates, boundary IDs and analysis keys.
+2. Rebuild rook edges from the GeoJSON and report any differences in origin–target keys.
+3. Recreate the Ahafo spatial lag using Listing 23.1 and the published rates.
+4. Recalculate the 399 permutation values after removing North East’s links and report the new graph and reference.
+5. Map the same 16 rates with a different class scheme and document the analytical values used in both maps.
+
+### Statistical reasoning
+
+1. Derive $E[I]=-1/(n-1)$ from uniform reassignment and the zero-sum centred vector.
+2. Calculate the percentage-point range in the GSS rates and explain its difference from global spatial association.
+3. Derive the SAR and SEM filtered regression equations and the shared log determinant in the likelihood.
+4. Show how the row-standardised graph implies the total-effect shortcut for a common shift.
+5. Explain why a permutation test using regression residuals needs a separate validity argument.
+
+### Cross-platform replication exercises
+
+1. Compare the ordered rook and distance lags, statistics and tail counts in two statistical environments and DuckDB.
+2. Reconcile the SAR and SEM profile results across Python, R and Stata, then check the filtered residual sums in DuckDB at the chosen values.
+
+### Applied assignment
+
+Prepare a spatial service-access brief for a regional planning audience. Use the 2021 rates and a declared boundary release. Produce a denominator-aware map, a geographic join ledger, two defensible weights choices and a comparison of how they alter the spatial association. State which findings reflect the observed regional rates and what data and design would be needed to study a policy spillover. Submit the plotted data and the code used to reproduce it.
+
+### Recommended reading and resources
+
+- @gss2021water documents the census rates and their household denominator. @runfola2020 describes the boundary data platform.
+- @moran1950 develops a measure of spatial association. @anselin1988 develops models and diagnostics for spatial dependence.
+- @lesage2009 presents spatial econometric models and interpretation of the response multiplier.
+
+## Chapter 24 Robust Statistical Inference, Bootstrap Methods, and Multiple Testing {#chapter-24}
+
+
+Chapter 24 exercises
+
+### Conceptual questions
+
+1. Distinguish observation, assignment and inference units in the fixture.
+2. Explain why adding observations inside a cluster does not add independent assignments.
+3. Describe the cross terms added when scores are aggregated before multiplication.
+4. State how HC2 and HC3 use leverage and why neither captures within-cluster dependence.
+5. Distinguish residual and reference degrees of freedom in the CR1 calculation.
+6. Explain why the wild procedure fits a restricted model and re-estimates the standard error.
+7. State the sharp null behind the exact assignment calculation and distinguish it from a zero average-effect null.
+8. Describe the trade-off when choosing a circular block length.
+9. Distinguish family-wise error rate and false discovery rate.
+10. Explain how the primary inference procedure changes the adjusted outcome probabilities.
+
+### Programming exercises
+
+1. Verify the two blocks, assignment totals, cluster membership and observation counts.
+2. Export all four score sums for each cluster and reproduce the full unscaled covariance matrix.
+3. Recover the seven extreme y1 wild draws by ID and verify both signs of the observed threshold.
+4. Build all 400 permissible assignment vectors from the combinations within each block and verify uniqueness.
+5. Construct a family table that reports raw probabilities, ranks, stepwise values and adjusted values under the three methods.
+
+### Statistical reasoning
+
+1. Expand one cluster score outer product and identify the terms absent from HC0.
+2. Derive the CR1 factor and reproduce the y1 standard error from the unscaled variance.
+3. Show why a full-rank design can yield a singular cluster covariance for a large joint test.
+4. Compare the Monte Carlo uncertainty of a 399-draw tail proportion with that of a 3,999-draw proportion at the same probability.
+5. Compute Holm and BH adjustments for the three primary probabilities by hand and explain their distinct error targets.
+
+### Cross-platform replication exercises
+
+1. Reproduce the CR1 coefficient, score matrix, standard error and three reference probabilities in two statistical environments and the SQL audit.
+2. Match the exact assignment and serial block indices by draw ID before comparing tail probabilities or the bootstrap standard deviation.
+
+### Applied assignment
+
+Draft an inference plan for a development programme assigned to a small number of communities. Identify the primary outcome family, assignment rule, unit of clustering and intended estimand. Choose a primary inference procedure and one sensitivity with a clear justification. Use the synthetic data to demonstrate the calculation and submit an auditable record of cluster membership, draw definitions, tail comparisons and multiplicity decisions.
+
+### Recommended reading and resources
+
+@white1980 and @cameron2015 cover heteroskedasticity and clustering. For resampling, see @cameron2008 and @kunsch1989. For multiplicity, see @holm1979 and @benjamini1995.
+
+## Chapter 25 Statistical Learning, Feature Engineering, and Model Validation {#chapter-25}
+
+
+Chapter 25 exercises
+
+### Conceptual questions
+
+1. Specify the unit, scoring time, outcome window and action for a monthly account review.
+2. Explain how event time and publication time differ in a historical feature store.
+3. Describe an intended deployment for which a customer holdout would be too restrictive.
+4. Explain why a row-random split can be optimistic with repeated records.
+5. Give two examples of transformations whose parameters belong inside a training fold.
+6. Explain when an unknown label should be excluded from a scoring denominator.
+7. Describe why a model with better AUC can have worse probability loss.
+8. Explain how class prevalence affects precision at an unchanged threshold.
+9. State the question answered by a paired bootstrap of customers.
+10. Explain why nested validation evaluates a selection procedure.
+
+### Programming exercises
+
+1. Reconstruct all four split roles from cohort and date and compare both set directions with the manifest.
+2. Calculate training medians and scales for all four baseline features and export one row per split and feature.
+3. Generate the temporal violation counts for the post-window status by split and month.
+4. Compute the event count and confusion cells at 0.25 with an explicit positive label.
+5. Rebuild the 400 bootstrap values by joining the customer differences to the multiplicity manifest.
+
+### Statistical reasoning
+
+1. Derive the threshold rule using the expected cost of a false positive and a false negative.
+2. Compute the Brier score of a constant prediction given the 92 events in 240 rows.
+3. Derive pairwise AUC for two tied scores with one event and one non-event at each level.
+4. Contrast the record-weighted and customer-weighted loss when customers have unequal row counts.
+5. Discuss how the interpretation of the percentile interval changes if one month is affected by a common disruption.
+
+### Cross-platform replication exercises
+
+1. Reconcile coefficients and final holdout probabilities in two statistical environments and check the same keys in DuckDB.
+2. Recompute average precision in two environments using the same tied-score rule and explain any discrepancy from a trapezoidal precision–recall area.
+
+### Applied assignment
+
+Prepare a validation protocol for a service provider entering a new region. Specify eligibility, feature and label publication dates, a grouping unit, at least one baseline, a final evaluation block and a loss tied to an action. Run the supplied baseline and leakage scenario. Submit the split audit, a paired comparison, two evidence exhibits and a one-page decision memo that distinguishes the eligible model from the retrospective diagnostic.
+
+### Recommended reading and resources
+
+@roberts2017 develops validation strategies for structured data. @cawley2010 explains bias from model selection and the rationale for separate evaluation. The Part VII companion contains the timestamped fixture, fold manifest, repeated bootstrap design and reproducible scoring scripts.
+
+## Chapter 26 Advanced Predictive Models and Ensemble Learning {#chapter-26}
+
+
+Chapter 26 exercises
+
+### Conceptual questions
+
+1. Explain why the weighted mean likelihood is unchanged when all case weights are multiplied by a constant.
+2. Distinguish the fitting objective, development selection criterion and action rule.
+3. Explain how scaling predictors changes the meaning of a ridge penalty.
+4. Describe the relative behaviour of ridge and lasso under strongly correlated predictors.
+5. Explain why feature subsampling can improve the value of bagging.
+6. Describe how gradient boosting updates an incorrect probability.
+7. Explain how tree and fit counts define the budget.
+8. Distinguish the ranking information in AUC and average precision.
+9. Explain why the coverage audit retains unlabelled IDs.
+10. State when two ensemble implementations should produce identical trees.
+
+### Programming exercises
+
+1. Recreate the three development folds and record their labelled counts and weight sums.
+2. Fit the ridge grid under the weighted mean objective and export one loss sum per fold and candidate.
+3. Verify the gradient numerically near the final ridge fit using finite differences.
+4. Fit the tree ensembles at each depth and reproduce each selected depth from its tuning log.
+5. Recalculate all model confusion matrices at 0.15, 0.25 and 0.35 on the frozen labelled holdout.
+
+### Statistical reasoning
+
+1. Derive Equation in Chapter 26 from the weighted logistic loss.
+2. Derive the relationship between Gini impurity and squared error for a binary leaf.
+3. Derive the variance of the bagged average under equicorrelation.
+4. Derive the weighted conditional probability in Equation in Chapter 26 for general $k$.
+5. Compute the ratio of false-negative to false-positive losses at which the two ridge threshold decisions have the same empirical cost.
+
+### Cross-platform replication exercises
+
+1. Match coefficient vectors under weighted mean and weighted sum conventions in two statistical environments.
+2. Compare two ensemble score files in DuckDB. Reconcile IDs, counts, log loss, AUC and threshold outcomes.
+
+### Applied assignment
+
+Write a model comparison protocol for a risk-review queue. Include a simple probability baseline, a fixed candidate search and an independent labelled holdout. Report the held-out results, probability calibration and operational counts for a stated review budget. Use the changed class-weight scenario to explain how a choice made during fitting changes the queue. State the evidence needed before making any real lending decision.
+
+### Recommended reading and resources
+
+@tibshirani1996 develops the lasso. @breiman2001 develops random forests and the role of tree dependence. @friedman2001 presents gradient boosting as stagewise optimisation. Use the companion’s frozen scores, tuning logs and solver routines to compare numerical and protocol equivalence.
+
+## Chapter 27 Explainable Artificial Intelligence, Algorithmic Fairness, and Model Diagnostics {#chapter-27}
+
+
+Chapter 27 exercises
+
+### Conceptual questions
+
+1. Distinguish calibration from discrimination and name one statistic for each.
+2. Explain why the average prediction can match prevalence when individual bins disagree.
+3. State which diagnostics need observed labels and which use scores only.
+4. Describe one consequence of rounding probabilities before thresholding.
+5. Explain why changing the ECE bins can change the reported value.
+6. Describe why omitting an audit group from training cannot establish fairness.
+7. Distinguish selection-rate parity, equal opportunity and equalised odds.
+8. Explain why a marginal permutation can produce unlikely feature combinations.
+9. Describe the reference used by a partial-dependence calculation.
+10. Explain why additive log-odds contributions cannot be added as probability changes.
+
+### Programming exercises
+
+1. Reconstruct the complete labelled and unlabelled denominators by audit group.
+2. Compute all five fixed bins, leaving empty-bin means undefined.
+3. Generate the full threshold confusion table and implement the reporting rule before displaying rates.
+4. Repeat the utilisation permutation diagnostic with a within-group shuffle and log each replicate.
+5. Recreate the local additive log-odds explanation and check the probability against a direct model prediction.
+
+### Statistical reasoning
+
+1. Recompute ECE from the three populated bins using unrounded values.
+2. Calculate a Wilson interval for group A’s false positive rate at 0.25.
+3. Derive Equation in Chapter 27 from the joint probabilities of an event and a flag.
+4. Bound group B’s all-scored prevalence using only the known labels.
+5. Give a resampling design for the difference in true positive rates with repeated applicants.
+
+### Cross-platform replication exercises
+
+1. Use DuckDB and a statistical environment to reconcile bin membership, empty bins and ECE on the exact same prediction IDs.
+2. Reconcile the count and interval inputs for each eligible group at threshold 0.25 in two statistical environments. Explain the suppression for group C without estimating a publishable rate.
+
+### Applied assignment
+
+Prepare a diagnostic report for the fictional credit-review panel. Include label coverage, calibration, threshold error rates, subgroup uncertainty and one explanation under two reference distributions. Describe how incomplete follow-up could change interpretation. Propose an evaluation design for a revised calibration map or action rule and specify the evidence needed before use.
+
+### Recommended reading and resources
+
+@guo2017 examine calibration and recalibration. @apley2020 addresses predictor dependence in model interpretation. @hardt2016 and @chouldechova2017 examine group error-rate and predictive-value criteria.
+
+## Chapter 28 Causal Machine Learning, Heterogeneous Effects, and Model Governance {#chapter-28}
+
+
+Chapter 28 exercises
+
+### Conceptual questions
+
+1. Define the full-population ATE and describe a decision for which an overlap target is more relevant.
+2. State the assumptions linking observed outcomes to potential outcomes.
+3. Explain why highly accurate treatment prediction can be a warning about overlap.
+4. Distinguish a nuisance regression from an estimate of a causal effect.
+5. Explain how cross-fitting prevents a unit’s outcome from fitting its own nuisance prediction.
+6. Describe what double robustness requires and why simultaneous misspecification can matter.
+7. Distinguish trimming, clipping and overlap weighting.
+8. Explain why a rural–urban contrast of subgroup effects is not an effect of residence.
+9. Explain the purpose of honesty in a causal tree.
+10. Describe a governance response to a substantial change in missing outcome labels.
+
+### Programming exercises
+
+1. Verify unique person IDs, fold membership and treatment counts by held-out and training subset.
+2. Recompute Equation in Chapter 28 from the frozen file and export its three components by ID.
+3. Compute treatment-arm effective sample sizes and balance for each pre-treatment variable.
+4. Refit the plain nuisance models and compare scores with the shared artifact.
+5. Reproduce the distance-shift scenario and design a second predeclared stress test.
+
+### Statistical reasoning
+
+1. Derive Equation in Chapter 28 from the conditional expectation of the augmented score.
+2. Show the result when only the outcome regressions or only the propensity is correct.
+3. Calculate the 95% interval using the sample score standard deviation and explain the independence assumption.
+4. Compare the full and trimmed effect benchmarks and explain the target change.
+5. Derive the local residual moment in Equation in Chapter 28 and discuss instability near zero treatment variance.
+
+### Cross-platform replication exercises
+
+1. Match each score and full-sample summary in DuckDB and a statistical environment using the same nuisance rows.
+2. Compare a separately learned nuisance specification across two environments. Document which differences follow from input predictions and which follow from the score calculation.
+
+### Applied assignment
+
+Prepare a technical decision memo for a fictional programme considering expansion. Specify the target effect, confounding assumptions and study design. Include a cross-fitting audit, overlap and balance evidence, a prespecified heterogeneous comparison and a monitoring plan. Identify what additional evidence would support allocating places by predicted treatment benefit.
+
+### Recommended reading and resources
+
+See @chernozhukov2018 for cross-fitting, @wager2018 and @athey2019 for forests, and @nist2023 and @mitchell2019 for governance.
+
+## Chapter 29 Applied Economic Research and Macroeconomic Policy Analysis {#chapter-29}
+
+
+Chapter 29 exercises
+
+### Conceptual questions
+
+1. Explain why a balanced country-year grid may still contain incomplete indicators.
+2. Compare an index re-reference with a revision to national accounts weights.
+3. State the unit of a difference between two GDP growth rates.
+4. Explain why the annual average policy rate can differ from the December 31 rate.
+5. Distinguish unemployment as a share of the labour force from nonemployment among working-age adults.
+6. Explain what a positive growth rate implies about the level after a severe contraction.
+7. Define a forecast horizon for an annual series and give one example of a revised-data origin.
+8. Describe which inflation measure belongs in the nominal GDP identity.
+9. Identify two channels that may jointly affect a central bank's rate and subsequent output.
+10. State the analytical population implied by an inner join on the six WDI indicators.
+
+### Programming exercises
+
+11. Expand the key grid to 2025 while retaining blanks for each source that lacks the year.
+12. Use SQL to recover the effective rate on every December 31, including years without a December meeting.
+13. Compute the three compound growth rates from 2014 to 2024 and independently check one from the underlying factors.
+14. Create an origin-horizon ledger for a flat forecast equal to the last observed growth rate.
+15. Modify the as-of query to accommodate two releases on one day and define a conflict rule.
+
+### Statistical reasoning
+
+16. Compare Ghana's 2024 implied nominal growth with the sum of real growth and deflator inflation. Quantify the interaction.
+17. Explain how a structural break would influence the expanding-window AR(1) and a five-year mean differently.
+18. Use the signed errors to identify the largest two-year Ghana miss. Explain its influence on the RMSE ranking.
+19. Propose a dependence-aware method for uncertainty in forecast loss differences when targets overlap.
+20. Recalculate the real policy-rate proxy using the year-end rate and explain the interpretation implied by mixing frequencies.
+
+### Cross-platform replication exercises
+
+21. Rebuild the WDI panel from the archived six extracts and reconcile the number of nonmissing values for every country and series.
+22. Reproduce the as-of release means and confirm the selected vintage in each origin–reference-year comparison. Introduce one release after cutoff and trace the effect.
+
+### Applied project
+
+23. Write a two-page macroeconomic briefing for Ghana with one predeclared comparator, a dated coverage table and a one- and two-year forecast scorecard. Describe which real-time archive you would need to make a claim about forecasting at the time. Attach a rerunnable extraction and forecast script.
+
+### Recommended reading and resources
+
+Read the WDI metadata together with the rates. Check the stated national growth definition and inspect the underlying source of the unemployment and lending indicators [@wdi2026part8]. Hyndman and Athanasopoulos provide the forecasting framework for rolling origins and error measures [@hyndman2021]. Croushore and Stark explain why real-time archives matter for evaluating macroeconomic models [@croushorestark2001]. Use the Bank of Ghana chronology to practise recovering the rate in force on a date between decisions [@bogpolicyrate].
+
+## Chapter 30 Public Health, Epidemiology, and Health Economics {#chapter-30}
+
+
+Chapter 30 exercises
+
+### Conceptual questions
+
+1. Define the unit, denominator and reference period of the reported 2022 GDHS live-birth statistic.
+2. Distinguish service access, utilisation and quality of care.
+3. Explain why a facility register can omit members of a coverage denominator.
+4. Distinguish a live-birth record from a woman-level summary of births.
+5. Define incidence proportion and incidence rate in a monitoring cohort.
+6. Explain how an absent outcome differs from a known non-facility delivery.
+7. Describe what a normalised survey weight can contribute to the facility-delivery estimate.
+8. Explain why the rural–urban contrast uses both domains in a joint variance calculation.
+9. Interpret an insurance odds ratio of 1.792 on the fitted model's scale.
+10. Distinguish administrative end of follow-up from event-related loss to follow-up.
+
+### Programming exercises
+
+11. Rebuild the 600-to-374 sample flow and export counts by stratum and eligibility stage.
+12. Compute both the overall weighted coverage estimate and all PSU linearised contributions in SQL.
+13. Set insurance to each value on the same covariate rows and save the paired fitted risks.
+14. Add a separate code for unknown expenditure. Ensure it cannot become a valid zero.
+15. Compute the survival table from the 12 people, including every censor-only time.
+
+### Statistical reasoning
+
+16. Recompute coverage after multiplying every weight by three. Explain the result for the point estimate and design standard error.
+17. Calculate the difference between the 24- and 36-month unweighted means and identify the records entering the longer window.
+18. Compare the naive and standardised risk differences. List assumptions needed to interpret the latter causally.
+19. Calculate the product of the two component means in Table 30.3 and explain why it differs from the mean of products.
+20. Move the censoring at time 3 to just before time 3. Compute the changed risk set and survival estimate at that time.
+
+### Cross-platform replication exercises
+
+21. Reconcile the observed denominators, weighted totals and rural gap standard error across two statistical engines.
+22. Reproduce the smearing factor from positive-spender residuals and reconcile both original-scale predictions.
+
+### Applied project
+
+23. Prepare a health planning note for a jurisdiction with public coverage tables. Document the eligible births, use only publishable aggregates and build a synthetic analogue to demonstrate survey variance and missing-place sensitivity. Show how the final interval and sample sizes would affect a district-level decision.
+
+### Recommended reading and resources
+
+Read the GDHS definitions alongside Table 9.7 before attempting a survey replication [@ghana2022dhs]. Lumley explains the use of design information and domain subsetting in complex surveys [@lumley2004; @lumleydomain]. Duan's retransformation paper develops the smearing estimate [@duan1983]. Kaplan and Meier give the product-limit estimator for incomplete follow-up [@kaplanmeier1958]. The cited resources support separate decisions about the denominator, design and fitted scale.
+
+## Chapter 31 Finance, Banking, Investment, and Business Analytics {#chapter-31}
+
+
+Chapter 31 exercises
+
+### Conceptual questions
+
+1. Define the numerator and denominator of the gross NPL ratio.
+2. Explain how a bank's NPL ratio can rise with no increase in nonperforming balances.
+3. Compare a system ratio of sums with an equal-bank mean of ratios.
+4. Distinguish a source institution code, an analytical ID and a consolidation segment.
+5. State the release quarter of the predictors and the label for a reference quarter of 12.
+6. Explain why an institution exit should have a separate outcome status.
+7. Explain what a tied pair contributes to AUC.
+8. Distinguish a cash distribution from an external portfolio contribution.
+9. Explain why anonymous sales contribute to revenue and require separate treatment in repeat-buyer rates.
+10. Define maximum drawdown from a series of cumulative wealth.
+
+### Programming exercises
+
+11. Reconstruct the filing-to-bank crosswalk and produce an exception table for unmatched or duplicated keys.
+12. Implement the same-segment adjacent-quarter join and enumerate all 25 excluded outcomes by reason.
+13. Add an availability audit for the NPL feature, listing every late test record.
+14. Create an original-currency sales and returns ledger linked to the reporting-currency output by line ID.
+15. Compute the wealth paths for price-only, total-return and buy-and-hold policies over the fixture.
+
+### Statistical reasoning
+
+16. Compare Brier and log loss for two forecasts that rank every case identically but assign different probabilities.
+17. Interpret the calibration points and explain what additional data would support uncertainty estimates.
+18. Compute event capture and review precision at the 0.35 threshold. Explain how a fixed review capacity changes the question.
+19. Explain how a policy change in loan classification might shift observed event prevalence and the estimated score.
+20. Describe a split that evaluates performance on new banks in future periods and explain its limitations.
+
+### Cross-platform replication exercises
+
+21. Reconcile the ratio and filing release for bank 2 on both sides of its source-code change.
+22. Reproduce the time-valid and late-feature test scores on the same keys and verify both violation counts.
+
+### Applied project
+
+23. Write a model monitoring memo for a fictional supervisory team. Specify one predictive target, build a release-date audit and attach a scorecard with calibration, review capacity and error consequences. Include one synthetic restatement sensitivity and explain which results the team could use at decision time.
+
+### Recommended reading and resources
+
+Use the IMF compilation guide to review the treatment of nonperforming balances, consolidation and other financial soundness indicators [@imf2019fsi]. Compare the calibration design with Chapter 27 and its cited work on probability calibration [@guo2017]. Consult the analysis framework in Chapter 25 when deciding whether a later reporting period, new banks or both belong in a validation design. The companion provides the exact dated filing and return-line fixtures for applying those distinctions.
+
+## Chapter 32 Agricultural Economics, Food Security, and Rural Development {#chapter-32}
+
+
+Chapter 32 exercises
+
+### Conceptual questions
+
+1. Define the grain of each of the three synthetic agricultural files.
+2. Explain why a zero harvest can belong in planted-area yield.
+3. Distinguish measured plot area from maize-allocated area.
+4. Explain which quantity the wet-basis moisture correction preserves.
+5. Give two reasons why the ratio of totals and an equal-plot mean can differ.
+6. Distinguish a household food-access item from a population food-insecurity scale.
+7. Explain how season of interview can influence comparisons of shortfall.
+8. Define a person-weighted and a household-weighted spending estimate.
+9. Distinguish assignment to an offer from observed adoption.
+10. State the subgroup for which the Wald estimand can identify an effect.
+
+### Programming exercises
+
+11. Verify the household join, maize selection, missing harvest and valid zero counts.
+12. Add a crop unit requiring a different mass conversion and verify it against a hand calculation.
+13. Compute and compare the distribution of reported-to-GPS area ratios for intercropped and sole-crop plots.
+14. Export weighted item numerator, denominator and PSU contributions for the rural household domain.
+15. Create a pair-level table of yield and uptake differences and flag any pair with a missing arm.
+
+### Statistical reasoning
+
+16. Quantify the GPS-versus-reported planted-area yield difference and explain which elements were held fixed.
+17. Separate the effects of conditioning on positive harvest and using harvested area in Table 32.1.
+18. Explain how changing the child equivalence weight from one-half to three-quarters changes the welfare denominator.
+19. Describe how peer learning between paired plots would affect the offer and adoption interpretations.
+20. Compare the paired ITT standard error with the result from treating all 240 plots as independent.
+
+### Cross-platform replication exercises
+
+21. Reproduce Table 32.1 in SQL and a statistical language using the same frozen eligibility rules.
+22. Reproduce the trial ITT, first stage and Wald ratio from the keyed pair differences. Explain what the naive adoption contrast measures.
+
+### Applied project
+
+23. Design an agricultural productivity and vulnerability brief for a rural development agency. Choose a crop, a season and a welfare population, document plausible units and records, and build a synthetic replication. Include a measurement sensitivity, a data lineage table and one defensible strategy for estimating the effect of an offer or an adoption decision.
+
+### Recommended reading and resources
+
+Compare the Ghana Census of Agriculture scope with the household and plot populations used here [@gssagc2020]. Carletto and colleagues illustrate how paired area measurements change empirical interpretation [@carletto2013]. The FAO methodology gives the official food-insecurity measurement procedure [@faofies]. For adoption, Angrist, Imbens and Rubin establish the instrumental-variable identification conditions [@angrist1996]. Chapters 12 and 17–19 develop the survey and experimental tools used in this application.
+
+## Chapter 33 End-to-End Impact Evaluation of a Development Intervention {#chapter-33}
+
+
+Chapter 33 exercises
+
+### Conceptual questions
+
+1. Identify the units of assignment, observation and estimation.
+2. Define the population for the full-cohort intention-to-treat estimand.
+3. Explain why assignment and payment receipt describe different exposures.
+4. State when equal-village and equal-household weights target the same contrast.
+5. Explain why design power depends on the number of randomised clusters.
+6. Explain how matched-pair orientation enters randomisation inference.
+7. Distinguish a reference interval from a completion range.
+8. Describe two mechanisms producing differential follow-up.
+9. Explain what a baseline gap can reveal about the cohort.
+10. State what evidence a transfer scale-up decision would require beyond the trial estimate.
+
+### Programming exercises
+
+11. Join the household and village files and verify the arm flow.
+12. Create a table of village eligibility, observed outcomes and reason counts.
+13. Export one record per pair with both village means and their difference.
+14. Recalculate the two-sided randomisation statistic from the archived signs.
+15. Produce a sensitivity curve for adverse departures from zero to ten points.
+
+### Statistical reasoning
+
+16. Recalculate the planning MDE when the intraclass correlation is 0.20.
+17. Explain how equal attrition rates can coexist with a biased observed contrast.
+18. Compare the change-score estimator with a prespecified baseline-adjusted regression.
+19. Compute the adverse departure required to cross the three-point threshold.
+20. Analyse the effect of an entirely unobserved village on the paired estimate and bounds.
+
+### Cross-platform replication exercises
+
+21. Reproduce pair differences, the standard error and the sign ledger in two engines.
+22. Reconcile the two completion endpoints from the original roster and the eligible baseline sums.
+
+### Applied assignment
+
+23. Write a protocol and two-page decision note for a hypothetical development intervention. Provide assignment and sample rules, the outcome contract, primary inference, attrition sensitivity, a deviation record and an executable replication archive.
+
+### Recommended reading and resources
+
+Read Campbell and colleagues for cluster trial reporting [@campbell2012], Lee for bounds under a selection restriction [@lee2009], and the Ghana LEAP evidence overview for a documented policy context [@unicefleap2024]. Chapter 24 gives additional guidance on clustered inference.
+
+## Chapter 34 Reproducible Business Intelligence and Financial Decision Analytics {#chapter-34}
+
+
+Chapter 34 exercises
+
+### Conceptual questions
+
+1. Distinguish a line, invoice and customer-origin key.
+2. Explain what a source cancellation can establish.
+3. Explain why cumulative returns need an original-sale audit.
+4. Describe how a zero-price line can arise.
+5. Distinguish a booked amount from a payment settlement.
+6. Define the identified-buyer cohort.
+7. Identify when the outcome at origin 45 matures.
+8. Explain why a missing week differs from a zero-quantity week.
+9. Describe how asymmetric cost weights forecast errors.
+10. Explain why fulfilled units may understate demand.
+
+### Programming exercises
+
+11. Reconcile eligible lines and one row per invoice in SQL.
+12. Introduce the invoice fan-out error and identify the incorrect total.
+13. List all 13 excluded lines and their rule failures.
+14. Rebuild customer eligibility and outcomes at origin 48.
+15. Reproduce both forecast vectors on the complete calendar.
+
+### Statistical reasoning
+
+16. Explain the apparent reversal when comparing two different holdout periods.
+17. Inspect the effect of the largest error on both scorecards.
+18. Change shortage cost to three and compare policies on the same rows.
+19. Describe how repeated buyers and overlapping label windows affect uncertainty.
+20. Design a validation that tests transfer to new buyers and later periods.
+
+### Cross-platform replication exercises
+
+21. Verify invoice net and linked-return quantities across two engines.
+22. Reproduce the common-period and shortened-period MAEs by matched keys.
+
+### Applied assignment
+
+23. Write a management report with a metric dictionary, a booked-amount reconciliation, dated cohorts and two forecasts on a common test. Use an explicit ordering criterion and document one intentional grain or timing error and its effect.
+
+### Recommended reading and resources
+
+Read the UCI source definitions [@ucionlineretail], the rolling-origin treatment in Hyndman and Athanasopoulos [@hyndman2021], and Chapters 7 and 25 on join cardinality and decision-time information.
+
+## Chapter 35 Comparative Cross-Country Economic and Social Development Analysis {#chapter-35}
+
+
+Chapter 35 exercises
+
+### Conceptual questions
+
+1. Explain why WLD belongs in the coverage audit and outside the regression.
+2. Distinguish an unmatched source key from a matched missing value.
+3. Identify the population described by the core comparison.
+4. Distinguish PPP expenditure per resident from output per person engaged.
+5. Explain which unit factors cancel in the two PWT ratios.
+6. Describe how a benchmark revision can affect a historical series.
+7. Distinguish period life expectancy from mean age.
+8. Explain what a country effect absorbs.
+9. Identify a dependence pattern that country clustering leaves unresolved.
+10. Explain how a weighted average of national life expectancies differs from a pooled life table.
+
+### Programming exercises
+
+11. Rebuild the versioned code and aggregate exclusion map.
+12. Export source keys with no PWT counterpart.
+13. Calculate the two PWT ratios with labelled units.
+14. Reproduce the balanced equal-weight slope through SQL centring.
+15. Generate leave-one-economy-out fits with row counts.
+
+### Statistical reasoning
+
+16. Translate the baseline slope to a fitted difference for a 10% income increase.
+17. Explain why weighting after unweighted centring can give a different fit.
+18. Distinguish the sensitivity to income definition from the sensitivity to coverage.
+19. Identify a reasonable response to possible cross-economy residual dependence.
+20. Compare the effect of giving each country equal weight and weighting by population.
+
+### Cross-platform replication exercises
+
+21. Match Ghana's endpoints and the complete country coverage ledger.
+22. Reproduce the slope, cluster correction and reference interval on the same observations.
+
+### Applied assignment
+
+23. Prepare a Ghana-centred development research note with a predeclared comparator group, two price or population concepts, a coverage ledger and a specified panel association. Supply the data access, code and output record needed for a clean rerun.
+
+### Recommended reading and resources
+
+Use the PWT release documentation and Feenstra, Inklaar and Timmer for measurement [@pwt110; @feenstra2015], the WDI metadata for the underlying indicators [@wdi2026part9] and Cameron and Miller for clustered inference [@cameron2015].
+
+## Chapter 36 Reproducible Public Health and Social Protection Policy Research {#chapter-36}
+
+
+Chapter 36 exercises
+
+### Conceptual questions
+
+1. Define the teaching population and eligibility rule.
+2. Distinguish eligibility, enrolment and recorded receipt.
+3. Explain why inclusion uses the recipient denominator.
+4. Explain why no stated need differs from a known met need.
+5. Interpret a relative survey weight and its weighted denominator.
+6. Explain why tied welfare observations receive a shared midrank.
+7. Interpret a negative concentration index for an adverse outcome.
+8. Distinguish the two release gates.
+9. Explain how a total and visible cells can reveal a withheld count.
+10. Name the records needed to validate an authorised linkage.
+
+### Programming exercises
+
+11. Create a household SQL view with eligibility, receipt and known need.
+12. Reconcile the weighted four-cell targeting table.
+13. Calculate tied midranks and verify their order invariance.
+14. Implement one re-ranked delete-PSU replicate.
+15. Export a projection with empty numerical fields for both withheld states.
+
+### Statistical reasoning
+
+16. Explain how targeted participation can correlate with health need before any causal effect.
+17. Compare headcounts under household and person weighting.
+18. Describe how a different event prevalence can affect relative concentration.
+19. Derive worst-case weighted completion limits for eight unresolved outcomes.
+20. Explain how an estimate with enough observations can still fail the precision rule.
+
+### Cross-platform replication exercises
+
+21. Match targeting ratios and design intervals across two implementations.
+22. Compare the concentration indexes and all design replicates using the same eligible domain.
+
+### Applied assignment
+
+23. Write a technical appendix and disclosure-reviewed policy brief for a fictional access or targeting decision. Specify the eligible population, design, inequality measure, public projection and requirements for an authorised rerun.
+
+### Recommended reading and resources
+
+Use O'Donnell and colleagues for survey-based health equity methods [@odonnell2008] and Erreygers for the bounded-variable correction [@erreygers2009]. Compare how Ghana DHS, LEAP and CFSVA document populations, rules and reference periods [@ghana2022dhs; @unicefleap2024; @ghcfsva2020].
+
+## Chapter 37 Version Control, Dependency Management, Automated Testing, and Continuous Integration {#chapter-37}
+
+
+Chapter 37 exercises
+
+### Conceptual questions
+
+1. Explain why a tag and its resolved commit are both recorded.
+2. Identify what an annotated tag says about a release's origin.
+3. Distinguish a package list from a lock with distribution hashes.
+4. Explain why an operating-system-specific wheel lock can fail elsewhere.
+5. Describe how notebook state can survive deletion of a cell.
+6. Give an example of a unit test for the pilot.
+7. Explain how two extracts of the same size can differ in eligibility.
+8. Distinguish execution status from numerical verification.
+9. Explain why a licensed route has a separate record.
+10. Identify the new evidence needed for scientific replication.
+
+### Programming exercises
+
+11. Restore the pilot lock and record the effective package versions.
+12. Run the tagged pilot from two clean checkouts and compare stable outputs.
+13. Add a unit test for nonpositive area.
+14. Create a duplicate-key fixture and verify that the pipeline rejects it.
+15. Generate a method-change record with the full-precision result diff.
+
+### Statistical reasoning
+
+16. Derive the pilot slope using the paired residual construction.
+17. Calculate the HC1-to-HC0 variance and standard-error ratios.
+18. State the units of the slope when the predictor and outcome are reversed.
+19. Construct a comparison in which the absolute tolerance dominates.
+20. Explain how a reference distribution can alter intervals at fixed covariance.
+
+### Cross-platform replication exercises
+
+21. Reconcile canonical sample IDs and the outputs of two fitting environments.
+22. Import the licensed evidence and verify a covariance and interval against the analytical reference.
+
+### Applied assignment
+
+23. Submit a tagged pilot reproduction, environment manifest, clean-run record and regression diff. State the scope of fresh and imported execution, and document the first affected stage of a deliberate discrepancy.
+
+### Recommended reading and resources
+
+Read Sandve and colleagues and Wilson and colleagues on reproducible computational practice [@sandve2013; @wilson2017]. Consult the Git tag manual and the Python and R lock documentation [@gitpart10; @pipsecure; @renvlocks].
+
+## Chapter 38 Reproducible Research Documents, Tables, Figures, and Academic Manuscripts {#chapter-38}
+
+
+Chapter 38 exercises
+
+### Conceptual questions
+
+1. Define the grain of the pilot coefficient record.
+2. Explain why comparison precedes rounding.
+3. Describe what a technical note adds to a journal report.
+4. Distinguish a citation key, DOI and release fingerprint.
+5. Explain why notebook output can become stale.
+6. State what is needed to verify a licensed run on changed input.
+7. Describe the role of alternative text for an interval plot.
+8. Explain what structural EPUB validation checks.
+9. Explain why a correct caption label can link to the wrong destination.
+10. Identify the files an editor needs to reconstruct a technical exhibit.
+
+### Programming exercises
+
+11. Generate both reports from the named verified rows.
+12. Add a source fingerprint to the exhibit registry.
+13. Derive corrected yield from harvest and area.
+14. Inject a wrong baseline value and require an audit failure.
+15. Render the report and inspect links and table headings.
+
+### Statistical reasoning
+
+16. Derive the one-record slope change for a model with intercept.
+17. Determine the sign if the corrected record lies below mean sessions.
+18. Explain why HC1 changes when x remains fixed.
+19. Compare the information in rounded and full-precision intervals.
+20. Explain why the pilot cannot estimate a causal effect of attendance.
+
+### Cross-platform replication exercises
+
+21. Compare the changed slope, standard error and interval in Python and R.
+22. Match a Stata export to the original analytical input and generated table.
+
+### Applied assignment
+
+23. Deliver an editable technical note and journal-style report with verifiable tables and figure data. Include the changed input, reporting registry and evidence that an overwritten value was detected and corrected.
+
+### Recommended reading and resources
+
+Use the Quarto book cross-reference documentation, Xie and colleagues on R Markdown and the W3C EPUB accessibility recommendation [@quartopart10; @rmarkdownpart10; @epuba11y].
+
+## Chapter 39 Research Ethics, Data Protection, Open Science, and Computational Accountability {#chapter-39}
+
+
+Chapter 39 exercises
+
+### Conceptual questions
+
+1. Distinguish access, redistribution and software reuse permissions.
+2. Give examples of direct and indirect identifiers.
+3. Explain how pseudonyms can preserve linkability.
+4. Name the copies that a retention rule should address.
+5. Identify two places where a notebook can store hidden data.
+6. Explain why survey weights do not implement a count threshold.
+7. Distinguish a restricted dataset from an undocumented estimator.
+8. Explain how FAIR stewardship can support controlled access.
+9. State who is responsible for a claim supported by generative assistance.
+10. Explain what a synthetic public rerun establishes.
+
+### Programming exercises
+
+11. Build an asset permissions register with a documented use for each item.
+12. Test a ZIP for unexpected members and a CSV for unexpected columns.
+13. Reproduce the synthetic log and notebook failures.
+14. Verify empty numeric fields for both unreleased states.
+15. Record failure locations without including the leaked example row.
+
+### Statistical reasoning
+
+16. Reconstruct the omitted cell from the example's total and subtotal.
+17. Explain why the subtraction fails on overlapping categories.
+18. Give an example of attribute disclosure in a class with several records.
+19. Compare the privacy and precision gates.
+20. Explain why a changed sample requires a new output review.
+
+### Cross-platform replication exercises
+
+21. Match the released domain rates and denominators across two Chapter 36 engines.
+22. Reconcile the approved public projection with the controlled ledger and applied status rule.
+
+### Applied assignment
+
+23. Submit a synthetic public release and a mock authorised package with a permissions register, availability statement, deviation record and verified correction of an injected disclosure error.
+
+### Recommended reading and resources
+
+Consult the Ghana Data Protection Act and the AEA policy for the jurisdictional and replication examples [@ghact843; @aeapart10]. Read Wilkinson and colleagues and Carroll and colleagues on data stewardship [@wilkinson2016; @carroll2020].
+
+## Chapter 40 The Complete Reproducible Statistical Research and Publication System {#chapter-40}
+
+
+Chapter 40 exercises
+
+### Conceptual questions
+
+1. State the research question and unit of analysis.
+2. Distinguish the 312 source keys from the 240 baseline rows.
+3. Explain why an unmatched key differs from an unusable matched record.
+4. Interpret a slope in years per log point of income.
+5. Explain why software agreement does not establish causation.
+6. Describe the second reader's evidence responsibilities.
+7. Distinguish a manifest from a data availability statement.
+8. Explain why equal row counts can conceal a model-key error.
+9. Identify one responsibility of the data steward and methods reviewer.
+10. Explain why a correction needs a version history.
+
+### Programming exercises
+
+11. Rebuild the country-year coverage audit.
+12. Recover the balanced slope from residual cross-products in SQL.
+13. Insert and diagnose a misplaced weighted coefficient.
+14. Verify a checksum manifest after extracting the archive.
+15. Regenerate the report with corrected numbers and evidence keys.
+
+### Statistical reasoning
+
+16. Translate the primary coefficient for a 10% rise in income.
+17. Explain the effect of switching to population weights.
+18. Discuss the implications of ten economy clusters.
+19. Describe plausible time-varying confounding in the model.
+20. Specify an additional design or data source for a policy mechanism.
+
+### Cross-platform replication exercises
+
+21. Match the primary and sensitivity estimates and inference across the available engines.
+22. Give a second reader the archive and reconcile the sample and outputs at the declared tolerances.
+
+### Applied assignment
+
+23. Submit a journal-style development study or approved sector variant with a tagged release, a lawful source route, independently checked implementations, a second-reader record and an archive test.
+
+### Recommended reading and resources
+
+Consult the National Academies report on reproduction and replication, the AEA policy and the source documentation for the PWT and WDI series [@nasem2019; @aeapart10; @pwt110; @wdi2026part9].

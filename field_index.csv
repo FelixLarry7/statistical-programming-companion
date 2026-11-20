@@ -1,0 +1,612 @@
+path,field,observed_type,key_role,definition,unit_or_domain,missing_rows,codebook
+chapter_companions/Part_I/companion/data/maize_pilot.csv,plot_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/maize_pilot.csv,season,integer,primary key,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/maize_pilot.csv,area_ha,decimal,,Cultivated area,ha,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/maize_pilot.csv,harvest_kg,decimal,,Recorded harvest weight,kg,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/maize_pilot.csv,sessions,integer,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/maize_pilot.csv,yield_kg_ha,decimal,,Harvest divided by eligible area,kg/ha,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/invoices.csv,invoice_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/invoices.csv,channel,text,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/invoices.csv,quarter,text,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/invoices.csv,currency,text,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/invoices.csv,amount_minor,integer,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/invoices.csv,refund_minor,integer,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/invoices.csv,state,text,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/refund_events.csv,refund_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/refund_events.csv,invoice_id,text,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/refund_events.csv,event_day,text,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/refund_events.csv,status,text,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/refund_events.csv,refund_minor,integer,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/representation.csv,row_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/representation.csv,unit_id,text with leading zero,,See chapter codebook,,1,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/representation.csv,rank_label,text,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/representation.csv,value_token,text,,See chapter codebook,,2,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/representation.csv,missing_reason,text,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/draws.csv,draw_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/draws.csv,u,decimal,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/encoding_design.csv,unit_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/encoding_design.csv,level,text,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/encoding_design.csv,outcome,integer,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/coverage.csv,episode_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/coverage.csv,cohort,integer,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/coverage.csv,consent,integer,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/coverage.csv,baseline_high,integer,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/coverage.csv,offer,integer,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/coverage.csv,reached_30d,integer,,See chapter codebook,,2,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_I/companion/data/coverage.csv,opened,integer,,See chapter codebook,,0,chapter_companions/Part_I/companion/data/codebook.md
+chapter_companions/Part_II/companion/data/raw/ch05_page_1.json,record_id,text with leading zero,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch05_page_1.json,observed_on,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch05_page_1.json,category,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch05_page_1.json,value_token,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch05_page_2.json,record_id,text with leading zero,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch05_page_2.json,observed_on,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch05_page_2.json,category,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch05_page_2.json,value_token,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch06_features.csv,record_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch06_features.csv,partition,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch06_features.csv,observed_on,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch06_features.csv,input_value,integer,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch06_fx.csv,currency,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch06_fx.csv,effective_date,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch06_fx.csv,fx_pp100,integer,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch06_invoices.csv,invoice_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch06_invoices.csv,invoice_date,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch06_invoices.csv,currency,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch06_invoices.csv,state,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch06_invoices.csv,quantity,integer,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch06_invoices.csv,price_minor,integer,,See chapter codebook,,2,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch07_customers.csv,customer_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch07_customers.csv,effective_date,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch07_customers.csv,version,integer,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch07_customers.csv,region,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch07_invoices.csv,invoice_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch07_invoices.csv,customer_id,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch07_invoices.csv,invoice_date,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch07_invoices.csv,total_minor,integer,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch07_lines.csv,invoice_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch07_lines.csv,line_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch07_lines.csv,amount_minor,integer,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_households.csv,hh_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_households.csv,stratum,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_households.csv,eligible,integer,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_households.csv,weight10,integer,,Relative weight stored in tenths,tenths of a weight unit,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_households_defect.csv,hh_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_households_defect.csv,stratum,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_households_defect.csv,eligible,integer,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_households_defect.csv,weight10,integer,,Relative weight stored in tenths,tenths of a weight unit,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_members.csv,hh_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_members.csv,member_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_members.csv,age,integer,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_members_defect.csv,hh_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_members_defect.csv,member_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_members_defect.csv,age,integer,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_plots.csv,plot_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_plots.csv,hh_id,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_plots.csv,area_m2,integer,,Recorded plot area,m²,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_II/companion/data/raw/ch08_plots.csv,crop,text,,See chapter codebook,,0,chapter_companions/Part_II/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/plots.csv,plot_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/plots.csv,regime,text,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/plots.csv,fert,integer,,See chapter codebook,,1,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/plots.csv,labour,integer,,See chapter codebook,,2,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/plots.csv,yield_t_ha,decimal,,Yield per hectare,tonnes/ha,1,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/figure_bins.csv,regime,text,primary key,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/figure_bins.csv,bin,integer,primary key,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/figure_bins.csv,lo,integer,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/figure_bins.csv,hi,integer,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/figure_bins.csv,mid,decimal,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/figure_bins.csv,frequency,integer,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/figure_intervals.csv,regime,text,primary key,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/figure_intervals.csv,n,integer,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/figure_intervals.csv,mean,decimal,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/figure_intervals.csv,se,decimal,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/figure_intervals.csv,df,integer,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/figure_intervals.csv,lower,decimal,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/figure_intervals.csv,upper,decimal,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/bootstrap_draws.csv,replicate,integer,primary key,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/bootstrap_draws.csv,draw,integer,primary key,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/bootstrap_draws.csv,original_index,integer,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/bootstrap_draws.csv,x,integer,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/critical_values.csv,df,integer,primary key,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/critical_values.csv,t975,decimal,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/fixed_draws.csv,design,text,primary key,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/fixed_draws.csv,n,integer,primary key,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/fixed_draws.csv,replicate,integer,primary key,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/fixed_draws.csv,draw,integer,primary key,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/fixed_draws.csv,x,decimal,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/survey.csv,hh_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/survey.csv,stratum,integer,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/survey.csv,psu,integer,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/survey.csv,fpc_n,integer,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/survey.csv,eligible,integer,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/survey.csv,rural,integer,,See chapter codebook,,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/survey.csv,welfare,integer,,See chapter codebook,,2,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_III/companion/data/raw/survey.csv,weight,integer,,Relative analytical weight,chapter-specific,0,chapter_companions/Part_III/companion/data/dictionary.csv
+chapter_companions/Part_IV/companion/data/pilot_source/plots.csv,plot_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/pilot_source/plots.csv,area_m2,integer,,Recorded plot area,m²,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/pilot_source/season_records.csv,plot_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/pilot_source/season_records.csv,season,integer,primary key,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/pilot_source/season_records.csv,harvest_kg,decimal,,Recorded harvest weight,kg,1,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/pilot_source/season_records.csv,sessions,integer,,See chapter codebook,,1,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/pilot13.csv,plot_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/pilot13.csv,season,integer,primary key,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/pilot13.csv,area_ha,decimal,,Cultivated area,ha,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/pilot13.csv,harvest_kg,decimal,,Recorded harvest weight,kg,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/pilot13.csv,sessions,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/pilot13.csv,yield_kg_ha,decimal,,Harvest divided by eligible area,kg/ha,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/regression13.csv,plot_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/regression13.csv,sessions,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/regression13.csv,irrigated,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/regression13.csv,yield_kg_ha,decimal,,Harvest divided by eligible area,kg/ha,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/appointments14.csv,count_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/appointments14.csv,capacity,decimal,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/appointments14.csv,rural,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/appointments14.csv,days,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/appointments14.csv,appointments,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/delivery14.csv,case_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/delivery14.csv,contacts,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/delivery14.csv,rural,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/delivery14.csv,event,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/prediction14.csv,scenario_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/prediction14.csv,contacts,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/prediction14.csv,rural,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/prediction14.csv,capacity,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/prediction14.csv,days,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/censor15.csv,case_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/censor15.csv,resources,decimal,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/censor15.csv,expenditure,decimal,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/censor15.csv,censored,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/duration15.csv,person_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/duration15.csv,risk,decimal,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/duration15.csv,supported,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/duration15.csv,duration,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/duration15.csv,event,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/facilities16.csv,patient_id,text,primary key,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/facilities16.csv,facility_id,text,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/facilities16.csv,baseline,decimal,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/facilities16.csv,outcome,decimal,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/facilities16.csv,balanced,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_IV/companion/data/raw/facilities16.csv,unbalanced,integer,,See chapter codebook,,0,chapter_companions/Part_IV/companion/data/codebook.csv
+chapter_companions/Part_V/companion/data/raw/allocations17.csv,draw,integer,primary key,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/allocations17.csv,z1,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/allocations17.csv,z2,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/allocations17.csv,z3,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/allocations17.csv,z4,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/allocations17.csv,z5,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/allocations17.csv,z6,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/allocations17.csv,z7,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/allocations17.csv,z8,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/allocations17.csv,z9,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/allocations17.csv,z10,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/allocations17.csv,z11,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/allocations17.csv,z12,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/households17.csv,household,integer,primary key,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/households17.csv,village,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/households17.csv,eligible,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/households17.csv,baseline_wave,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/households17.csv,outcome_wave,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/households17.csv,baseline,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/households17.csv,admin,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/households17.csv,receipt,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/households17.csv,measured,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/households17.csv,survey,integer,,See chapter codebook,,30,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/villages17.csv,village,integer,primary key,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/villages17.csv,block,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/villages17.csv,offer,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,draw,integer,primary key,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u1,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u2,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u3,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u4,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u5,integer,,Under-five mortality rate,"per 1,000 live births",0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u6,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u7,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u8,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u9,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u10,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u11,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u12,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u13,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u14,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u15,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u16,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u17,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u18,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u19,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u20,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u21,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u22,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u23,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u24,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u25,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u26,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u27,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u28,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u29,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u30,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u31,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u32,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u33,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u34,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u35,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u36,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u37,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u38,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/multipliers18.csv,u39,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/rollout18.csv,unit,integer,primary key,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/rollout18.csv,period,integer,primary key,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/rollout18.csv,cohort,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/rollout18.csv,x,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/rollout18.csv,in_scope,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/rollout18.csv,outcome,decimal,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/encourage19.csv,record,integer,primary key,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/encourage19.csv,x,decimal,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/encourage19.csv,z,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/encourage19.csv,z2,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/encourage19.csv,dose,decimal,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/encourage19.csv,weak,decimal,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/encourage19.csv,outcome,decimal,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/encourage19.csv,weak_outcome,decimal,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/threshold19.csv,record,integer,primary key,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/threshold19.csv,running,decimal,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/threshold19.csv,eligible,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/threshold19.csv,receipt,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/threshold19.csv,sharp,decimal,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/threshold19.csv,fuzzy,decimal,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/threshold19.csv,baseline,decimal,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/places20.csv,place,integer,primary key,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/places20.csv,period,integer,primary key,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/places20.csv,outcome,decimal,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/selection20.csv,record,integer,primary key,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/selection20.csv,eligible,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/selection20.csv,fold,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/selection20.csv,x,decimal,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/selection20.csv,rural,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/selection20.csv,treated,integer,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_V/companion/data/raw/selection20.csv,outcome,decimal,,See chapter codebook,,0,chapter_companions/Part_V/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/panel21.csv,entity,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/panel21.csv,year,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/panel21.csv,y,decimal,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/panel21.csv,x1,decimal,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/panel21.csv,x2,decimal,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/gdp22.csv,country,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/gdp22.csv,year,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/gdp22.csv,growth,decimal,,Annual real GDP growth,percent,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/crosswalk23.csv,region,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/crosswalk23.csv,name,text,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/crosswalk23.csv,source_name,text,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/crosswalk23.csv,geometry_year,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/regions23.csv,region,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/regions23.csv,access,decimal,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/regions23.csv,lat,decimal,,Centroid latitude,degrees,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/regions23.csv,lon,decimal,,Centroid longitude,degrees,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/weights23.csv,graph,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/weights23.csv,origin,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/weights23.csv,target,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/weights23.csv,weight,decimal,,Relative analytical weight,chapter-specific,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,draw,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p1,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p2,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p3,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p4,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p5,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p6,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p7,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p8,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p9,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p10,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p11,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p12,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p13,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p14,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p15,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/permutations23.csv,p16,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/assignments24.csv,draw,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/assignments24.csv,z1,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/assignments24.csv,z2,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/assignments24.csv,z3,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/assignments24.csv,z4,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/assignments24.csv,z5,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/assignments24.csv,z6,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/assignments24.csv,z7,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/assignments24.csv,z8,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/assignments24.csv,z9,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/assignments24.csv,z10,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/assignments24.csv,z11,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/assignments24.csv,z12,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/blocks24.csv,draw,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/blocks24.csv,b1,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/blocks24.csv,b2,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/blocks24.csv,b3,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/blocks24.csv,b4,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/blocks24.csv,b5,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/blocks24.csv,b6,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/blocks24.csv,b7,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/blocks24.csv,b8,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/blocks24.csv,b9,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/blocks24.csv,b10,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/blocks24.csv,b11,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/blocks24.csv,b12,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/serial24.csv,t,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/serial24.csv,y,decimal,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/signs24.csv,draw,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/signs24.csv,s1,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/signs24.csv,s2,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/signs24.csv,s3,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/signs24.csv,s4,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/signs24.csv,s5,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/signs24.csv,s6,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/signs24.csv,s7,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/signs24.csv,s8,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/signs24.csv,s9,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/signs24.csv,s10,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/signs24.csv,s11,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/signs24.csv,s12,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/trial24.csv,record,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/trial24.csv,cluster,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/trial24.csv,block,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/trial24.csv,assigned,integer,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/trial24.csv,x,decimal,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/trial24.csv,y1,decimal,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/trial24.csv,y2,decimal,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VI/companion/data/raw/trial24.csv,y3,decimal,,See chapter codebook,,0,chapter_companions/Part_VI/companion/data/codebook.md
+chapter_companions/Part_VII/companion/data/bootstrap25.csv,draw,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/bootstrap25.csv,customer,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/bootstrap25.csv,multiplicity,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/customers25.csv,row_id,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/customers25.csv,customer,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/customers25.csv,cohort,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/customers25.csv,month,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/customers25.csv,label_month,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/customers25.csv,outcome,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/customers25.csv,tenure,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/customers25.csv,spend,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/customers25.csv,contacts,integer,,See chapter codebook,,384,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/customers25.csv,decline,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/customers25.csv,future,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/customers25.csv,future_month,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/splits25.csv,split,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/splits25.csv,row_id,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/splits25.csv,role,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit26.csv,borrower,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit26.csv,fold,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit26.csv,audit_group,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit26.csv,outcome,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit26.csv,weight,decimal,,Relative analytical weight,chapter-specific,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit26.csv,utilisation,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit26.csv,volatility,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit26.csv,late,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit26.csv,history,decimal,,See chapter codebook,,91,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit26.csv,ratio,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit26.csv,thin,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/ensemble26.csv,borrower,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/ensemble26.csv,outcome,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/ensemble26.csv,py_forest,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/ensemble26.csv,py_boost,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/ensemble26.csv,r_forest,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/ensemble26.csv,r_boost,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit_predictions.csv,borrower,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit_predictions.csv,outcome,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit_predictions.csv,audit_group,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit_predictions.csv,ridge,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/credit_predictions.csv,class2,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/nuisance28.csv,person,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/nuisance28.csv,fold,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/nuisance28.csv,e,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/nuisance28.csv,m0,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/nuisance28.csv,m1,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/programme28.csv,person,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/programme28.csv,fold,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/programme28.csv,rural,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/programme28.csv,need,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/programme28.csv,distance,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/programme28.csv,baseline,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/programme28.csv,treated,integer,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/programme28.csv,outcome,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VII/companion/data/programme28.csv,true_effect,decimal,,See chapter codebook,,0,chapter_companions/Part_VII/companion/data_dictionary.md
+chapter_companions/Part_VIII/companion/data/macro29.csv,country,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/macro29.csv,year,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/macro29.csv,growth,decimal,,Annual real GDP growth,percent,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/macro29.csv,cpi,decimal,,Annual consumer-price inflation,percent,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/macro29.csv,deflator,decimal,,Annual GDP deflator inflation,percent,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/macro29.csv,unemployment,decimal,,Modelled unemployment,percent of labour force,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/macro29.csv,tax,decimal,,Tax revenue,percent of GDP,33,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/macro29.csv,lending,decimal,,Annual lending rate,percent,38,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/policy29.csv,year,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/policy29.csv,day,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/policy29.csv,policy,decimal,,Policy rate in force on date,percent,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/revision29.csv,year,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/revision29.csv,vintage,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/revision29.csv,available,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/revision29.csv,value,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/births30.csv,person,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/births30.csv,stratum,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/births30.csv,psu,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/births30.csv,rural,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/births30.csv,age,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/births30.csv,parity,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/births30.csv,wealth,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/births30.csv,insured,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/births30.csv,months,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/births30.csv,live,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/births30.csv,facility,integer,,Place of delivery,"0 other, 1 facility, −1 unknown",0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/births30.csv,weight,decimal,,Relative analytical weight,chapter-specific,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/expenditure30.csv,household,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/expenditure30.csv,rural,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/expenditure30.csv,chronic,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/expenditure30.csv,insured,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/expenditure30.csv,spend,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/followup30.csv,person,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/followup30.csv,time,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/followup30.csv,event,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/assets31.csv,month,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/assets31.csv,equity,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/assets31.csv,bond,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/assets31.csv,equity_cash,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/assets31.csv,bond_cash,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/bank_filings31.csv,source,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/bank_filings31.csv,quarter,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/bank_filings31.csv,version,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/bank_filings31.csv,release,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/bank_filings31.csv,gross,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/bank_filings31.csv,npl,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/bank_filings31.csv,capital,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/bank_filings31.csv,funding,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/bank_ids31.csv,source,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/bank_ids31.csv,quarter,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/bank_ids31.csv,bank,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/bank_ids31.csv,segment,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/transactions31.csv,line,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/transactions31.csv,month,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/transactions31.csv,customer,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/transactions31.csv,currency,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/transactions31.csv,units,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/transactions31.csv,price,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/transactions31.csv,fx,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/transactions31.csv,original,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/transactions31.csv,posted,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/households32.csv,household,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/households32.csv,stratum,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/households32.csv,psu,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/households32.csv,rural,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/households32.csv,size,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/households32.csv,adults,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/households32.csv,distance,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/households32.csv,meal_shortfall,integer,,Shortfall response on the teaching food-access item,"0 no, 1 yes, −1 unknown",0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/households32.csv,food_spend,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/households32.csv,weight,decimal,,Relative analytical weight,chapter-specific,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/plots32.csv,plot,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/plots32.csv,household,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/plots32.csv,season,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/plots32.csv,maize,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/plots32.csv,gps,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/plots32.csv,reported,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/plots32.csv,share,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/plots32.csv,harvested,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/plots32.csv,unit,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/plots32.csv,harvest,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/plots32.csv,moisture,decimal,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/trial32.csv,plot,integer,primary key,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/trial32.csv,pair,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/trial32.csv,offer,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/trial32.csv,adopt,integer,,See chapter codebook,,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_VIII/companion/data/trial32.csv,yield_kg_ha,decimal,,Harvest divided by eligible area,kg/ha,0,chapter_companions/Part_VIII/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/assignment33.csv,village,integer,primary key,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/assignment33.csv,pair,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/assignment33.csv,region,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/assignment33.csv,offer,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,draw,integer,primary key,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p01,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p02,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p03,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p04,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p05,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p06,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p07,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p08,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p09,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p10,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p11,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p12,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p13,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p14,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p15,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p16,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p17,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p18,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p19,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p20,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p21,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p22,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p23,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/draws33.csv,p24,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/roster33.csv,household,integer,primary key,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/roster33.csv,village,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/roster33.csv,eligible,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/roster33.csv,baseline,decimal,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/roster33.csv,observed,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/roster33.csv,followup,decimal,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/roster33.csv,reason,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/retail34.csv,line,integer,primary key,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/retail34.csv,invoice,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/retail34.csv,product,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/retail34.csv,week,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/retail34.csv,units,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/retail34.csv,pence,integer,,Unit price,GBP pence,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/retail34.csv,customer,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/retail34.csv,cancel,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/returns34.csv,line,integer,primary key,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/returns34.csv,invoice,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/returns34.csv,status,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/returns34.csv,units,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/returns34.csv,pence,integer,,Unit price,GBP pence,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/returns34.csv,original,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/map35.csv,economy,integer,primary key,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/map35.csv,include,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/pwt35.csv,economy,integer,primary key,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/pwt35.csv,year,integer,primary key,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/pwt35.csv,rgdpe,decimal,,Expenditure-side real GDP at chained PPPs,million 2021 USD,8,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/pwt35.csv,rgdpo,decimal,,Output-side real GDP at chained PPPs,million 2021 USD,8,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/pwt35.csv,rgdpna,decimal,,Real GDP at constant national prices,million 2021 USD,8,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/pwt35.csv,pop,decimal,,Penn World Table resident population,million people,8,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/pwt35.csv,emp,decimal,,Penn World Table persons engaged,million people,8,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/wdi35.csv,economy,integer,primary key,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/wdi35.csv,year,integer,primary key,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/wdi35.csv,life,decimal,,Life expectancy at birth,years,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/wdi35.csv,population,integer,,WDI midyear population,people,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/wdi35.csv,u5,decimal,,Under-five mortality rate,"per 1,000 live births",0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/wdi35.csv,gdp2015,decimal,,WDI real GDP per resident,constant 2015 USD,16,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/welfare36.csv,household,integer,primary key,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/welfare36.csv,stratum,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/welfare36.csv,psu,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/welfare36.csv,domain,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/welfare36.csv,rural,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/welfare36.csv,score,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/welfare36.csv,priority,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/welfare36.csv,transfer,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/welfare36.csv,insurance,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/welfare36.csv,need,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/welfare36.csv,unmet,integer,,Unmet care conditional on need,"0 no, 1 yes, −1 unknown or out of domain",0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/welfare36.csv,welfare,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/welfare36.csv,size,integer,,See chapter codebook,,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+chapter_companions/Part_IX/companion/data/welfare36.csv,weight,decimal,,Relative analytical weight,chapter-specific,0,chapter_companions/Part_IX/companion/DATA_DICTIONARY.md
+companion/pilot/data/raw/plots.csv,plot_id,text,primary key,See chapter codebook,,0,data/codebooks/data_notes.md
+companion/pilot/data/raw/plots.csv,area_m2,integer,,Recorded plot area,m²,0,data/codebooks/data_notes.md
+companion/pilot/data/raw/season_records.csv,plot_id,text,primary key,See chapter codebook,,0,data/codebooks/data_notes.md
+companion/pilot/data/raw/season_records.csv,season,integer,primary key,See chapter codebook,,0,data/codebooks/data_notes.md
+companion/pilot/data/raw/season_records.csv,harvest_kg,decimal,,Recorded harvest weight,kg,1,data/codebooks/data_notes.md
+companion/pilot/data/raw/season_records.csv,sessions,integer,,See chapter codebook,,1,data/codebooks/data_notes.md
+companion/pilot/evidence/licensed/duckdb/analytical.csv,plot_id,text,primary key,See chapter codebook,,0,data/codebooks/data_notes.md
+companion/pilot/evidence/licensed/duckdb/analytical.csv,season,integer,primary key,See chapter codebook,,0,data/codebooks/data_notes.md
+companion/pilot/evidence/licensed/duckdb/analytical.csv,area_ha,decimal,,Cultivated area,ha,0,data/codebooks/data_notes.md
+companion/pilot/evidence/licensed/duckdb/analytical.csv,harvest_kg,decimal,,Recorded harvest weight,kg,0,data/codebooks/data_notes.md
+companion/pilot/evidence/licensed/duckdb/analytical.csv,sessions,integer,,See chapter codebook,,0,data/codebooks/data_notes.md
+companion/pilot/evidence/licensed/duckdb/analytical.csv,yield_kg_ha,decimal,,Harvest divided by eligible area,kg/ha,0,data/codebooks/data_notes.md
+companion/reporting/outputs/scenario_analytical.csv,plot_id,text,primary key,See chapter codebook,,0,data/codebooks/data_notes.md
+companion/reporting/outputs/scenario_analytical.csv,season,integer,primary key,See chapter codebook,,0,data/codebooks/data_notes.md
+companion/reporting/outputs/scenario_analytical.csv,area_ha,decimal,,Cultivated area,ha,0,data/codebooks/data_notes.md
+companion/reporting/outputs/scenario_analytical.csv,harvest_kg,decimal,,Recorded harvest weight,kg,0,data/codebooks/data_notes.md
+companion/reporting/outputs/scenario_analytical.csv,sessions,integer,,See chapter codebook,,0,data/codebooks/data_notes.md
+companion/reporting/outputs/scenario_analytical.csv,yield_kg_ha,decimal,,Harvest divided by eligible area,kg/ha,0,data/codebooks/data_notes.md
+companion/governance/outputs/public_domains.csv,domain,text,primary key,See chapter codebook,,0,data/codebooks/data_notes.md
+companion/governance/outputs/public_domains.csv,status,text,,See chapter codebook,,0,data/codebooks/data_notes.md
+companion/governance/outputs/public_domains.csv,estimate,decimal,,See chapter codebook,,2,data/codebooks/data_notes.md
+companion/governance/outputs/public_domains.csv,lower_95,decimal,,See chapter codebook,,2,data/codebooks/data_notes.md
+companion/governance/outputs/public_domains.csv,upper_95,decimal,,See chapter codebook,,2,data/codebooks/data_notes.md
+data/snapshots/D07/faostat_ghana_maize_2010_2024.csv,area_code,integer,primary key,See chapter codebook,,0,data/codebooks/data_notes.md
+data/snapshots/D07/faostat_ghana_maize_2010_2024.csv,area,text,,See chapter codebook,,0,data/codebooks/data_notes.md
+data/snapshots/D07/faostat_ghana_maize_2010_2024.csv,item_code,integer,primary key,See chapter codebook,,0,data/codebooks/data_notes.md
+data/snapshots/D07/faostat_ghana_maize_2010_2024.csv,item,text,,See chapter codebook,,0,data/codebooks/data_notes.md
+data/snapshots/D07/faostat_ghana_maize_2010_2024.csv,element_code,integer,primary key,See chapter codebook,,0,data/codebooks/data_notes.md
+data/snapshots/D07/faostat_ghana_maize_2010_2024.csv,element,text,,See chapter codebook,,0,data/codebooks/data_notes.md
+data/snapshots/D07/faostat_ghana_maize_2010_2024.csv,year,integer,primary key,See chapter codebook,,0,data/codebooks/data_notes.md
+data/snapshots/D07/faostat_ghana_maize_2010_2024.csv,unit,text,,See chapter codebook,,0,data/codebooks/data_notes.md
+data/snapshots/D07/faostat_ghana_maize_2010_2024.csv,value,decimal,,See chapter codebook,,0,data/codebooks/data_notes.md
+data/snapshots/D07/faostat_ghana_maize_2010_2024.csv,flag,text,,See chapter codebook,,0,data/codebooks/data_notes.md
+data/snapshots/D07/faostat_ghana_maize_2010_2024.csv,note,text,,See chapter codebook,,39,data/codebooks/data_notes.md
+data/snapshots/D10/bankfind_four_banks_2020q1_2023q4.csv,CERT,integer,primary key,FDIC certificate identifier,institution code,0,data/codebooks/data_notes.md
+data/snapshots/D10/bankfind_four_banks_2020q1_2023q4.csv,REPDTE,integer,primary key,Financial report date,YYYYMMDD,0,data/codebooks/data_notes.md
+data/snapshots/D10/bankfind_four_banks_2020q1_2023q4.csv,ASSET,integer,,Total assets,thousand USD,0,data/codebooks/data_notes.md
+data/snapshots/D10/bankfind_four_banks_2020q1_2023q4.csv,LNLSGR,integer,,Gross loans and leases,thousand USD,0,data/codebooks/data_notes.md
+data/snapshots/D10/bankfind_four_banks_2020q1_2023q4.csv,LNLSNET,integer,,Net loans and leases,thousand USD,0,data/codebooks/data_notes.md
+data/snapshots/D10/bankfind_four_banks_2020q1_2023q4.csv,NCLNLS,integer,,Total noncurrent loans and leases,thousand USD,0,data/codebooks/data_notes.md
+data/snapshots/D10/bankfind_four_banks_2020q1_2023q4.csv,NCLNLSR,decimal,,Noncurrent loans and leases relative to gross loans and leases,percent,0,data/codebooks/data_notes.md
